@@ -131,11 +131,17 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
           )}
 
           <div className={styles.quickBtns}>
-            {profiles.slice(0, 7).map(p => (
-              <Link key={p.slug} href={`/${p.slug}`} className={styles.qb}>
-                {p.name.split(' ')[0]}
-              </Link>
-            ))}
+            {/* Show top profile from each main category for discovery */}
+            {['cristiano-ronaldo','taylor-swift','lebron-james','elon-musk',
+              'mrbeast','openai','robert-lewandowski','dwayne-johnson']
+              .map(slug => profiles.find(p => p.slug === slug))
+              .filter(Boolean)
+              .map(p => (
+                <Link key={p!.slug} href={`/${p!.slug}`} className={styles.qb}>
+                  {p!.name.split(' ')[0]}
+                </Link>
+              ))
+            }
           </div>
         </div>
       </section>
@@ -157,10 +163,11 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
         <div className={styles.counter}><div className={styles.counterNum}>{profiles.length.toLocaleString()}</div><div className={styles.counterLabel}>Profiles</div></div>
         <div className={styles.counter}><div className={styles.counterNum}>{new Set(profiles.map(p => p.country)).size}</div><div className={styles.counterLabel}>Countries</div></div>
         <div className={styles.counter}><div className={styles.counterNum}>$47T+</div><div className={styles.counterLabel}>Wealth tracked</div></div>
-        <div className={styles.counter}><div className={styles.counterNum}>{profiles.filter(p => p.ai_enabled).length}</div><div className={styles.counterLabel}>AI analyses</div></div>
+        <div className={styles.counter}><div className={styles.counterNum}>{profiles.filter((p: any) => p.ai_enabled).length}</div><div className={styles.counterLabel}>AI analyses</div></div>
       </div>
 
-      {/* ACTIVITY FEED */}
+      {/* ACTIVITY FEED — only show if there's data */}
+      {feed && feed.length > 0 && (
       <section className={styles.section}>
         <div className={styles.feedHead}>
           <h2 className={styles.sectionTitle}>What&apos;s happening</h2>
@@ -179,6 +186,7 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
           ))}
         </div>
       </section>
+      )}
 
       {/* CATEGORIES + LEADERBOARD */}
       <section className={styles.section} id="leaderboard">
