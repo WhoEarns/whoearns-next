@@ -360,29 +360,50 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
+      {/* SEO CONTENT BLOCK */}
       <section className={styles.section} style={{ paddingBottom: '48px' }}>
-        <div className={styles.secEy}>Transparency</div>
-        <h2 className={styles.sectionTitle} style={{ marginBottom: '5px' }}>How the data works</h2>
-        <p className={styles.secSub} style={{ marginBottom: '20px' }}>Honest about sources. Clear about estimates.</p>
-        <div className={styles.howGrid}>
-          <div className={styles.howCard}>
-            <div className={styles.howIco}>—</div>
-            <h3 className={styles.howTitle}>Verified data <span className="badge verified">verified</span></h3>
-            <p className={styles.howDesc}>Public company revenues from SEC EDGAR, Warsaw Stock Exchange and official filings. Football stats from official UEFA and FIFA records. Crypto from public blockchain data.</p>
-            <div className={styles.howSrc}>SEC · GPW Warsaw · Stripe · UEFA · Blockchain</div>
+        <div className={styles.seoBlock}>
+          <div className={styles.seoMain}>
+            <div className={styles.secEy}>About WhoEarns</div>
+            <h2 className={styles.sectionTitle} style={{ marginBottom: '14px' }}>
+              The numbers people actually want to see
+            </h2>
+            <p className={styles.seoP}>
+              WhoEarns is a revenue intelligence and net worth tracking platform covering the world&apos;s most famous athletes, entertainers, tech founders and AI companies. We track verified revenue data from SEC EDGAR filings, Stripe-connected APIs and official financial reports — alongside clearly labelled estimates from Forbes, Bloomberg and public records for individuals whose wealth isn&apos;t publicly disclosed.
+            </p>
+            <p className={styles.seoP}>
+              Our football player net worth rankings cover everyone from Cristiano Ronaldo ($1.1 billion) to emerging stars, with full career stats, contract values and endorsement breakdowns. Our tech founder wealth tracker covers the billionaires behind the AI era — Jensen Huang, Elon Musk, Mark Zuckerberg — with NVIDIA, Tesla and Meta revenue data verified from official filings.
+            </p>
+            <p className={styles.seoP}>
+              For AI companies, WhoEarns tracks annual recurring revenue, valuation and growth rates for OpenAI, Anthropic, Midjourney, Cursor and dozens of the fastest-growing startups. For musicians and entertainers, we cover touring income, catalog values, streaming royalties and brand deals — the full picture behind the headlines.
+            </p>
+            <p className={styles.seoP}>
+              Every figure on WhoEarns is labelled{' '}
+              <span className="badge verified">verified</span> (from official sources) or{' '}
+              <span className="badge estimated">est</span> (estimated from public data).
+              We dispute no figure takes more than 48 hours — email{' '}
+              <a href="mailto:hello@whoearns.com" style={{color:'var(--gold)'}}>hello@whoearns.com</a>.{' '}
+              <Link href="/disclaimer" style={{color:'var(--t2)'}}>Full data disclaimer →</Link>
+            </p>
           </div>
-          <div className={styles.howCard}>
-            <div className={styles.howIco}>—</div>
-            <h3 className={styles.howTitle}>Estimated figures <span className="badge estimated">est</span></h3>
-            <p className={styles.howDesc}>Net worth for celebrities and athletes estimated from reported salaries, endorsements, property records, and outlets including Forbes and Bloomberg. Every estimate shows its source.</p>
-            <div className={styles.howSrc}>Forbes · Bloomberg · Public records</div>
-          </div>
-          <div className={styles.howCard}>
-            <div className={styles.howIco}>—</div>
-            <h3 className={styles.howTitle}>Updates and disputes</h3>
-            <p className={styles.howDesc}>All profiles show a last-reviewed date. Top profiles reviewed monthly. To dispute any data, email hello@whoearns.com — we respond within 48 hours.</p>
-            <div className={styles.howSrc}>Last review: April 2026</div>
+          <div className={styles.seoSide}>
+            <div className={styles.seoCard}>
+              <div className={styles.seoCardTitle}>Data sources</div>
+              {[
+                ['SEC EDGAR', 'US public company filings'],
+                ['Forbes', 'Celebrity net worth estimates'],
+                ['Bloomberg', 'Billionaire index tracking'],
+                ['Stripe API', 'Startup MRR verification'],
+                ['UEFA / FIFA', 'Football career statistics'],
+                ['Blockchain', 'Crypto holdings on-chain'],
+              ].map(([src, desc]) => (
+                <div key={src} className={styles.srcRow}>
+                  <span className={styles.srcName}>{src}</span>
+                  <span className={styles.srcDesc}>{desc}</span>
+                </div>
+              ))}
+              <Link href="/disclaimer" className={styles.srcMore}>Full data methodology →</Link>
+            </div>
           </div>
         </div>
       </section>
@@ -400,7 +421,7 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
               <div className={styles.footerBrand}>Who<em style={{color:'var(--gold)',fontStyle:'normal'}}>Earns</em></div>
               <p className={styles.footerTag}>Revenue intelligence for every business — tech giants, footballers, creators, AI startups and local businesses.</p>
               <div className={styles.footerSoc}>
-                <a href="https://x.com/whoearns" target="_blank" rel="noopener noreferrer" className={styles.footerSocLink}>X — @WhoEarns</a>
+                <a href="https://x.com/whoearns" target="_blank" rel="noopener noreferrer" className={styles.footerSocLink}>X — @WhoEarnsCom</a>
                 <a href="https://instagram.com/whoearns" target="_blank" rel="noopener noreferrer" className={styles.footerSocLink}>Instagram</a>
                 <a href="https://tiktok.com/@whoearns" target="_blank" rel="noopener noreferrer" className={styles.footerSocLink}>TikTok</a>
               </div>
@@ -438,7 +459,7 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
               © 2026 WhoEarns. All net worth figures marked <span className="badge estimated" style={{fontSize:'7px'}}>est</span> are estimates from publicly available information. Nothing on this site constitutes financial, legal or investment advice.{' '}
               <Link href="/disclaimer">Data Disclaimer</Link> · <Link href="/privacy">Privacy Policy</Link> · <a href="mailto:hello@whoearns.com">hello@whoearns.com</a>
             </p>
-            <div className={styles.footerBadges}><span className={styles.badge}>GDPR</span><span className={styles.badge}>Stripe</span><span className={styles.badge}>Apr 2026</span></div>
+            <div className={styles.footerBadges}><span className={styles.badge}>GDPR</span><span className={styles.badge}>Apr 2026</span></div>
           </div>
         </div>
       </footer>
