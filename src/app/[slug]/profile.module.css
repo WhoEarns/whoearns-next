@@ -1,0 +1,224 @@
+.breadcrumb {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: calc(var(--nav-h) + 20px) 20px 0;
+}
+.breadcrumbList {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--t3);
+  flex-wrap: wrap;
+}
+.breadcrumbList a { color: var(--t2); text-decoration: none; transition: color 0.2s; }
+.breadcrumbList a:hover { color: var(--gold); }
+.sep { color: var(--t3); }
+
+.main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 20px 20px 80px;
+}
+
+/* HEADER */
+.header {
+  background: var(--s1);
+  border: 1px solid var(--b2);
+  border-radius: var(--rl);
+  padding: clamp(16px, 4vw, 28px);
+  margin-bottom: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.header::after {
+  content: '';
+  position: absolute; top: 0; right: 0;
+  width: 200px; height: 100%;
+  background: radial-gradient(ellipse at top right, rgba(242,180,32,0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.headerInner {
+  display: flex;
+  gap: clamp(12px, 3vw, 20px);
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.avatarWrap {
+  width: clamp(60px, 13vw, 84px);
+  height: clamp(60px, 13vw, 84px);
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--b2);
+  background: var(--s2);
+  flex-shrink: 0;
+}
+
+.headerText { flex: 1; min-width: 0; }
+
+.h1 {
+  font-size: clamp(22px, 5vw, 38px);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.metaRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.metaItem { font-size: 12px; color: var(--t2); }
+
+.tags { display: flex; gap: 5px; flex-wrap: wrap; }
+.tag {
+  font-size: 10px; font-weight: 600;
+  letter-spacing: 0.5px; text-transform: uppercase;
+  padding: 3px 9px; border-radius: 100px;
+  border: 1px solid var(--b2); color: var(--t2);
+}
+.tag_s { background: var(--gr); color: var(--green); border-color: rgba(34,201,122,.25); }
+.tag_a { background: var(--br); color: var(--blue);  border-color: rgba(91,156,246,.25); }
+.tag_r { background: var(--gd); color: var(--gold);  border-color: rgba(242,180,32,.25); }
+.tag_c { background: var(--pr); color: var(--purple);border-color: rgba(167,139,250,.25); }
+
+/* STATS GRID */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.statBox {
+  background: var(--s2);
+  border: 1px solid var(--b1);
+  border-radius: var(--rm);
+  padding: clamp(12px, 2vw, 18px);
+}
+.statLabel {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--t3);
+  margin-bottom: 7px;
+  display: flex; align-items: center; gap: 4px; flex-wrap: wrap;
+}
+.statValue {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(19px, 4vw, 26px);
+  font-weight: 700; letter-spacing: -0.5px;
+  line-height: 1; margin-bottom: 4px;
+}
+.val_gold   { color: var(--gold); }
+.val_green  { color: var(--green); }
+.val_blue   { color: var(--blue); }
+.val_purple { color: var(--purple); }
+.statNote { font-size: 10px; color: var(--t3); }
+
+/* SEO CONTENT */
+.seoContent {
+  background: var(--s1);
+  border: 1px solid var(--b1);
+  border-radius: var(--rl);
+  padding: clamp(20px, 4vw, 32px);
+  margin-bottom: 12px;
+}
+.seoH2 {
+  font-size: clamp(18px, 3vw, 24px);
+  font-weight: 700; letter-spacing: -0.3px;
+  margin-bottom: 16px; color: var(--t1);
+}
+.seoBody { font-size: 14px; color: var(--t2); line-height: 1.85; }
+.seoBody :global(p) { margin-bottom: 16px; }
+.seoBody :global(p:last-child) { margin-bottom: 0; }
+.seoBody :global(strong) { color: var(--t1); font-weight: 600; }
+
+/* CAREER TABLE */
+.careerSection {
+  background: var(--s1);
+  border: 1px solid var(--b1);
+  border-radius: var(--rl);
+  padding: clamp(16px, 3vw, 24px);
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.sectionTitle {
+  font-size: clamp(16px, 2.5vw, 20px);
+  font-weight: 700; letter-spacing: -0.3px;
+  margin-bottom: 16px; color: var(--t1);
+}
+.tableWrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.careerTable {
+  width: 100%; min-width: 460px;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.careerTable thead tr { background: rgba(255,255,255,0.025); }
+.careerTable thead th {
+  padding: 9px 12px; text-align: left;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--t3);
+  border-bottom: 1px solid var(--b1);
+  white-space: nowrap;
+}
+.careerTable tbody tr { border-bottom: 1px solid var(--b1); }
+.careerTable tbody tr:last-child { border-bottom: none; }
+.careerTable tbody tr:hover { background: rgba(255,255,255,0.02); }
+.careerTable td { padding: 9px 12px; white-space: nowrap; }
+.totalRow { background: var(--gd) !important; border-top: 1px solid rgba(242,180,32,0.15) !important; }
+.goldText { color: var(--gold); }
+
+/* INFO BOXES */
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.infoBox {
+  background: var(--s1);
+  border: 1px solid var(--b1);
+  border-radius: var(--rm);
+  padding: 16px;
+}
+.infoTitle {
+  font-size: 13px; font-weight: 600;
+  margin-bottom: 13px; color: var(--t1);
+}
+.infoList { list-style: none; }
+.infoRow {
+  display: flex; justify-content: space-between;
+  align-items: flex-start;
+  padding: 7px 0; border-bottom: 1px solid var(--b1);
+  font-size: 12px; gap: 10px;
+}
+.infoRow:last-child { border-bottom: none; }
+.infoRow dt { color: var(--t2); flex-shrink: 0; }
+.infoRow dd { font-weight: 600; text-align: right; word-break: break-word; color: var(--t1); }
+
+/* PROFILE FOOTER */
+.profileFooter {
+  margin-top: 12px;
+  padding: 14px 18px;
+  background: var(--s1);
+  border: 1px solid var(--b1);
+  border-radius: var(--r);
+  font-size: 11px;
+  color: var(--t3);
+  line-height: 1.7;
+}
+.profileFooter a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .statsGrid { grid-template-columns: 1fr 1fr; }
+  .infoGrid  { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .statsGrid { grid-template-columns: 1fr 1fr; }
+}
