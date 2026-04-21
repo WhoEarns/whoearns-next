@@ -58,23 +58,25 @@ export async function searchProfiles(query: string): Promise<Partial<Profile>[]>
   const { data, error } = await supabase
     .from('profiles')
     .select('id, slug, name, category, country, stats, meta, net_worth, avatar_skin, avatar_hair, avatar_style, avatar_jersey, avatar_number, avatar_bg, avatar_accessory')
-    .ilike('name', `%${query}%`)
+    .or(`name.ilike.%${query}%,slug.ilike.%${query}%`)
+    .order('rank_order', { ascending: true })
     .limit(8)
 
   if (error) return []
   return data || []
 }
 
-export async function getAllSlugs(): Promise<string[]> {
+export async function getLeaderboard(category: string): Promise<Partial<Profile>[]> {
   const { data, error } = await supabase
     .from('profiles')
-    .select('slug')
+    .select('slug, name, category, country, stats, meta, growth, rank_order, avatar_skin, avatar_hair, avatar_style, avatar_jersey, avatar_number, avatar_bg, avatar_accessory')
+    .eq('category', category)
+    .order('rank_order', { ascending: true })
+    .limit(10)
 
   if (error) return []
-  return (data || []).map(p => p.slug)
+  return data || []
 }
-
-// ── CATEGORIES ────────────────────────────────────────────
 
 export async function getCategories(): Promise<Category[]> {
   const { data, error } = await supabase
@@ -86,8 +88,6 @@ export async function getCategories(): Promise<Category[]> {
   if (error) return []
   return data || []
 }
-
-// ── ACTIVITY FEED ─────────────────────────────────────────
 
 export async function getActivityFeed(): Promise<ActivityFeedItem[]> {
   const { data, error } = await supabase
@@ -101,17 +101,17 @@ export async function getActivityFeed(): Promise<ActivityFeedItem[]> {
   return data || []
 }
 
-// ── EMAIL ALERTS ──────────────────────────────────────────
-
-export async function subscribeToProfile(email: string, profileSlug: string, profileName: string) {
+export async function subscribeToProfile(
+  email: string,
+  profileSlug: string,
+  profileName: string
+): Promise<boolean> {
   const { error } = await supabase
     .from('email_alerts')
-    .upsert({ email, profile_slug: profileSlug, profile_name: profileName })
+    .insert({ email, profile_slug: profileSlug, profile_name: profileName })
 
   return !error
 }
-
-// ── DATA SUBMISSIONS ──────────────────────────────────────
 
 export async function submitDataCorrection(data: {
   profile_slug: string
@@ -120,8 +120,8 @@ export async function submitDataCorrection(data: {
   current_value: string
   suggested_value: string
   source_url: string
-  submitter_email?: string
-}) {
+  submitter_email: string
+}): Promise<boolean> {
   const { error } = await supabase
     .from('data_submissions')
     .insert(data)
@@ -129,16 +129,12 @@ export async function submitDataCorrection(data: {
   return !error
 }
 
-// ── LEADERBOARD ───────────────────────────────────────────
-
-export async function getLeaderboard(category: string): Promise<Partial<Profile>[]> {
+export async function getAllSlugs(): Promise<string[]> {
   const { data, error } = await supabase
     .from('profiles')
-    .select('slug, name, category, country, stats, meta, growth, rank_order, avatar_skin, avatar_hair, avatar_style, avatar_jersey, avatar_number, avatar_bg, avatar_accessory')
-    .eq('category', category)
+    .select('slug')
     .order('rank_order', { ascending: true })
-    .limit(10)
 
   if (error) return []
-  return data || []
+  return (data || []).map(p => p.slug)
 }
