@@ -18,30 +18,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'daily',
       priority: 1,
     },
-    {
-      url: 'https://whoearns.com/footballers',
+    // Category pages
+    ...['footballers','basketball','singers','actors','creators',
+        'tech-founders','politicians','athletes',
+        'ai-startups','tech-giants','startup-mrr','indie-founders'].map(key => ({
+      url: `https://whoearns.com/category/${key}`,
       lastModified: new Date(),
-      changeFrequency: 'weekly',
+      changeFrequency: 'weekly' as const,
       priority: 0.8,
-    },
-    {
-      url: 'https://whoearns.com/tech',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://whoearns.com/ai',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://whoearns.com/creators',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
+    })),
     ...profileUrls,
   ]
 }
