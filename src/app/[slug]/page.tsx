@@ -13,7 +13,7 @@ import styles from './profile.module.css'
 
 export async function generateStaticParams() {
   const slugs = await getAllSlugs()
-  return slugs.map(slug => ({ slug }))
+  return slugs.map((slug: string) => ({ slug }))
 }
 
 // ── PER-PAGE SEO METADATA ─────────────────────────────────
