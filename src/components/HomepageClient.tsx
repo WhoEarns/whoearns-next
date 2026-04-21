@@ -11,13 +11,31 @@ interface Props {
   categories: Category[]
 }
 
-const CATEGORY_ICONS: Record<string, string> = {
-  tech: '—', ai: '—', founders: '—', startups: '—',
-  footballers: '—', poland: '—', creators: '—', local: '—',
+// Maps category tab key → profile.category values in Supabase
+const CATEGORY_MAP: Record<string, string[]> = {
+  footballers:    ['footballers', 'footballer'],
+  basketball:     ['basketball'],
+  singers:        ['singers', 'musician'],
+  actors:         ['actors', 'actor'],
+  creators:       ['creators', 'creator'],
+  'tech-founders':['tech-founders', 'founder'],
+  politicians:    ['politicians', 'politician'],
+  athletes:       ['athletes', 'athlete'],
+  'ai-startups':  ['ai-startups', 'ai'],
+  'tech-giants':  ['tech-giants', 'tech'],
+  'startup-mrr':  ['startup-mrr', 'startup'],
+  'indie-founders':['indie-founders', 'indie-founder', 'founder'],
+  'media-companies':['media-companies', 'media'],
+  'sports-teams': ['sports-teams', 'sports-team'],
+  poland:         ['pl'],   // filtered by country
 }
 
+const PEOPLE_CATS  = ['footballers','basketball','singers','actors','creators','tech-founders','politicians','athletes']
+const COMPANY_CATS = ['ai-startups','tech-giants','startup-mrr','indie-founders','media-companies','sports-teams']
+
 export default function HomepageClient({ profiles, feed, categories }: Props) {
-  const [activeCategory, setActiveCategory] = useState('tech')
+  const [activeCategory, setActiveCategory] = useState('footballers')
+  const [showCompanies, setShowCompanies] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const [searchResults, setSearchResults] = useState<Profile[]>([])
   const [searchOpen, setSearchOpen] = useState(false)
@@ -25,7 +43,6 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
   const [compareB, setCompareB] = useState('')
   const searchRef = useRef<HTMLDivElement>(null)
 
-  // Close search on outside click
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       if (!searchRef.current?.contains(e.target as Node)) setSearchOpen(false)
@@ -34,7 +51,6 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
     return () => document.removeEventListener('mousedown', handler)
   }, [])
 
-  // Live search
   useEffect(() => {
     if (searchQuery.length < 2) { setSearchResults([]); setSearchOpen(false); return }
     const q = searchQuery.toLowerCase()
@@ -45,32 +61,22 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
     setSearchOpen(results.length > 0)
   }, [searchQuery, profiles])
 
-  // Map category tab keys to profile.category values in Supabase
-  const CATEGORY_MAP: Record<string, string[]> = {
-    tech:        ['tech'],
-    ai:          ['ai'],
-    founders:    ['founder'],
-    startups:    ['startup'],
-    footballers: ['footballer'],
-    poland:      ['footballer', 'creator', 'business', 'musician', 'founder'],
-    creators:    ['creator', 'musician', 'athlete'],
-    local:       ['local', 'business'],
-  }
-
-  // Leaderboard for active category
   const leaderboard = profiles
     .filter(p => {
       if (activeCategory === 'poland') return p.country === 'pl'
       const cats = CATEGORY_MAP[activeCategory] || [activeCategory]
-      return cats.includes(p.category)
+      return cats.some(c => p.category === c)
     })
     .sort((a, b) => a.rank_order - b.rank_order)
     .slice(0, 10)
 
-  // Trending: top profiles by rank
   const trending = [...profiles].sort((a, b) => a.rank_order - b.rank_order).slice(0, 9)
 
-  const activecat = categories.find(c => c.key === activeCategory)
+  const getCat = (key: string) => categories.find(c => c.key === key)
+  const activecat = getCat(activeCategory)
+
+  const peopleCats  = categories.filter(c => PEOPLE_CATS.includes(c.key))
+  const companyCats = categories.filter(c => COMPANY_CATS.includes(c.key))
 
   return (
     <>
@@ -85,46 +91,34 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
         </h1>
         <p className={styles.sub}>
           Net worth, monthly revenue and career earnings for{' '}
-          <strong>footballers, creators, tech giants</strong> and AI startups.
+          <strong>footballers, creators, tech billionaires</strong> and AI startups.
           The numbers people actually want to see.
         </p>
 
-        {/* SEARCH */}
         <div className={styles.searchOuter} ref={searchRef}>
           <div className={styles.searchBox}>
             <input
               className={styles.searchInput}
               type="text"
-              placeholder="Search Lewandowski, MrBeast, OpenAI…"
+              placeholder="Search Lewandowski, Taylor Swift, OpenAI…"
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
               onFocus={() => searchResults.length > 0 && setSearchOpen(true)}
-              autoComplete="off"
-              autoCorrect="off"
-              spellCheck={false}
+              autoComplete="off" autoCorrect="off" spellCheck={false}
               aria-label="Search profiles"
             />
             <button className={styles.searchBtn} aria-label="Search">Search</button>
           </div>
 
-          {/* SEARCH DROPDOWN */}
           {searchOpen && searchResults.length > 0 && (
             <div className={styles.searchDrop} role="listbox">
               {searchResults.map(p => (
-                <Link
-                  key={p.slug}
-                  href={`/${p.slug}`}
-                  className={styles.searchItem}
-                  role="option"
-                  onClick={() => { setSearchOpen(false); setSearchQuery('') }}
-                >
+                <Link key={p.slug} href={`/${p.slug}`} className={styles.searchItem}
+                  role="option" onClick={() => { setSearchOpen(false); setSearchQuery('') }}>
                   <div className={styles.searchAva}>
-                    <Avatar
-                      skin={p.avatar_skin} hair={p.avatar_hair}
-                      style={p.avatar_style} jersey={p.avatar_jersey}
-                      number={p.avatar_number} bg={p.avatar_bg}
-                      accessory={p.avatar_accessory} size={34}
-                    />
+                    <Avatar skin={p.avatar_skin} hair={p.avatar_hair} style={p.avatar_style}
+                      jersey={p.avatar_jersey} number={p.avatar_number} bg={p.avatar_bg}
+                      accessory={p.avatar_accessory} size={34} />
                   </div>
                   <div>
                     <div className={styles.searchName}>{p.name}</div>
@@ -136,7 +130,6 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
             </div>
           )}
 
-          {/* QUICK BUTTONS */}
           <div className={styles.quickBtns}>
             {profiles.slice(0, 7).map(p => (
               <Link key={p.slug} href={`/${p.slug}`} className={styles.qb}>
@@ -161,50 +154,26 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
 
       {/* COUNTERS */}
       <div className={styles.counters}>
-        <div className={styles.counter}>
-          <div className={styles.counterNum}>{profiles.length.toLocaleString()}</div>
-          <div className={styles.counterLabel}>Profiles</div>
-        </div>
-        <div className={styles.counter}>
-          <div className={styles.counterNum}>{new Set(profiles.map(p => p.country)).size}</div>
-          <div className={styles.counterLabel}>Countries</div>
-        </div>
-        <div className={styles.counter}>
-          <div className={styles.counterNum}>$47T+</div>
-          <div className={styles.counterLabel}>Wealth tracked</div>
-        </div>
-        <div className={styles.counter}>
-          <div className={styles.counterNum}>{profiles.filter(p => p.ai_enabled).length}</div>
-          <div className={styles.counterLabel}>AI analyses</div>
-        </div>
+        <div className={styles.counter}><div className={styles.counterNum}>{profiles.length.toLocaleString()}</div><div className={styles.counterLabel}>Profiles</div></div>
+        <div className={styles.counter}><div className={styles.counterNum}>{new Set(profiles.map(p => p.country)).size}</div><div className={styles.counterLabel}>Countries</div></div>
+        <div className={styles.counter}><div className={styles.counterNum}>$47T+</div><div className={styles.counterLabel}>Wealth tracked</div></div>
+        <div className={styles.counter}><div className={styles.counterNum}>{profiles.filter(p => p.ai_enabled).length}</div><div className={styles.counterLabel}>AI analyses</div></div>
       </div>
 
       {/* ACTIVITY FEED */}
       <section className={styles.section}>
         <div className={styles.feedHead}>
           <h2 className={styles.sectionTitle}>What&apos;s happening</h2>
-          <div className={styles.liveTag}>
-            <span className={styles.liveDot} />
-            Live updates
-          </div>
+          <div className={styles.liveTag}><span className={styles.liveDot} />Live updates</div>
         </div>
         <div className={styles.feedList}>
           {feed.map(item => (
-            <div
-              key={item.id}
-              className={styles.feedItem}
+            <div key={item.id} className={styles.feedItem}
               onClick={() => item.profile_slug && (window.location.href = `/${item.profile_slug}`)}
-              role={item.profile_slug ? 'link' : undefined}
-              style={{ cursor: item.profile_slug ? 'pointer' : 'default' }}
-            >
+              style={{ cursor: item.profile_slug ? 'pointer' : 'default' }}>
               <div className={styles.feedIco}>—</div>
-              <div
-                className={styles.feedText}
-                dangerouslySetInnerHTML={{ __html: item.text_html }}
-              />
-              <span className={`${styles.feedType} ${styles[`feedType_${item.feed_type}`]}`}>
-                {item.feed_type}
-              </span>
+              <div className={styles.feedText} dangerouslySetInnerHTML={{ __html: item.text_html }} />
+              <span className={`${styles.feedType} ${styles[`feedType_${item.feed_type}`]}`}>{item.feed_type}</span>
               <span className={styles.feedTime}>{item.display_time}</span>
             </div>
           ))}
@@ -213,64 +182,88 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
 
       {/* CATEGORIES + LEADERBOARD */}
       <section className={styles.section} id="leaderboard">
-        <div className={styles.secEy}>Browse</div>
-        <h2 className={styles.sectionTitle}>Every Category</h2>
-        <p className={styles.secSub}>Filter by country or category</p>
 
-        {/* CATEGORY GRID */}
+        {/* ── PEOPLE CATEGORIES ─────────────────────── */}
+        <div className={styles.secEy}>People</div>
+        <h2 className={styles.sectionTitle}>Athletes, Artists and Icons</h2>
+        <p className={styles.secSub}>Net worth and career stats for the world&apos;s most famous people</p>
         <div className={styles.catGrid}>
-          {categories.map(cat => (
-            <button
-              key={cat.key}
+          {peopleCats.map(cat => (
+            <button key={cat.key}
               className={`${styles.cat} ${activeCategory === cat.key ? styles.catActive : ''}`}
-              onClick={() => setActiveCategory(cat.key)}
-            >
-              <span className={styles.catIco}>{CATEGORY_ICONS[cat.key] || '—'}</span>
+              onClick={() => { setActiveCategory(cat.key); setShowCompanies(false) }}>
               <div className={styles.catName}>{cat.label}</div>
               <div className={styles.catHint}>{cat.hint}</div>
             </button>
           ))}
         </div>
 
-        {/* LEADERBOARD */}
+        {/* ── COMPANY CATEGORIES ────────────────────── */}
+        <div className={styles.companyToggle}>
+          <button className={styles.toggleBtn} onClick={() => setShowCompanies(v => !v)}>
+            {showCompanies ? '▲' : '▼'} Companies and Startups
+          </button>
+          <span className={styles.toggleSub}>Tech giants, AI startups, verified MRR</span>
+        </div>
+
+        {showCompanies && (
+          <div className={`${styles.catGrid} ${styles.catGridCompany}`}>
+            {companyCats.map(cat => (
+              <button key={cat.key}
+                className={`${styles.cat} ${activeCategory === cat.key ? styles.catActive : ''}`}
+                onClick={() => setActiveCategory(cat.key)}>
+                <div className={styles.catName}>{cat.label}</div>
+                <div className={styles.catHint}>{cat.hint}</div>
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* ── REGIONAL LINK ─────────────────────────── */}
+        <div className={styles.regionalRow}>
+          <span className={styles.regionalLabel}>Regional profiles:</span>
+          <button className={`${styles.regionalBtn} ${activeCategory === 'poland' ? styles.regionalBtnActive : ''}`}
+            onClick={() => { setActiveCategory('poland'); setShowCompanies(false) }}>
+            Poland
+          </button>
+        </div>
+
+        {/* ── LEADERBOARD ───────────────────────────── */}
         <div className={styles.lbHead}>
           <div>
             <div className={styles.lbTitle}>{activecat?.title || 'Leaderboard'}</div>
             <div className={styles.lbSub}>{activecat?.subtitle}</div>
           </div>
+          <Link href={`/category/${activeCategory}`} className={styles.lbSeeAll}>
+            See all →
+          </Link>
         </div>
 
         <div className={styles.rankList} role="list">
-          {leaderboard.map((p, i) => (
-            <Link
-              key={p.slug}
-              href={`/${p.slug}`}
-              className={`${styles.rankCard} ${i === 0 ? styles.p1 : i === 1 ? styles.p2 : i === 2 ? styles.p3 : ''}`}
-              role="listitem"
-            >
-              <div className={`${styles.rankPos} ${i < 3 ? styles.rankTop : ''}`}>{i + 1}</div>
+          {leaderboard.length === 0 ? (
+            <div className={styles.empty}>
+              No profiles in this category yet.{' '}
+              <a href="mailto:hello@whoearns.com">Suggest a profile →</a>
+            </div>
+          ) : leaderboard.map((p, i) => (
+            <Link key={p.slug} href={`/${p.slug}`}
+              className={`${styles.rankCard} ${i===0?styles.p1:i===1?styles.p2:i===2?styles.p3:''}`}
+              role="listitem">
+              <div className={`${styles.rankPos} ${i<3?styles.rankTop:''}`}>{i+1}</div>
               <div className={styles.rankAva}>
-                <Avatar
-                  skin={p.avatar_skin} hair={p.avatar_hair}
-                  style={p.avatar_style} jersey={p.avatar_jersey}
-                  number={p.avatar_number} bg={p.avatar_bg}
-                  accessory={p.avatar_accessory} size={38}
-                />
+                <Avatar skin={p.avatar_skin} hair={p.avatar_hair} style={p.avatar_style}
+                  jersey={p.avatar_jersey} number={p.avatar_number} bg={p.avatar_bg}
+                  accessory={p.avatar_accessory} size={38} />
               </div>
               <div className={styles.rankInfo}>
-                <div className={styles.rankName}>
-                  {p.name}
-                  {p.stats?.[0]?.verified && (
-                    <span className={`${styles.rb} ${styles.rbV}`}>verified</span>
-                  )}
-                </div>
+                <div className={styles.rankName}>{p.name}</div>
                 <div className={styles.rankDet}>{p.meta?.[0]} · {p.tags?.[0]?.label}</div>
               </div>
               <div className={styles.rankVal}>
                 <div className={`${styles.rankMain} ${p.stats?.[0]?.color ? styles[`val_${p.stats[0].color}`] : ''}`}>
                   {p.stats?.[0]?.value}
                   {p.growth && (
-                    <span className={`${styles.growth} ${p.growth.startsWith('-') ? styles.growthDn : styles.growthUp}`}>
+                    <span className={`${styles.growth} ${p.growth.startsWith('-')?styles.growthDn:styles.growthUp}`}>
                       {p.growth}
                     </span>
                   )}
@@ -282,6 +275,61 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
         </div>
       </section>
 
+      {/* COMPARE */}
+      <section className={styles.section} id="compare">
+        <div className={styles.secEy}>Compare</div>
+        <h2 className={styles.sectionTitle} style={{ marginBottom: '5px' }}>Compare Any Two</h2>
+        <p className={styles.secSub} style={{ marginBottom: '18px' }}>Pick any two profiles and compare them side by side</p>
+        <div className={styles.compareSelects}>
+          <select className={styles.compareSelect} value={compareA}
+            onChange={e => setCompareA(e.target.value)} aria-label="Select first profile">
+            <option value="">Select first profile...</option>
+            {profiles.map(p => <option key={p.slug} value={p.slug}>{p.name}</option>)}
+          </select>
+          <div className={styles.vsMid}>vs</div>
+          <select className={styles.compareSelect} value={compareB}
+            onChange={e => setCompareB(e.target.value)} aria-label="Select second profile">
+            <option value="">Select second profile...</option>
+            {profiles.map(p => <option key={p.slug} value={p.slug}>{p.name}</option>)}
+          </select>
+        </div>
+        {compareA && compareB && (() => {
+          const pA = profiles.find(p => p.slug === compareA)
+          const pB = profiles.find(p => p.slug === compareB)
+          if (!pA || !pB) return null
+          const allLabels = [...new Set([
+            ...(pA.stats||[]).map((s:any)=>s.label),
+            ...(pB.stats||[]).map((s:any)=>s.label),
+          ])]
+          const getVal = (p:any, label:string) => p.stats?.find((s:any)=>s.label===label)?.value||'—'
+          return (
+            <div className={styles.compareCards}>
+              {[pA,pB].map(p => (
+                <div key={p.slug} className={styles.compareCard}>
+                  <div className={styles.compareCardHead}>
+                    <div className={styles.compareAva}>
+                      <Avatar skin={p.avatar_skin} hair={p.avatar_hair} style={p.avatar_style}
+                        jersey={p.avatar_jersey} number={p.avatar_number} bg={p.avatar_bg}
+                        accessory={p.avatar_accessory} size={42} />
+                    </div>
+                    <div>
+                      <div className={styles.compareName}>{p.name}</div>
+                      <div className={styles.compareSub}>{p.meta?.[0]}</div>
+                    </div>
+                  </div>
+                  {allLabels.map(label=>(
+                    <div key={label} className={styles.compareRow}>
+                      <span className={styles.compareKey}>{label}</span>
+                      <span className={styles.compareVal}>{getVal(p,label)}</span>
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
+          )
+        })()}
+      </section>
+
       {/* TRENDING */}
       <section className={styles.section}>
         <div className={styles.secEy}>Trending</div>
@@ -290,94 +338,18 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
           {trending.map(p => (
             <Link key={p.slug} href={`/${p.slug}`} className={styles.trendCard}>
               <div className={styles.trendAva}>
-                <Avatar
-                  skin={p.avatar_skin} hair={p.avatar_hair}
-                  style={p.avatar_style} jersey={p.avatar_jersey}
-                  number={p.avatar_number} bg={p.avatar_bg}
-                  accessory={p.avatar_accessory} size={36}
-                />
+                <Avatar skin={p.avatar_skin} hair={p.avatar_hair} style={p.avatar_style}
+                  jersey={p.avatar_jersey} number={p.avatar_number} bg={p.avatar_bg}
+                  accessory={p.avatar_accessory} size={36} />
               </div>
               <div>
                 <div className={styles.trendName}>{p.name}</div>
-                <div className={styles.trendFact}>
-                  {p.stats?.[0]?.value} {p.stats?.[0]?.label}
-                </div>
+                <div className={styles.trendFact}>{p.stats?.[0]?.value} {p.stats?.[0]?.label}</div>
               </div>
               <span className={styles.trendArr}>›</span>
             </Link>
           ))}
         </div>
-      </section>
-
-      {/* COMPARE */}
-      <section className={styles.section} id="compare">
-        <div className={styles.secEy}>Compare</div>
-        <h2 className={styles.sectionTitle} style={{ marginBottom: '5px' }}>Compare Any Two</h2>
-        <p className={styles.secSub} style={{ marginBottom: '20px' }}>Pick any two profiles and compare them side by side</p>
-        <div className={styles.compareSelects}>
-          <select
-            className={styles.compareSelect}
-            value={compareA}
-            onChange={e => setCompareA(e.target.value)}
-            aria-label="Select first profile"
-          >
-            <option value="">Select first profile...</option>
-            {profiles.map(p => (
-              <option key={p.slug} value={p.slug}>{p.name}</option>
-            ))}
-          </select>
-          <div className={styles.vsMid}>vs</div>
-          <select
-            className={styles.compareSelect}
-            value={compareB}
-            onChange={e => setCompareB(e.target.value)}
-            aria-label="Select second profile"
-          >
-            <option value="">Select second profile...</option>
-            {profiles.map(p => (
-              <option key={p.slug} value={p.slug}>{p.name}</option>
-            ))}
-          </select>
-        </div>
-        {compareA && compareB && (() => {
-          const pA = profiles.find(p => p.slug === compareA)
-          const pB = profiles.find(p => p.slug === compareB)
-          if (!pA || !pB) return null
-          const allLabels = [...new Set([
-            ...(pA.stats || []).map((s: any) => s.label),
-            ...(pB.stats || []).map((s: any) => s.label),
-          ])]
-          const getVal = (p: any, label: string) =>
-            p.stats?.find((s: any) => s.label === label)?.value || '—'
-          return (
-            <div className={styles.compareCards}>
-              {[pA, pB].map(p => (
-                <div key={p.slug} className={styles.compareCard}>
-                  <div className={styles.compareCardHead}>
-                    <div className={styles.compareAva}>
-                      <Avatar
-                        skin={p.avatar_skin} hair={p.avatar_hair}
-                        style={p.avatar_style} jersey={p.avatar_jersey}
-                        number={p.avatar_number} bg={p.avatar_bg}
-                        accessory={p.avatar_accessory} size={42}
-                      />
-                    </div>
-                    <div>
-                      <div className={styles.compareName}>{p.name}</div>
-                      <div className={styles.compareSub}>{p.meta?.[0]}</div>
-                    </div>
-                  </div>
-                  {allLabels.map(label => (
-                    <div key={label} className={styles.compareRow}>
-                      <span className={styles.compareKey}>{label}</span>
-                      <span className={styles.compareVal}>{getVal(p, label)}</span>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          )
-        })()}
       </section>
 
       {/* HOW IT WORKS */}
@@ -389,19 +361,19 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
           <div className={styles.howCard}>
             <div className={styles.howIco}>—</div>
             <h3 className={styles.howTitle}>Verified data <span className="badge verified">verified</span></h3>
-            <p className={styles.howDesc}>Public company revenues from SEC EDGAR, Warsaw Stock Exchange and official filings. Startup MRR via Stripe API. Football stats from official UEFA and FIFA records. Crypto from public blockchain data.</p>
+            <p className={styles.howDesc}>Public company revenues from SEC EDGAR, Warsaw Stock Exchange and official filings. Football stats from official UEFA and FIFA records. Crypto from public blockchain data.</p>
             <div className={styles.howSrc}>SEC · GPW Warsaw · Stripe · UEFA · Blockchain</div>
           </div>
           <div className={styles.howCard}>
             <div className={styles.howIco}>—</div>
             <h3 className={styles.howTitle}>Estimated figures <span className="badge estimated">est</span></h3>
-            <p className={styles.howDesc}>Net worth for celebrities and athletes estimated from reported salaries, endorsements, property records, and outlets including Forbes and Bloomberg. Every estimate shows its source and is clearly labelled.</p>
+            <p className={styles.howDesc}>Net worth for celebrities and athletes estimated from reported salaries, endorsements, property records, and outlets including Forbes and Bloomberg. Every estimate shows its source.</p>
             <div className={styles.howSrc}>Forbes · Bloomberg · Public records</div>
           </div>
           <div className={styles.howCard}>
             <div className={styles.howIco}>—</div>
             <h3 className={styles.howTitle}>Updates and disputes</h3>
-            <p className={styles.howDesc}>All profiles show a last-reviewed date. Top 100 profiles reviewed monthly. To dispute any data or request a correction, email hello@whoearns.com — we respond within 48 hours.</p>
+            <p className={styles.howDesc}>All profiles show a last-reviewed date. Top profiles reviewed monthly. To dispute any data, email hello@whoearns.com — we respond within 48 hours.</p>
             <div className={styles.howSrc}>Last review: April 2026</div>
           </div>
         </div>
@@ -413,39 +385,32 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
           <div className={styles.legend}>
             <span><span className="badge verified">verified</span> confirmed via official filings, APIs or on-chain data</span>
             <span><span className="badge estimated">est</span> estimated from Forbes, Bloomberg and public records</span>
-            <span>Dispute: <a href="mailto:hello@whoearns.com" style={{ color: 'var(--gold)', textDecoration: 'none' }}>hello@whoearns.com</a></span>
+            <span>Dispute: <a href="mailto:hello@whoearns.com" style={{color:'var(--gold)',textDecoration:'none'}}>hello@whoearns.com</a></span>
           </div>
           <div className={styles.footerGrid}>
             <div>
-              <div className={styles.footerBrand}>Who<em style={{ color: 'var(--gold)', fontStyle: 'normal' }}>Earns</em></div>
+              <div className={styles.footerBrand}>Who<em style={{color:'var(--gold)',fontStyle:'normal'}}>Earns</em></div>
               <p className={styles.footerTag}>Revenue intelligence for every business — tech giants, footballers, creators, AI startups and local businesses.</p>
               <div className={styles.footerSoc}>
                 <a href="https://x.com/whoearns" target="_blank" rel="noopener noreferrer" className={styles.footerSocLink}>X — @WhoEarns</a>
                 <a href="https://instagram.com/whoearns" target="_blank" rel="noopener noreferrer" className={styles.footerSocLink}>Instagram</a>
                 <a href="https://tiktok.com/@whoearns" target="_blank" rel="noopener noreferrer" className={styles.footerSocLink}>TikTok</a>
-                <a href="https://youtube.com/@whoearns" target="_blank" rel="noopener noreferrer" className={styles.footerSocLink}>YouTube</a>
               </div>
             </div>
             <div>
-              <div className={styles.footerColTitle}>Categories</div>
+              <div className={styles.footerColTitle}>People</div>
               <ul className={styles.footerLinks}>
-                {categories.map(c => (
-                  <li key={c.key}>
-                    <button className={styles.footerLink} onClick={() => { setActiveCategory(c.key); document.getElementById('leaderboard')?.scrollIntoView({ behavior: 'smooth' }) }}>
-                      {c.label}
-                    </button>
-                  </li>
+                {peopleCats.map(c=>(
+                  <li key={c.key}><button className={styles.footerLink} onClick={()=>{ setActiveCategory(c.key); document.getElementById('leaderboard')?.scrollIntoView({behavior:'smooth'}) }}>{c.label}</button></li>
                 ))}
               </ul>
             </div>
             <div>
-              <div className={styles.footerColTitle}>Product</div>
+              <div className={styles.footerColTitle}>Companies</div>
               <ul className={styles.footerLinks}>
-                <li><a href="mailto:hello@whoearns.com" className={styles.footerLink}>Go Pro — €9/mo</a></li>
-                <li><a href="mailto:hello@whoearns.com" className={styles.footerLink}>Claim Profile — €49/mo</a></li>
-                <li><a href="mailto:hello@whoearns.com" className={styles.footerLink}>API Access — €99/mo</a></li>
-                <li><a href="mailto:hello@whoearns.com" className={styles.footerLink}>Submit a Profile</a></li>
-                <li><a href="mailto:hello@whoearns.com" className={styles.footerLink}>Dispute Data</a></li>
+                {companyCats.map(c=>(
+                  <li key={c.key}><button className={styles.footerLink} onClick={()=>{ setActiveCategory(c.key); setShowCompanies(true); document.getElementById('leaderboard')?.scrollIntoView({behavior:'smooth'}) }}>{c.label}</button></li>
+                ))}
               </ul>
             </div>
             <div>
@@ -456,19 +421,16 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
                 <li><Link href="/cookies" className={styles.footerLink}>Cookie Policy</Link></li>
                 <li><Link href="/disclaimer" className={styles.footerLink}>Data Disclaimer</Link></li>
                 <li><a href="mailto:hello@whoearns.com" className={styles.footerLink}>GDPR Request</a></li>
+                <li><a href="mailto:hello@whoearns.com" className={styles.footerLink}>Submit a Profile</a></li>
               </ul>
             </div>
           </div>
           <div className={styles.footerBottom}>
             <p className={styles.footerLegal}>
-              © 2026 WhoEarns. All net worth figures marked <span className="badge estimated" style={{ fontSize: '7px' }}>est</span> are estimates from publicly available information — not verified financial statements. Nothing on this site constitutes financial, legal or investment advice.{' '}
+              © 2026 WhoEarns. All net worth figures marked <span className="badge estimated" style={{fontSize:'7px'}}>est</span> are estimates from publicly available information. Nothing on this site constitutes financial, legal or investment advice.{' '}
               <Link href="/disclaimer">Data Disclaimer</Link> · <Link href="/privacy">Privacy Policy</Link> · <a href="mailto:hello@whoearns.com">hello@whoearns.com</a>
             </p>
-            <div className={styles.footerBadges}>
-              <span className={styles.badge}>GDPR</span>
-              <span className={styles.badge}>Stripe</span>
-              <span className={styles.badge}>Apr 2026</span>
-            </div>
+            <div className={styles.footerBadges}><span className={styles.badge}>GDPR</span><span className={styles.badge}>Stripe</span><span className={styles.badge}>Apr 2026</span></div>
           </div>
         </div>
       </footer>
