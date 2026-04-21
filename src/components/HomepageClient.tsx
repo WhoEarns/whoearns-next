@@ -421,7 +421,7 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
               <div className={styles.footerBrand}>Who<em style={{color:'var(--gold)',fontStyle:'normal'}}>Earns</em></div>
               <p className={styles.footerTag}>Revenue intelligence for every business — tech giants, footballers, creators, AI startups and local businesses.</p>
               <div className={styles.footerSoc}>
-                <a href="https://x.com/whoearns" target="_blank" rel="noopener noreferrer" className={styles.footerSocLink}>X — @WhoEarnsCom</a>
+                <a href="https://x.com/WhoEarnsCom" target="_blank" rel="noopener noreferrer" className={styles.footerSocLink}>X — @WhoEarnsCom</a>
                 <a href="https://instagram.com/whoearns" target="_blank" rel="noopener noreferrer" className={styles.footerSocLink}>Instagram</a>
                 <a href="https://tiktok.com/@whoearns" target="_blank" rel="noopener noreferrer" className={styles.footerSocLink}>TikTok</a>
               </div>
