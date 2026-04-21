@@ -97,7 +97,7 @@ export default async function ProfilePage(
           </li>
           <span className={styles.sep}>›</span>
           <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
-            <Link href={`/${profile.category}`} itemProp="item">
+            <Link href={`/?cat=${profile.category}#leaderboard`} itemProp="item">
               <span itemProp="name">{categoryLabel(profile.category)}</span>
             </Link>
             <meta itemProp="position" content="2" />
@@ -272,9 +272,32 @@ export default async function ProfilePage(
 
 function categoryLabel(cat: string): string {
   const map: Record<string, string> = {
-    footballer: 'Footballers', creator: 'Creators', tech: 'Tech Giants',
-    ai: 'AI Companies', founder: 'Tech Founders', startup: 'Startups',
-    business: 'Business', athlete: 'Athletes', musician: 'Musicians',
+    // New category keys
+    footballers: 'Football Players',
+    basketball: 'Basketball Players',
+    singers: 'Singers and Rappers',
+    actors: 'Actors',
+    creators: 'Social Media Creators',
+    'tech-founders': 'Tech Founders',
+    politicians: 'Politicians',
+    athletes: 'Athletes',
+    'ai-startups': 'AI Startups',
+    'tech-giants': 'Tech Giants',
+    'startup-mrr': 'Startup MRR',
+    'indie-founders': 'Indie Founders',
+    'media-companies': 'Media Companies',
+    'sports-teams': 'Sports Teams',
+    poland: 'Poland',
+    // Legacy keys (fallback)
+    footballer: 'Football Players',
+    creator: 'Social Media Creators',
+    tech: 'Tech Giants',
+    ai: 'AI Startups',
+    founder: 'Tech Founders',
+    startup: 'Startup MRR',
+    business: 'Business',
+    athlete: 'Athletes',
+    musician: 'Singers and Rappers',
   }
   return map[cat] || 'Profiles'
 }
@@ -297,7 +320,7 @@ function buildJsonLd(profile: Profile, slug: string) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'WhoEarns', item: 'https://whoearns.com' },
-      { '@type': 'ListItem', position: 2, name: categoryLabel(profile.category), item: `https://whoearns.com/${profile.category}` },
+      { '@type': 'ListItem', position: 2, name: categoryLabel(profile.category), item: `https://whoearns.com` },
       { '@type': 'ListItem', position: 3, name: profile.name, item: `https://whoearns.com/${slug}` },
     ],
   }
