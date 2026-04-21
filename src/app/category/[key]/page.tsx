@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { getCategories, getProfilesByCategory } from '@/lib/supabase'
+import { getCategories, getProfilesByCategory, getProfilesByCountry } from '@/lib/supabase'
 import type { Profile, Category } from '@/types'
 import Avatar from '@/components/Avatar'
 import CategoryClient from '@/components/CategoryClient'
@@ -286,9 +286,7 @@ export default async function CategoryPage(
   // Get profiles — filter by country for regional categories
   let profiles: Profile[]
   if (key === 'poland') {
-    const { supabase } = await import('@/lib/supabase')
-    const { data } = await supabase.from('profiles').select('*').eq('country', 'pl').order('rank_order')
-    profiles = data || []
+    profiles = await getProfilesByCountry('pl')
   } else {
     const cats = CATEGORY_MAP[key] || [key]
     profiles = allProfiles.filter(p => cats.some(c => p.category === c))
