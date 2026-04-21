@@ -1,18 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Static export for Vercel — pages pre-rendered at build time
-  // Remove this if you want server-side rendering instead
-  output: 'standalone',
-  
-  // Image optimization
+  // Do NOT set output: 'standalone' when deploying to Vercel
+  // Vercel handles its own optimised output format automatically
+
   images: {
     formats: ['image/avif', 'image/webp'],
   },
 
-  // SEO: trailing slashes off
   trailingSlash: false,
-
-  // Enable React strict mode
   reactStrictMode: true,
 }
 
