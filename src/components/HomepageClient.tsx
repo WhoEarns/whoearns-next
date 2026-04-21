@@ -2,8 +2,8 @@
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import type { Profile, Category, ActivityFeedItem } from '@/types'
-import Avatar from './Avatar'
-import styles from './HomepageClient.module.css'
+import Avatar from '@/components/Avatar'
+import styles from '@/components/HomepageClient.module.css'
 
 interface Props {
   profiles: Profile[]
@@ -21,6 +21,8 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
   const [searchQuery, setSearchQuery] = useState('')
   const [searchResults, setSearchResults] = useState<Profile[]>([])
   const [searchOpen, setSearchOpen] = useState(false)
+  const [compareA, setCompareA] = useState('')
+  const [compareB, setCompareB] = useState('')
   const searchRef = useRef<HTMLDivElement>(null)
 
   // Close search on outside click
@@ -43,9 +45,25 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
     setSearchOpen(results.length > 0)
   }, [searchQuery, profiles])
 
+  // Map category tab keys to profile.category values in Supabase
+  const CATEGORY_MAP: Record<string, string[]> = {
+    tech:        ['tech'],
+    ai:          ['ai'],
+    founders:    ['founder'],
+    startups:    ['startup'],
+    footballers: ['footballer'],
+    poland:      ['footballer', 'creator', 'business', 'musician', 'founder'],
+    creators:    ['creator', 'musician', 'athlete'],
+    local:       ['local', 'business'],
+  }
+
   // Leaderboard for active category
   const leaderboard = profiles
-    .filter(p => p.category === activeCategory)
+    .filter(p => {
+      if (activeCategory === 'poland') return p.country === 'pl'
+      const cats = CATEGORY_MAP[activeCategory] || [activeCategory]
+      return cats.includes(p.category)
+    })
     .sort((a, b) => a.rank_order - b.rank_order)
     .slice(0, 10)
 
@@ -289,6 +307,77 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
             </Link>
           ))}
         </div>
+      </section>
+
+      {/* COMPARE */}
+      <section className={styles.section} id="compare">
+        <div className={styles.secEy}>Compare</div>
+        <h2 className={styles.sectionTitle} style={{ marginBottom: '5px' }}>Compare Any Two</h2>
+        <p className={styles.secSub} style={{ marginBottom: '20px' }}>Pick any two profiles and compare them side by side</p>
+        <div className={styles.compareSelects}>
+          <select
+            className={styles.compareSelect}
+            value={compareA}
+            onChange={e => setCompareA(e.target.value)}
+            aria-label="Select first profile"
+          >
+            <option value="">Select first profile...</option>
+            {profiles.map(p => (
+              <option key={p.slug} value={p.slug}>{p.name}</option>
+            ))}
+          </select>
+          <div className={styles.vsMid}>vs</div>
+          <select
+            className={styles.compareSelect}
+            value={compareB}
+            onChange={e => setCompareB(e.target.value)}
+            aria-label="Select second profile"
+          >
+            <option value="">Select second profile...</option>
+            {profiles.map(p => (
+              <option key={p.slug} value={p.slug}>{p.name}</option>
+            ))}
+          </select>
+        </div>
+        {compareA && compareB && (() => {
+          const pA = profiles.find(p => p.slug === compareA)
+          const pB = profiles.find(p => p.slug === compareB)
+          if (!pA || !pB) return null
+          const allLabels = [...new Set([
+            ...(pA.stats || []).map((s: any) => s.label),
+            ...(pB.stats || []).map((s: any) => s.label),
+          ])]
+          const getVal = (p: any, label: string) =>
+            p.stats?.find((s: any) => s.label === label)?.value || '—'
+          return (
+            <div className={styles.compareCards}>
+              {[pA, pB].map(p => (
+                <div key={p.slug} className={styles.compareCard}>
+                  <div className={styles.compareCardHead}>
+                    <div className={styles.compareAva}>
+                      <Avatar
+                        skin={p.avatar_skin} hair={p.avatar_hair}
+                        style={p.avatar_style} jersey={p.avatar_jersey}
+                        number={p.avatar_number} bg={p.avatar_bg}
+                        accessory={p.avatar_accessory} size={42}
+                      />
+                    </div>
+                    <div>
+                      <div className={styles.compareName}>{p.name}</div>
+                      <div className={styles.compareSub}>{p.meta?.[0]}</div>
+                    </div>
+                  </div>
+                  {allLabels.map(label => (
+                    <div key={label} className={styles.compareRow}>
+                      <span className={styles.compareKey}>{label}</span>
+                      <span className={styles.compareVal}>{getVal(p, label)}</span>
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
+          )
+        })()}
       </section>
 
       {/* HOW IT WORKS */}
