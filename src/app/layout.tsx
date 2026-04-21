@@ -3,7 +3,7 @@ import Script from 'next/script'
 import Nav from '@/components/Nav'
 import './globals.css'
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-XXXXXXXXXX'
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-Q2VRE1FSFN'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://whoearns.com'),
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@WhoEarns',
-    creator: '@WhoEarns',
+    site: '@WhoEarnsCom',
+    creator: '@WhoEarnsCom',
     title: 'WhoEarns — Net Worth, Revenue and Career Stats',
     description: 'The numbers people actually want to see.',
     images: ['/og-image.jpg'],
