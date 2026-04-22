@@ -7,7 +7,7 @@
   --b2: rgba(255, 255, 255, 0.12);
   --b3: rgba(255, 255, 255, 0.20);
   --t1: #f0ece4;
-  --t2: #b0acbc;
+  --t2: #c4c0ce;
   --t3: #6e6a80;
   --gold: #f2b420;
   --gd: rgba(242, 180, 32, 0.12);
@@ -57,7 +57,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* Scrollbar */
