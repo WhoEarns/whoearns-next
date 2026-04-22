@@ -132,7 +132,7 @@
   font-weight: 700; letter-spacing: -0.3px;
   margin-bottom: 16px; color: var(--t1);
 }
-.seoBody { font-size: 14px; color: var(--t2); line-height: 1.85; }
+.seoBody { font-size: 16px; color: var(--t2); line-height: 1.9; }
 .seoBody :global(p) { margin-bottom: 16px; }
 .seoBody :global(p:last-child) { margin-bottom: 0; }
 .seoBody :global(strong) { color: var(--t1); font-weight: 600; }
