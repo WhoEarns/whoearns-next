@@ -37,8 +37,8 @@ export default function CategoryClient({ profiles, categoryLabel }: Props) {
     return num
   }
 
-  const maxVal = Math.max(...profiles.map(p => getNumericValue(p.stats?.[0]?.value || '0')))
-  const top10 = profiles.slice(0, 10)
+  const maxVal = Math.max(...sorted.map(p => getNumericValue(p.stats?.[0]?.value || '0')))
+  const top10 = sorted.slice(0, 10)
 
   return (
     <div className={styles.wrap}>
