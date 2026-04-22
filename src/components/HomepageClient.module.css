@@ -146,7 +146,7 @@
 }
 .tickerTrack {
   display: flex; gap: 36px;
-  animation: tickScroll 55s linear infinite;
+  animation: tickScroll 90s linear infinite;
   white-space: nowrap; width: max-content;
 }
 .ticker:hover .tickerTrack { animation-play-state: paused; }
