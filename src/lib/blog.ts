@@ -1,0 +1,440 @@
+// ============================================================
+// WHOEARNS BLOG POSTS
+// Add new posts here — they auto-appear on /blog
+// HTML content supports custom CSS classes defined in blog.module.css
+// ============================================================
+
+export interface BlogPost {
+  slug: string
+  title: string
+  excerpt: string
+  category: string
+  date: string
+  readTime: number
+  content: string
+}
+
+export const BLOG_POSTS: Record<string, BlogPost> = {
+
+  // ── NBA PLAYOFFS 2026 ──────────────────────────────────────
+  'nba-playoffs-2026-richest-players': {
+    slug: 'nba-playoffs-2026-richest-players',
+    title: 'NBA Playoffs 2026 — Net Worth of Every Star Still Playing',
+    excerpt: 'The 2026 NBA Playoffs feature some of the wealthiest athletes on earth. We ranked every major star still competing by net worth — from LeBron James at $1.5 billion to the rising generation of billionaire-track players.',
+    category: 'Basketball',
+    date: 'April 21, 2026',
+    readTime: 8,
+    content: `
+<p>The 2026 NBA Playoffs represent the highest concentration of wealthy athletes in any single sporting competition on earth. The sixteen teams still competing include players whose combined net worth exceeds $5 billion. Here is the complete financial breakdown of every major star still in contention.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$5B+</div>
+    <div class="stat-callout-label">Combined player wealth</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$59M</div>
+    <div class="stat-callout-label">Highest annual salary</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$1.5B</div>
+    <div class="stat-callout-label">Richest active player</div>
+  </div>
+</div>
+
+<h2>The billionaire bracket — players on track for $1 billion net worth</h2>
+
+<p>LeBron James leads all active NBA players with an estimated net worth of <strong>$1.5 billion</strong> — the first active NBA player to reach billionaire status. His wealth comes from a combination of his $50 million annual NBA salary, his lifetime Nike deal (estimated at $30M+ per year), his SpringHill entertainment company valued at $725 million, and a stake in Liverpool FC through Fenway Sports Group. LeBron is not just the richest player in the playoffs — he is the template that every younger player is following.</p>
+
+<p>Kevin Durant follows at an estimated <strong>$200 million</strong>, with $51 million in annual salary, a Nike signature deal worth approximately $25 million per year, and his Boardroom media company which has assembled a portfolio of over 30 startup investments. Durant co-founded Boardroom specifically to build a post-basketball business empire before his playing days end.</p>
+
+<p>Stephen Curry has an estimated net worth of <strong>$160 million</strong>, earning $59 million per year from Golden State Warriors — the highest annual salary in the league — plus approximately $20 million annually from his Under Armour partnership. Curry is the all-time leader in three-pointers made and the only player ever to win the MVP award unanimously.</p>
+
+<div class="profile-card-grid">
+  <a href="/lebron-james" class="profile-card">
+    <div class="profile-card-rank">1</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">LeBron James</div>
+      <div class="profile-card-detail">Los Angeles Lakers · 21 seasons</div>
+    </div>
+    <div class="profile-card-val">$1.5B</div>
+  </a>
+  <a href="/kevin-durant" class="profile-card">
+    <div class="profile-card-rank">2</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Kevin Durant</div>
+      <div class="profile-card-detail">Phoenix Suns · $51M salary</div>
+    </div>
+    <div class="profile-card-val">$200M</div>
+  </a>
+  <a href="/stephen-curry" class="profile-card">
+    <div class="profile-card-rank">3</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Stephen Curry</div>
+      <div class="profile-card-detail">Golden State Warriors · $59M salary</div>
+    </div>
+    <div class="profile-card-val">$160M</div>
+  </a>
+  <a href="/giannis-antetokounmpo" class="profile-card">
+    <div class="profile-card-rank">4</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Giannis Antetokounmpo</div>
+      <div class="profile-card-detail">Milwaukee Bucks · 2x MVP</div>
+    </div>
+    <div class="profile-card-val">$120M</div>
+  </a>
+</div>
+
+<h2>How NBA players build wealth beyond their contracts</h2>
+
+<p>The naive assumption is that NBA players get rich from their contracts. In reality, the contract is the starting capital — the business empire is where generational wealth is built. LeBron James earns more from Nike than from basketball. Michael Jordan, who retired 22 years ago, earns more from Air Jordan royalties today than any active player earns in salary. The pattern is consistent: the players who build lasting wealth treat their playing career as a platform, not the destination.</p>
+
+<p>The key multiplier is the shoe deal. Nike, Adidas and Under Armour pay elite players for brand association, not performance — meaning the income continues whether the player is healthy, injured, or retired. LeBron's lifetime Nike deal is estimated to be worth over $1 billion in total value. Curry's Under Armour partnership sparked an entire footwear line. Giannis signed a lifetime deal with Nike in 2021 — extraordinary for a player still in his prime.</p>
+
+<h2>The next generation — who becomes a billionaire next?</h2>
+
+<p>Giannis Antetokounmpo is the most likely active player to become a billionaire within a decade. The Greek Freak earns approximately $48 million per year from Milwaukee Bucks plus a lifetime Nike deal. His commercial profile in Europe, Asia and the US is enormous and growing. His rags-to-riches story — from selling sunglasses on the streets of Athens to NBA champion — is one of sport's greatest narratives and a commercial asset in itself.</p>
+
+<p>Nikola Jokic, the three-time MVP centre for Denver Nuggets, is an outlier — genuinely disinterested in commercial activity, famously preferring horse racing in Serbia to business meetings. He earns approximately $51 million per year but has deliberately avoided the endorsement ecosystem that multiplies wealth for players like LeBron and Giannis. His net worth is estimated at approximately $60 million despite being arguably the best player in the world.</p>
+
+<p>Luka Doncic represents perhaps the most interesting commercial case. The Slovenian point guard is 26 years old and already considered a generational talent. His Jordan Brand deal — Nike's premium sub-brand — positions him alongside the game's legends commercially. With 15+ years of playing career ahead and a global profile across Europe and the Americas, Doncic could be the NBA's next billionaire athlete.</p>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Player</th>
+      <th>Team</th>
+      <th>Net Worth</th>
+      <th>Annual Salary</th>
+      <th>Key Endorsement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><a href="/lebron-james">LeBron James</a></td><td>Lakers</td><td class="gold">$1.5B</td><td>$50M</td><td>Nike lifetime</td></tr>
+    <tr><td>2</td><td><a href="/kevin-durant">Kevin Durant</a></td><td>Suns</td><td class="gold">$200M</td><td>$51M</td><td>Nike KD</td></tr>
+    <tr><td>3</td><td><a href="/stephen-curry">Stephen Curry</a></td><td>Warriors</td><td class="gold">$160M</td><td>$59M</td><td>Under Armour</td></tr>
+    <tr><td>4</td><td><a href="/giannis-antetokounmpo">Giannis</a></td><td>Bucks</td><td class="gold">$120M</td><td>$48M</td><td>Nike lifetime</td></tr>
+    <tr><td>5</td><td><a href="/nikola-jokic">Nikola Jokic</a></td><td>Nuggets</td><td class="gold">$60M</td><td>$51M</td><td>Minimal</td></tr>
+    <tr><td>6</td><td><a href="/luka-doncic">Luka Doncic</a></td><td>Mavericks</td><td class="gold">$55M</td><td>$46M</td><td>Jordan Brand</td></tr>
+    <tr><td>7</td><td><a href="/jayson-tatum">Jayson Tatum</a></td><td>Celtics</td><td class="gold">$40M</td><td>$32M</td><td>Jordan Brand</td></tr>
+    <tr><td>8</td><td><a href="/devin-booker">Devin Booker</a></td><td>Suns</td><td class="gold">$35M</td><td>$36M</td><td>Nike</td></tr>
+  </tbody>
+</table>
+
+<h2>What the 2026 playoffs tell us about modern athlete wealth</h2>
+
+<p>The 2026 playoffs are unusual in that they feature three separate generations of superstar simultaneously. LeBron James, now 41, represents the player-as-businessman model that defined the 2010s. Giannis and Durant are mid-career players executing that model with more sophistication. And Luka Doncic, Jayson Tatum and Anthony Edwards represent a generation that has grown up entirely in the social media era — with fundamentally different tools for audience building and monetisation than anything LeBron had in 2003.</p>
+
+<p>Anthony Edwards in particular bears watching from a commercial standpoint. The 24-year-old Minnesota Timberwolves guard has emerged as one of the NBA's most charismatic personalities. His social media following is growing faster than any active player's. Adidas signed him to a signature shoe deal in 2023 — a significant bet on his commercial future. At his current trajectory, Edwards could be the NBA's dominant commercial property for the next decade.</p>
+
+<div class="related-profiles">
+  <h3>Explore player profiles</h3>
+  <div class="profile-card-grid">
+    <a href="/lebron-james" class="profile-card">
+      <div class="profile-card-info">
+        <div class="profile-card-name">LeBron James</div>
+        <div class="profile-card-detail">Full profile — salary, Nike deal, SpringHill</div>
+      </div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/stephen-curry" class="profile-card">
+      <div class="profile-card-info">
+        <div class="profile-card-name">Stephen Curry</div>
+        <div class="profile-card-detail">Full profile — Under Armour, salary, stats</div>
+      </div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/kevin-durant" class="profile-card">
+      <div class="profile-card-info">
+        <div class="profile-card-name">Kevin Durant</div>
+        <div class="profile-card-detail">Full profile — Nike KD, Boardroom, investments</div>
+      </div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/category/basketball" class="profile-card">
+      <div class="profile-card-info">
+        <div class="profile-card-name">All Basketball Players</div>
+        <div class="profile-card-detail">Full rankings — richest NBA players 2026</div>
+      </div>
+      <div class="profile-card-val">→</div>
+    </a>
+  </div>
+</div>
+    `
+  },
+
+  // ── WORLD CUP 2026 ────────────────────────────────────────
+  'world-cup-2026-richest-footballers': {
+    slug: 'world-cup-2026-richest-footballers',
+    title: 'World Cup 2026 — The Richest Footballers Still Playing and What They Earn',
+    excerpt: 'The 2026 FIFA World Cup in the United States, Canada and Mexico brings the world\'s wealthiest footballers to the biggest stage. We tracked the net worth, salary and earnings of every major star at the tournament.',
+    category: 'Football',
+    date: 'April 21, 2026',
+    readTime: 10,
+    content: `
+<p>The 2026 FIFA World Cup, hosted across the United States, Canada and Mexico, is the largest tournament in the competition's history — expanded to 48 teams and 104 matches. It also features a remarkable concentration of individual wealth. The players competing this summer include four individuals with net worths exceeding $200 million, and dozens more who earn more in a week than most people earn in a lifetime.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">48</div>
+    <div class="stat-callout-label">Teams competing</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$1.1B</div>
+    <div class="stat-callout-label">Richest player (Ronaldo)</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$200M</div>
+    <div class="stat-callout-label">Mbappe annual earnings</div>
+  </div>
+</div>
+
+<h2>Cristiano Ronaldo — a billion-dollar World Cup</h2>
+
+<p>Cristiano Ronaldo arrives at his sixth World Cup as the wealthiest footballer in history, with an estimated net worth of <strong>$1.1 billion</strong>. At 41 years old, the Portuguese forward is a genuine football billionaire — the first to reach that milestone through playing career earnings and commercial income rather than inheritance or investment returns.</p>
+
+<p>Ronaldo earns approximately $200 million per year in total. His Al Nassr salary in Saudi Arabia accounts for less than half of that. The rest comes from his lifetime Nike deal, his CR7 brand (hotels in six countries, clothing, fragrance, gyms), Instagram sponsored posts estimated at $3.2 million each on a 650 million follower account, and his Pestana CR7 hotel chain. Portugal's performance at this World Cup may be his last major tournament — making every match a farewell to the biggest stage in football.</p>
+
+<p>For context on how extraordinary $1.1 billion is for a footballer: when Ronaldo signed his first professional contract at Sporting CP in 2002, he was paid approximately €1,500 per month. Twenty-four years later, he earns more per Instagram post than he earned in his entire first year as a professional.</p>
+
+<h2>Lionel Messi — the defending champion</h2>
+
+<p>Argentina arrives in the United States as defending World Cup champions, and Lionel Messi — with an estimated net worth of <strong>$700 million</strong> — arrives as the man who finally completed his international legacy in Qatar. The 2022 World Cup victory, which many consider the greatest individual tournament performance in history, transformed Messi's commercial value in the final stage of his career.</p>
+
+<p>Messi earns approximately $135 million per year total. His Inter Miami contract includes revenue sharing from the club's commercial growth — a deal structure that ties his income directly to the club's success in building its brand. His Instagram following of 500 million generates approximately $2.6 million per sponsored post. At 38, this may be Messi's final World Cup.</p>
+
+<div class="profile-card-grid">
+  <a href="/cristiano-ronaldo" class="profile-card">
+    <div class="profile-card-rank">1</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Cristiano Ronaldo</div>
+      <div class="profile-card-detail">Portugal · Al Nassr · $200M/yr</div>
+    </div>
+    <div class="profile-card-val">$1.1B</div>
+  </a>
+  <a href="/lionel-messi" class="profile-card">
+    <div class="profile-card-rank">2</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Lionel Messi</div>
+      <div class="profile-card-detail">Argentina · Inter Miami · 8x Ballon d'Or</div>
+    </div>
+    <div class="profile-card-val">$700M</div>
+  </a>
+  <a href="/kylian-mbappe" class="profile-card">
+    <div class="profile-card-rank">3</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Kylian Mbappe</div>
+      <div class="profile-card-detail">France · Real Madrid · $150M/yr</div>
+    </div>
+    <div class="profile-card-val">$300M</div>
+  </a>
+  <a href="/neymar-jr" class="profile-card">
+    <div class="profile-card-rank">4</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Neymar Jr</div>
+      <div class="profile-card-detail">Brazil · Santos · $56K crypto on-chain</div>
+    </div>
+    <div class="profile-card-val">$200M</div>
+  </a>
+</div>
+
+<h2>The Mbappe era begins</h2>
+
+<p>Kylian Mbappe arrives at this World Cup as arguably the best player on earth and certainly the most commercially valuable active footballer under 30. At 27, the Real Madrid forward has his peak earning years ahead of him. His estimated net worth of <strong>$300 million</strong> is already remarkable — by the time his career ends, Mbappe may rival or surpass Ronaldo's total wealth.</p>
+
+<p>Mbappe earns approximately $150 million per year in total, combining his Real Madrid salary with his Nike deal and major brand partnerships including Hublot and Dior. His commercial appeal spans demographics and geographies in a way that even Ronaldo's does not — Mbappe is genuinely beloved across Africa, Asia, and South America in addition to Europe.</p>
+
+<h2>The Saudi League stars — financially transformed</h2>
+
+<p>The Saudi Pro League's recruitment of elite European players over the past three years has created a new tier of footballer wealth. Players who might have earned £15 million per year at a European club accepted two to four times that sum in Saudi Arabia — often with additional appearance fees, signing bonuses and commercial obligations.</p>
+
+<p>The net worth impact has been dramatic. Karim Benzema, Neymar, and Ronaldo all saw their annual earnings increase substantially upon moving to Saudi Arabia, despite declining competitive prestige. For players in their late 30s approaching the end of their careers, the financial logic is straightforward: take the money, build the business, plan the post-career transition.</p>
+
+<h2>Norway at their first World Cup since 1998 — the Haaland effect</h2>
+
+<p>Erling Haaland achieved something remarkable in 2025 — he led Norway to qualify for the World Cup for the first time since 1998. The Manchester City striker's individual earnings of approximately £28 million per year from his club contract, combined with endorsements from Nike and others, give him an estimated net worth of <strong>$100 million</strong> at just 25 years old.</p>
+
+<p>Norway's presence in this tournament is almost entirely attributable to Haaland's dominance in qualifying — he scored 16 goals in 8 qualifying matches. It also represents an enormous commercial opportunity: Norway has virtually no English-language football media presence despite producing one of the game's best players. That gap is a content opportunity that remains almost entirely unexploited.</p>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Player</th>
+      <th>Country</th>
+      <th>Net Worth</th>
+      <th>Club</th>
+      <th>Annual Earnings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><a href="/cristiano-ronaldo">Cristiano Ronaldo</a></td><td>Portugal</td><td class="gold">$1.1B</td><td>Al Nassr</td><td>~$200M</td></tr>
+    <tr><td>2</td><td><a href="/lionel-messi">Lionel Messi</a></td><td>Argentina</td><td class="gold">$700M</td><td>Inter Miami</td><td>~$135M</td></tr>
+    <tr><td>3</td><td><a href="/kylian-mbappe">Kylian Mbappe</a></td><td>France</td><td class="gold">$300M</td><td>Real Madrid</td><td>~$150M</td></tr>
+    <tr><td>4</td><td><a href="/neymar-jr">Neymar Jr</a></td><td>Brazil</td><td class="gold">$200M</td><td>Santos</td><td>~$45M</td></tr>
+    <tr><td>5</td><td><a href="/robert-lewandowski">Robert Lewandowski</a></td><td>Poland</td><td class="gold">$200M</td><td>Barcelona</td><td>~$35M</td></tr>
+    <tr><td>6</td><td><a href="/erling-haaland">Erling Haaland</a></td><td>Norway</td><td class="gold">$100M</td><td>Man City</td><td>~$30M</td></tr>
+    <tr><td>7</td><td><a href="/memphis-depay">Memphis Depay</a></td><td>Netherlands</td><td class="gold">$50M</td><td>—</td><td>~$12M</td></tr>
+  </tbody>
+</table>
+
+<h2>What makes a World Cup footballer wealthy — the full breakdown</h2>
+
+<p>Club salary is only the beginning for elite internationals. The truly wealthy footballers at this World Cup have built their fortunes across multiple streams simultaneously. Ronaldo's hotel chain now operates in six countries. Messi's Adidas deal predates his club career by a decade. Mbappe's Dior partnership targets audiences that have never watched a football match.</p>
+
+<p>The common thread is brand building during the playing years to create income that survives the end of the career. A footballer who earns £20 million per year for 15 years and spends conservatively has £200 million. A footballer who takes that same income and invests in businesses, maintains a global personal brand, and builds commercial partnerships that continue post-retirement can multiply that figure many times over.</p>
+
+<p>Ronaldo is the proof of concept. At 41, playing in Saudi Arabia — outside of Europe's main commercial spotlight — he still earns $200 million per year. The Saudi salary will end. The hotel chain, the Nike deal, the 650 million Instagram followers, and the CR7 brand will not.</p>
+
+<div class="related-profiles">
+  <h3>Explore footballer profiles</h3>
+  <div class="profile-card-grid">
+    <a href="/cristiano-ronaldo" class="profile-card">
+      <div class="profile-card-info">
+        <div class="profile-card-name">Cristiano Ronaldo</div>
+        <div class="profile-card-detail">Full profile — career stats, CR7 brand, salary</div>
+      </div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/lionel-messi" class="profile-card">
+      <div class="profile-card-info">
+        <div class="profile-card-name">Lionel Messi</div>
+        <div class="profile-card-detail">Full profile — 8 Ballons d'Or, career earnings</div>
+      </div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/erling-haaland" class="profile-card">
+      <div class="profile-card-info">
+        <div class="profile-card-name">Erling Haaland</div>
+        <div class="profile-card-detail">Full profile — Man City salary, Norway captain</div>
+      </div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/category/footballers" class="profile-card">
+      <div class="profile-card-info">
+        <div class="profile-card-name">All Football Players</div>
+        <div class="profile-card-detail">Full rankings — richest footballers 2026</div>
+      </div>
+      <div class="profile-card-val">→</div>
+    </a>
+  </div>
+</div>
+    `
+  },
+
+  // ── AI WEALTH EXPLOSION 2026 ───────────────────────────────
+  'ai-founders-net-worth-2026': {
+    slug: 'ai-founders-net-worth-2026',
+    title: 'The AI Wealth Explosion — How Much Have AI Founders Made Since ChatGPT',
+    excerpt: 'The launch of ChatGPT in November 2022 triggered the fastest wealth creation event in technology history. We tracked exactly how much the founders and investors behind the AI revolution have made — and who benefits next.',
+    category: 'Tech',
+    date: 'April 18, 2026',
+    readTime: 9,
+    content: `
+<p>When OpenAI launched ChatGPT on November 30, 2022, it was positioned as a research preview. Within two months it had 100 million users — the fastest product adoption in history. Within 18 months it had triggered a wealth creation event that rivals the dot-com boom, the smartphone era, and possibly both combined. Here is exactly what has happened to the people at the centre of it.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$120B+</div>
+    <div class="stat-callout-label">Jensen Huang net worth</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$130B</div>
+    <div class="stat-callout-label">NVIDIA revenue FY2025</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$3.7B</div>
+    <div class="stat-callout-label">OpenAI ARR end 2024</div>
+  </div>
+</div>
+
+<h2>Jensen Huang — the biggest wealth creation story of the AI era</h2>
+
+<p>No individual has benefited more from the AI boom than Jensen Huang, the co-founder and CEO of NVIDIA. In January 2020, NVIDIA was worth approximately $145 billion. By April 2026 it had reached $3.3 trillion — a 22x increase driven almost entirely by demand for GPU chips to train and run AI models.</p>
+
+<p>Huang owns approximately 3.5% of NVIDIA. That stake is now worth over $115 billion, giving him an estimated personal net worth exceeding <strong>$120 billion</strong>. He co-founded NVIDIA in 1993 with Chris Malachowsky and Curtis Priem with essentially nothing. The company spent its first decade building graphics chips for gaming. The decision to develop CUDA — a platform allowing developers to use GPUs for general-purpose computing — proved to be one of the most consequential product decisions in technology history, though nobody knew it at the time.</p>
+
+<p>NVIDIA's FY2025 revenue reached $130 billion — growing 114% year on year — with data centre revenue alone reaching $115 billion. The company now earns more in a single quarter than it earned in its entire first decade combined.</p>
+
+<div class="profile-card-grid">
+  <a href="/jensen-huang" class="profile-card">
+    <div class="profile-card-rank">1</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Jensen Huang</div>
+      <div class="profile-card-detail">NVIDIA founder · $130B revenue FY2025</div>
+    </div>
+    <div class="profile-card-val">$120B</div>
+  </a>
+  <a href="/openai" class="profile-card">
+    <div class="profile-card-rank">2</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">OpenAI</div>
+      <div class="profile-card-detail">$3.7B ARR · $157B valuation · 300M users</div>
+    </div>
+    <div class="profile-card-val">$3.7B ARR</div>
+  </a>
+  <a href="/anthropic" class="profile-card">
+    <div class="profile-card-rank">3</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Anthropic</div>
+      <div class="profile-card-detail">$1B+ ARR · $61B valuation · Claude AI</div>
+    </div>
+    <div class="profile-card-val">$1B+ ARR</div>
+  </a>
+  <a href="/cursor" class="profile-card">
+    <div class="profile-card-rank">4</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Cursor</div>
+      <div class="profile-card-detail">$500M ARR · fastest dev tool ever · $9B val</div>
+    </div>
+    <div class="profile-card-val">$500M ARR</div>
+  </a>
+</div>
+
+<h2>The application layer — who is getting rich building on top of AI</h2>
+
+<p>The infrastructure layer (NVIDIA, cloud providers) has captured most of the AI-era wealth so far. The application layer is catching up. Cursor went from zero to $500 million in annual recurring revenue in under 18 months — the fastest growth rate of any developer tool in history. Midjourney built to $300 million ARR with 40 employees and zero venture capital. Lovable may have reached $100 million ARR in approximately 10 weeks.</p>
+
+<p>The common thread across these application-layer companies is leverage. A 40-person company generating $300 million in revenue (Midjourney) has a revenue-per-employee ratio of $7.5 million — extraordinary by any measure in software history. This is the defining economic characteristic of the AI era: very small teams can build very large businesses very quickly.</p>
+
+<h2>What comes next — the second wave</h2>
+
+<p>The first wave of AI wealth was infrastructure (NVIDIA) and general-purpose models (OpenAI, Anthropic). The second wave will be vertical AI — products built for specific professions with domain-specific training. Medical AI, legal AI, financial AI, engineering AI. These products will charge 5-10x the price of general-purpose tools because they solve specific high-value problems. The companies building them are being founded right now.</p>
+
+<div class="related-profiles">
+  <h3>Explore AI company profiles</h3>
+  <div class="profile-card-grid">
+    <a href="/openai" class="profile-card">
+      <div class="profile-card-info">
+        <div class="profile-card-name">OpenAI</div>
+        <div class="profile-card-detail">Revenue breakdown, growth rate, business model</div>
+      </div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/anthropic" class="profile-card">
+      <div class="profile-card-info">
+        <div class="profile-card-name">Anthropic</div>
+        <div class="profile-card-detail">Claude AI, Amazon investment, valuation</div>
+      </div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/jensen-huang" class="profile-card">
+      <div class="profile-card-info">
+        <div class="profile-card-name">Jensen Huang</div>
+        <div class="profile-card-detail">NVIDIA founder profile, $130B revenue</div>
+      </div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/category/ai-startups" class="profile-card">
+      <div class="profile-card-info">
+        <div class="profile-card-name">All AI Companies</div>
+        <div class="profile-card-detail">Revenue rankings — fastest growing AI startups</div>
+      </div>
+      <div class="profile-card-val">→</div>
+    </a>
+  </div>
+</div>
+    `
+  },
+}
