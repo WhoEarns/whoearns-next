@@ -190,3 +190,15 @@
 @media (max-width: 600px) {
   .plans { grid-template-columns: 1fr; }
 }
+
+.navLink {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--t2);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: var(--r);
+  transition: color 0.2s;
+  font-family: 'Outfit', sans-serif;
+}
+.navLink:hover { color: var(--gold); }

@@ -26,6 +26,7 @@ export default function Nav() {
           Who<em>Earns</em>
         </Link>
         <div className={styles.right}>
+          <Link href="/blog" className={styles.navLink}>Blog</Link>
           <button className={styles.mode} onClick={toggleMode} aria-label="Toggle theme">
             {light ? '🌙' : '☀'}
           </button>
