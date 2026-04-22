@@ -265,6 +265,15 @@ export default async function ProfilePage(
         </footer>
 
       </main>
+
+      {/* ── SIMILAR PROFILES ────────────────────────────── */}
+      <div style={{ maxWidth: 'var(--max-w)', margin: '0 auto', padding: '0 20px 60px' }}>
+        <SimilarProfiles
+          currentSlug={profile.slug}
+          category={profile.category}
+          currentName={profile.name}
+        />
+      </div>
     </>
   )
 }
