@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { getAllProfiles } from '@/lib/supabase'
+import { BLOG_POSTS } from '@/lib/blog'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const profiles = await getAllProfiles()
@@ -26,6 +27,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.8,
+    })),
+    // Blog posts
+    { url: 'https://whoearns.com/blog', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    ...Object.values(BLOG_POSTS).map(post => ({
+      url: `https://whoearns.com/blog/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
     })),
     ...profileUrls,
   ]
