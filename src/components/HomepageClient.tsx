@@ -445,6 +445,7 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
             <div>
               <div className={styles.footerColTitle}>Legal</div>
               <ul className={styles.footerLinks}>
+                <li><Link href="/blog" className={styles.footerLink}>Blog</Link></li>
                 <li><Link href="/terms" className={styles.footerLink}>Terms of Service</Link></li>
                 <li><Link href="/privacy" className={styles.footerLink}>Privacy Policy</Link></li>
                 <li><Link href="/cookies" className={styles.footerLink}>Cookie Policy</Link></li>
