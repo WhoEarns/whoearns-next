@@ -98,7 +98,7 @@ export default async function ProfilePage(
           </li>
           <span className={styles.sep}>›</span>
           <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
-            <Link href={`/?cat=${profile.category}#leaderboard`} itemProp="item">
+            <Link href={`/category/${profile.category}`} itemProp="item">
               <span itemProp="name">{categoryLabel(profile.category)}</span>
             </Link>
             <meta itemProp="position" content="2" />
@@ -321,7 +321,7 @@ function buildJsonLd(profile: Profile, slug: string) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'WhoEarns', item: 'https://whoearns.com' },
-      { '@type': 'ListItem', position: 2, name: categoryLabel(profile.category), item: `https://whoearns.com` },
+      { '@type': 'ListItem', position: 2, name: categoryLabel(profile.category), item: `https://whoearns.com/category/${profile.category}` },
       { '@type': 'ListItem', position: 3, name: profile.name, item: `https://whoearns.com/${slug}` },
     ],
   }
