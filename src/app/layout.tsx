@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import Nav from '@/components/Nav'
+import BackToTop from '@/components/BackToTop'
 import './globals.css'
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-Q2VRE1FSFN'
@@ -68,6 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         )}
         <Nav />
         {children}
+        <BackToTop />
       </body>
     </html>
   )
