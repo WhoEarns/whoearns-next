@@ -5,6 +5,7 @@ import { getProfileBySlug, getAllSlugs } from '@/lib/supabase'
 import type { Profile } from '@/types'
 import Avatar from '@/components/Avatar'
 import ProfileInteractive from '@/components/ProfileInteractive'
+import SimilarProfiles from '@/components/SimilarProfiles'
 import styles from './profile.module.css'
 
 // ── STATIC GENERATION ─────────────────────────────────────
