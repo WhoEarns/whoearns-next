@@ -1,94 +1,157 @@
 .wrap {
-  margin-top: 24px;
-  background: var(--s1);
-  border: 1px solid var(--b1);
-  border-radius: var(--rl);
-  padding: 20px;
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid var(--b1);
 }
 
 .head {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 14px;
+  align-items: flex-end;
+  margin-bottom: 16px;
 }
 
-.label {
+.headLeft {}
+
+.eyebrow {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 9px; letter-spacing: 2px;
-  text-transform: uppercase; color: var(--t3);
+  font-size: 9px; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--gold);
+  margin-bottom: 4px;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; font-weight: 700;
+  letter-spacing: -0.3px; color: var(--t1);
+  margin: 0;
 }
 
 .seeAll {
-  font-size: 12px; font-weight: 600;
+  font-size: 13px; font-weight: 600;
   color: var(--gold); text-decoration: none;
+  white-space: nowrap; flex-shrink: 0;
   transition: opacity 0.2s;
 }
 .seeAll:hover { opacity: 0.7; }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .card {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 14px;
-  background: var(--s2);
+  gap: 14px;
+  padding: 16px 18px;
+  background: var(--s1);
   border: 1px solid var(--b1);
-  border-radius: var(--rm);
+  border-radius: var(--rl);
   text-decoration: none;
   color: inherit;
   transition: all 0.2s;
+  overflow: hidden;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: transparent;
+  transition: background 0.2s;
 }
 .card:hover {
   border-color: var(--b2);
-  transform: translateX(2px);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+.card:hover::before { background: var(--gold); }
+
+.rankBadge {
+  position: absolute;
+  top: 10px; right: 12px;
+  font-family: 'Playfair Display', serif;
+  font-size: 11px; font-weight: 700;
+  color: var(--t3);
+  opacity: 0.5;
 }
 
-.ava {
-  width: 40px; height: 40px;
-  border-radius: 9px;
+.avaWrap {
+  width: 56px; height: 56px;
+  border-radius: 12px;
   overflow: hidden;
-  border: 1px solid var(--b1);
+  border: 1px solid var(--b2);
   flex-shrink: 0;
-  background: var(--s3);
+  background: var(--s2);
 }
 
-.info { flex: 1; min-width: 0; }
+.info {
+  flex: 1;
+  min-width: 0;
+}
 
 .name {
-  font-size: 13px; font-weight: 600;
+  font-size: 15px; font-weight: 700;
   color: var(--t1);
   white-space: nowrap; overflow: hidden;
   text-overflow: ellipsis;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
-.detail {
-  font-size: 10px; color: var(--t3);
+.meta {
+  font-size: 11px; color: var(--t3);
+  margin-bottom: 7px;
   white-space: nowrap; overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.val { text-align: right; flex-shrink: 0; }
+.tags {
+  display: flex; gap: 4px; flex-wrap: wrap;
+}
 
-.valMain {
+.tag {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 2px 7px; border-radius: 3px;
+  background: var(--s2);
+  color: var(--t3);
+  border: 1px solid var(--b1);
+}
+
+.val {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.valNum {
   font-family: 'Playfair Display', serif;
-  font-size: 14px; font-weight: 700;
-  color: var(--gold); letter-spacing: -0.3px;
+  font-size: 18px; font-weight: 700;
+  color: var(--gold);
+  letter-spacing: -0.5px;
+  line-height: 1;
+  margin-bottom: 3px;
 }
 
 .valLabel {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 8px; letter-spacing: 0.5px;
+  font-size: 8px; letter-spacing: 1px;
   text-transform: uppercase; color: var(--t3);
-  margin-top: 1px;
 }
 
-@media (max-width: 600px) {
+.growth {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px; font-weight: 600;
+  padding: 2px 6px; border-radius: 3px;
+  margin-top: 5px; display: inline-block;
+}
+.growthUp { background: var(--gr); color: var(--green); }
+.growthDn { background: rgba(242,80,80,.1); color: var(--red); }
+
+@media (max-width: 700px) {
   .grid { grid-template-columns: 1fr; }
+  .title { font-size: 18px; }
 }
