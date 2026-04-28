@@ -24,17 +24,19 @@ export default function CategoryClient({ profiles, categoryLabel }: Props) {
     return a.rank_order - b.rank_order
   })
 
-  // Get numeric value from string like "$1.1B", "$200M", "$3.7B ARR"
+  // Get numeric value from string like "$1.1B", "$200M", "~3M PLN", "£15M"
   const getNumericValue = (str: string): number => {
     if (!str) return 0
-    const cleaned = str.replace(/[^0-9.BMKTbmkt]/g, '')
-    const num = parseFloat(cleaned)
+    const num = parseFloat(str.replace(/[^0-9.]/g, ''))
     if (isNaN(num)) return 0
-    if (str.includes('T')) return num * 1000
-    if (str.includes('B') || str.includes('b')) return num
-    if (str.includes('M') || str.includes('m')) return num / 1000
-    if (str.includes('K') || str.includes('k')) return num / 1000000
-    return num
+    // Normalise to USD millions for comparison
+    const isPLN = str.includes('PLN')
+    const multiplier = isPLN ? 0.25 : 1  // rough PLN→USD
+    if (str.match(/[Tt]/)) return num * 1000 * multiplier
+    if (str.match(/[Bb]/)) return num * multiplier
+    if (str.match(/[Mm]/)) return (num / 1000) * multiplier
+    if (str.match(/[Kk]/)) return (num / 1000000) * multiplier
+    return num * multiplier
   }
 
   const maxVal = Math.max(...sorted.map(p => getNumericValue(p.stats?.[0]?.value || '0')))
@@ -119,9 +121,9 @@ export default function CategoryClient({ profiles, categoryLabel }: Props) {
               <tr>
                 <th>#</th>
                 <th>Name</th>
-                <th>{sorted[0]?.stats?.[0]?.label || 'Net Worth'}</th>
-                <th>{sorted[0]?.stats?.[1]?.label || 'Stat 2'}</th>
-                <th>{sorted[0]?.stats?.[2]?.label || 'Stat 3'}</th>
+                <th>Net Worth / Revenue</th>
+                <th>Stat 2</th>
+                <th>Stat 3</th>
                 <th>Country</th>
                 <th>Trend</th>
               </tr>
