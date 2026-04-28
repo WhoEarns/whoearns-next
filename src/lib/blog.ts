@@ -641,6 +641,90 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
   </div>
 </div>
     `
-  }
+  },
+
+  'latwogang-bedoes-cancer-fighters-record-2026': {
+    slug: 'latwogang-bedoes-cancer-fighters-record-2026',
+    title: 'Łatwogang and Bedoes Break the World Record — $70M Raised for Cancer Fighters',
+    excerpt: 'Polish streamer Łatwogang and rapper Bedoes set the all-time Guinness World Record for charity fundraising. A 9-day livestream raised over 250 million PLN — approximately $70 million — for children with cancer in Poland.',
+    category: 'Poland',
+    date: 'April 28, 2026',
+    readTime: 6,
+    content: `
+<p>Between April 17 and April 26, 2026, Polish streamer Łatwogang hosted a nine-day non-stop YouTube livestream that raised over 250 million PLN for the Cancer Fighters Foundation. That is approximately <strong>$70 million USD</strong> — a new Guinness World Record for the largest amount ever raised during a single charity livestream, smashing the previous record by more than three times.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">251.8M</div>
+    <div class="stat-callout-label">PLN raised (~$70M USD)</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">9 days</div>
+    <div class="stat-callout-label">Non-stop livestream</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">1.54M</div>
+    <div class="stat-callout-label">Peak concurrent viewers</div>
+  </div>
+</div>
+
+<h2>The song that started everything</h2>
+
+<p>Bedoes 2115 — one of Poland&apos;s most popular rappers — co-wrote a song called <em>Ciągle tutaj jestem (diss na raka)</em> — "I&apos;m Still Here (A Diss Track Against Cancer)" — with Maja Mecan, an 11-year-old leukemia patient and beneficiary of the Cancer Fighters Foundation. The song became a symbol of hope for children battling cancer across Poland.</p>
+
+<p>Łatwogang (real name Piotr Garkowski) then posted a challenge on TikTok: he would listen to the song continuously for one second for every like the idea received. The concept went viral overnight. The original fundraising goal was 500,000 PLN. Within days it had passed 100 million. It kept going.</p>
+
+<div class="profile-card-grid">
+  <a href="/latogang" class="profile-card">
+    <div class="profile-card-rank">🏆</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Łatwogang</div>
+      <div class="profile-card-detail">Piotr Garkowski — Guinness World Record holder</div>
+    </div>
+    <div class="profile-card-val">$70M</div>
+  </a>
+  <a href="/bedoes" class="profile-card">
+    <div class="profile-card-rank">♥</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Bedoes 2115</div>
+      <div class="profile-card-detail">Wrote the song — donated 1M PLN personally</div>
+    </div>
+    <div class="profile-card-val">→</div>
+  </a>
+</div>
+
+<h2>Nine days. A nation united.</h2>
+
+<p>The stream ran for approximately 216 consecutive hours from a Warsaw flat. Robert Lewandowski — Barcelona striker and Poland&apos;s all-time top scorer — appeared live and returned to TikTok specifically to support the campaign. Tennis champion Iga Świątek joined. Singer Doda participated. Companies including XTB donated millions. The children from Cancer Fighters Foundation joined the emotional finale. Bedoes himself donated over 1,000,000 PLN personally.</p>
+
+<p>MrBeast responded on X: &ldquo;Love when people use their platform for good.&rdquo; The previous record — the French Z EVENT 2025 with 325 streamers — raised $19.4 million. Łatwogang, alone, raised more than three times that.</p>
+
+<h2>What this means for Polish creators</h2>
+
+<p>Before April 2026, Łatwogang was well-known in Poland but had limited international profile. After this, Reuters, Dexerto, Al Bawaba and dozens of global outlets covered the story. A Polish YouTuber from Warsaw is now one of the most talked-about names in global streaming culture. Bedoes, who wrote the song that sparked everything, has seen his international recognition multiply overnight. This is what happens when a creator uses their platform for something that transcends entertainment.</p>
+
+<div class="related-profiles">
+  <h3>Polish profiles on WhoEarns</h3>
+  <div class="profile-card-grid">
+    <a href="/latogang" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">Łatwogang</div><div class="profile-card-detail">World record holder — Cancer Fighters stream</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/bedoes" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">Bedoes 2115</div><div class="profile-card-detail">Rapper — wrote Ciągle tutaj jestem</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/robert-lewandowski" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">Robert Lewandowski</div><div class="profile-card-detail">Appeared on stream to support</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/category/creators" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">All Polish Creators</div><div class="profile-card-detail">Friz, Wersow and more</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+  </div>
+</div>
+    `
+  },
 
 }
