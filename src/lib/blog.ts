@@ -1,7 +1,5 @@
 // ============================================================
 // WHOEARNS BLOG POSTS
-// Add new posts here — they auto-appear on /blog
-// HTML content supports custom CSS classes defined in blog.module.css
 // ============================================================
 
 export interface BlogPost {
@@ -16,7 +14,6 @@ export interface BlogPost {
 
 export const BLOG_POSTS: Record<string, BlogPost> = {
 
-  // ── NBA PLAYOFFS 2026 ──────────────────────────────────────
   'nba-playoffs-2026-richest-players': {
     slug: 'nba-playoffs-2026-richest-players',
     title: 'NBA Playoffs 2026 — Net Worth of Every Star Still Playing',
@@ -164,7 +161,8 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  // ── WORLD CUP 2026 ────────────────────────────────────────
+  // ── WORLD CUP 2026 ────────────────────────────────────────,
+
   'world-cup-2026-richest-footballers': {
     slug: 'world-cup-2026-richest-footballers',
     title: 'World Cup 2026 — The Richest Footballers Still Playing and What They Earn',
@@ -323,7 +321,8 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  // ── AI WEALTH EXPLOSION 2026 ───────────────────────────────
+  // ── AI WEALTH EXPLOSION 2026 ───────────────────────────────,
+
   'ai-founders-net-worth-2026': {
     slug: 'ai-founders-net-worth-2026',
     title: 'The AI Wealth Explosion — How Much Have AI Founders Made Since ChatGPT',
@@ -437,4 +436,211 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
 </div>
     `
   },
+  // ── RICHEST ATHLETES OF ALL TIME ──────────────────────────,
+
+  'richest-athletes-of-all-time': {
+    slug: 'richest-athletes-of-all-time',
+    title: 'The Richest Athletes of All Time — Net Worth Rankings 2026',
+    excerpt: 'From Michael Jordan to Cristiano Ronaldo, we ranked the wealthiest athletes in history by net worth. The results reveal how sport creates billionaires — and why the richest athletes earn more from business than from sport.',
+    category: 'Rankings',
+    date: 'April 22, 2026',
+    readTime: 10,
+    content: `
+<p>Sport creates billionaires. But the wealthiest athletes in history didn&apos;t build their fortunes on the field, court or course — they built them in the boardroom, on the brand deal, and through equity. This is the definitive ranking of the richest athletes who have ever competed.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$3B+</div>
+    <div class="stat-callout-label">Richest athlete ever (Jordan)</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$1.5B</div>
+    <div class="stat-callout-label">Richest active (LeBron)</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$1.1B</div>
+    <div class="stat-callout-label">Richest footballer (Ronaldo)</div>
+  </div>
+</div>
+
+<h2>1. Michael Jordan — $3 billion</h2>
+
+<p>Michael Jordan is the richest athlete in history. At his playing peak, Jordan earned approximately $90 million per season from salary and endorsements. But the number that defines his fortune is not from basketball: his equity stake in the Jordan Brand, licensed to Nike, generates over $1.5 billion in annual retail revenue. Jordan receives a reported 5% royalty — approximately $150 million per year, every year, without stepping on a court.</p>
+
+<p>Jordan also owned the Charlotte Hornets for 13 years before selling his majority stake in 2023 for approximately $3 billion — a transaction that crystallised his billionaire status. The lesson of Jordan&apos;s wealth is simple: the shoe deal that started as an endorsement became the most valuable brand in athletic footwear history.</p>
+
+<div class="profile-card-grid">
+  <a href="/lebron-james" class="profile-card">
+    <div class="profile-card-rank">2</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">LeBron James</div>
+      <div class="profile-card-detail">Active — Nike lifetime + SpringHill</div>
+    </div>
+    <div class="profile-card-val">$1.5B</div>
+  </a>
+  <a href="/cristiano-ronaldo" class="profile-card">
+    <div class="profile-card-rank">3</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Cristiano Ronaldo</div>
+      <div class="profile-card-detail">Active — CR7 brand + Al Nassr</div>
+    </div>
+    <div class="profile-card-val">$1.1B</div>
+  </a>
+  <a href="/lionel-messi" class="profile-card">
+    <div class="profile-card-rank">4</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Lionel Messi</div>
+      <div class="profile-card-detail">Active — Adidas lifetime + Inter Miami equity</div>
+    </div>
+    <div class="profile-card-val">$700M</div>
+  </a>
+  <a href="/serena-williams" class="profile-card">
+    <div class="profile-card-rank">5</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Serena Williams</div>
+      <div class="profile-card-detail">Retired — Serena Ventures VC fund</div>
+    </div>
+    <div class="profile-card-val">$300M</div>
+  </a>
+</div>
+
+<h2>Tiger Woods — where scandal meets resilience</h2>
+
+<p>Tiger Woods has an estimated net worth of $1.1 billion, making him the joint-third richest athlete alongside Ronaldo. Woods earned over $1.7 billion in career endorsements before his 2009 personal scandal cost him multiple deals overnight. His recovery — both physically after multiple back surgeries and commercially through his TGR design business and golf course portfolio — is one of sport&apos;s great second acts.</p>
+
+<h2>Roger Federer — the Uniqlo deal that changed everything</h2>
+
+<p>Roger Federer, retired since 2022, is estimated to be worth $550 million despite career prize money of under $130 million. The defining commercial moment was leaving Nike for Uniqlo in 2018 — a deal reportedly worth $300 million over 10 years. His equity stake in Swiss shoe brand On Running, worth over $300 million at its IPO, completed a remarkable business portfolio built alongside his tennis career.</p>
+
+<h2>The formula — how athletes become billionaires</h2>
+
+<p>The pattern across every athlete worth $500 million or more is consistent. Playing contracts rarely exceed $500 million total across a career. The multipliers are equity stakes in sports teams, lifetime endorsement deals with royalty structures, and owned brands that outlast the playing career. Jordan&apos;s shoe royalties, LeBron&apos;s SpringHill, Federer&apos;s On Running, Ronaldo&apos;s hotel chain — these are the mechanisms that convert sporting fame into lasting wealth.</p>
+
+<table class="data-table">
+  <thead>
+    <tr><th>#</th><th>Athlete</th><th>Sport</th><th>Net Worth</th><th>Primary wealth source</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Michael Jordan</td><td>Basketball</td><td class="gold">$3B+</td><td>Jordan Brand royalties, Hornets sale</td></tr>
+    <tr><td>2</td><td><a href="/lebron-james">LeBron James</a></td><td>Basketball</td><td class="gold">$1.5B</td><td>Nike lifetime, SpringHill, Liverpool FC</td></tr>
+    <tr><td>3</td><td><a href="/cristiano-ronaldo">Cristiano Ronaldo</a></td><td>Football</td><td class="gold">$1.1B</td><td>CR7 brand, Nike, Al Nassr salary</td></tr>
+    <tr><td>4</td><td><a href="/lionel-messi">Lionel Messi</a></td><td>Football</td><td class="gold">$700M</td><td>Adidas lifetime, Inter Miami equity</td></tr>
+    <tr><td>5</td><td><a href="/roger-federer">Roger Federer</a></td><td>Tennis</td><td class="gold">$550M</td><td>Uniqlo $300M, On Running equity</td></tr>
+    <tr><td>6</td><td><a href="/floyd-mayweather">Floyd Mayweather</a></td><td>Boxing</td><td class="gold">$450M</td><td>$1.1B career fight purses</td></tr>
+    <tr><td>7</td><td><a href="/serena-williams">Serena Williams</a></td><td>Tennis</td><td class="gold">$300M</td><td>Nike 25yr, Serena Ventures VC</td></tr>
+    <tr><td>8</td><td><a href="/conor-mcgregor">Conor McGregor</a></td><td>MMA</td><td class="gold">$200M</td><td>Proper No. Twelve whiskey $600M sale</td></tr>
+    <tr><td>9</td><td><a href="/usain-bolt">Usain Bolt</a></td><td>Athletics</td><td class="gold">$90M</td><td>Puma lifetime, restaurant chain</td></tr>
+    <tr><td>10</td><td><a href="/novak-djokovic">Novak Djokovic</a></td><td>Tennis</td><td class="gold">$250M</td><td>$180M prize money, Lacoste, investments</td></tr>
+  </tbody>
+</table>
+
+<div class="related-profiles">
+  <h3>Explore athlete profiles</h3>
+  <div class="profile-card-grid">
+    <a href="/lebron-james" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">LeBron James</div><div class="profile-card-detail">$1.5B — full earnings breakdown</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/cristiano-ronaldo" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">Cristiano Ronaldo</div><div class="profile-card-detail">$1.1B — CR7 brand analysis</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/category/athletes" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">All Athletes</div><div class="profile-card-detail">Full rankings — richest athletes 2026</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/category/basketball" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">Basketball Rankings</div><div class="profile-card-detail">NBA net worth leaderboard 2026</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+  </div>
+</div>
+    `
+  },
+
+  'how-much-do-nba-players-make': {
+    slug: 'how-much-do-nba-players-make',
+    title: 'How Much Do NBA Players Make in 2026? Salaries, Deals and Real Numbers',
+    excerpt: 'The NBA minimum salary is $1.1 million. The maximum is $59 million. But total earnings — including endorsements, equity and business income — can reach $200 million per year for the elite. Here is the complete breakdown.',
+    category: 'Basketball',
+    date: 'April 22, 2026',
+    readTime: 9,
+    content: `
+<p>NBA salaries are publicly available — every contract is disclosed under the Collective Bargaining Agreement. But the salary is only part of the story. For elite players, endorsement income, equity stakes and business ventures can dwarf what the team pays. Here is the complete breakdown of how NBA player earnings work in 2026.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$59M</div>
+    <div class="stat-callout-label">Max salary 2025-26 (Curry)</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$1.1M</div>
+    <div class="stat-callout-label">Rookie minimum salary</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$9.5M</div>
+    <div class="stat-callout-label">Average NBA salary 2025-26</div>
+  </div>
+</div>
+
+<h2>How NBA salaries are structured</h2>
+
+<p>NBA salaries are set by the Collective Bargaining Agreement. The salary cap sits at approximately $140 million in 2025-26. The maximum individual salary is $59 million, which Stephen Curry earns from Golden State Warriors. Maximum salary is determined by years of service — players with 10+ years can earn up to 35% of the cap.</p>
+
+<p>A player drafted in the first round signs a four-year rookie contract. After that they become a restricted free agent — meaning their current team can match any offer. This structure keeps good young players at their drafting team but means they can be underpaid relative to their value in the early career years.</p>
+
+<h2>What the average NBA player earns</h2>
+
+<p>The average NBA salary in 2025-26 is approximately $9.5 million per year. The median is closer to $4.5 million — the average is skewed upward by supermax contracts. The minimum for a veteran with 10+ years is approximately $3 million. For a rookie the minimum is $1.1 million. There are 450 roster spots in the NBA and thousands of players competing for them — the lottery odds of reaching even the minimum salary make every NBA contract extraordinary.</p>
+
+<table class="data-table">
+  <thead>
+    <tr><th>Player</th><th>Team</th><th>Annual Salary</th><th>Contract type</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/stephen-curry">Stephen Curry</a></td><td>Golden State</td><td class="gold">$59.0M</td><td>Veteran max</td></tr>
+    <tr><td><a href="/nikola-jokic">Nikola Jokic</a></td><td>Denver</td><td class="gold">$51.4M</td><td>Supermax</td></tr>
+    <tr><td><a href="/kevin-durant">Kevin Durant</a></td><td>Phoenix</td><td class="gold">$51.2M</td><td>Veteran max</td></tr>
+    <tr><td><a href="/joel-embiid">Joel Embiid</a></td><td>Philadelphia</td><td class="gold">$51.4M</td><td>Supermax</td></tr>
+    <tr><td><a href="/giannis-antetokounmpo">Giannis</a></td><td>Milwaukee</td><td class="gold">$48.8M</td><td>Supermax</td></tr>
+    <tr><td><a href="/lebron-james">LeBron James</a></td><td>LA Lakers</td><td class="gold">$51.4M</td><td>Veteran max</td></tr>
+    <tr><td><a href="/shai-gilgeous-alexander">SGA</a></td><td>OKC</td><td class="gold">$35.4M</td><td>Rookie max ext.</td></tr>
+    <tr><td><a href="/luka-doncic">Luka Doncic</a></td><td>Dallas</td><td class="gold">$46.2M</td><td>Supermax</td></tr>
+  </tbody>
+</table>
+
+<h2>Endorsements — where the real wealth is built</h2>
+
+<p>For the elite tier, endorsement income exceeds salary. LeBron James earns approximately $50 million in NBA salary and approximately $150 million from endorsements and business income — a 1:3 ratio in favour of commercial activity. The shoe deal is the foundation. Nike pays LeBron an estimated $30-35 million per year in royalties. Under Armour pays Curry approximately $20 million. New Balance signed Shai Gilgeous-Alexander to a signature deal — a statement for a brand entering basketball seriously.</p>
+
+<p>The most commercially active players layer in deals with Gatorade, State Farm, AT&T, Amazon and others. LeBron endorses over 15 major brands simultaneously. This portfolio is managed like a business — agents negotiate across multiple years and product categories, with performance bonuses tied to playoff success and individual awards.</p>
+
+<h2>Equity — the new frontier</h2>
+
+<p>The most financially sophisticated players now think of themselves as investors who happen to play basketball. LeBron&apos;s 2% stake in Liverpool FC through Fenway Sports Group is worth hundreds of millions. His SpringHill Company was valued at $725 million in 2021. Kevin Durant&apos;s Boardroom has invested in over 30 companies. This investor-athlete model, pioneered by LeBron, is the template followed by every financially educated player entering the league today.</p>
+
+<div class="related-profiles">
+  <h3>Explore player earnings</h3>
+  <div class="profile-card-grid">
+    <a href="/lebron-james" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">LeBron James</div><div class="profile-card-detail">$1.5B net worth — full breakdown</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/stephen-curry" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">Stephen Curry</div><div class="profile-card-detail">$59M salary — highest in NBA</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/shai-gilgeous-alexander" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">Shai Gilgeous-Alexander</div><div class="profile-card-detail">New Balance deal — 2026 MVP candidate</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/category/basketball" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">All NBA Players</div><div class="profile-card-detail">Full net worth rankings 2026</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+  </div>
+</div>
+    `
+  }
+
 }
