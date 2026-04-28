@@ -164,8 +164,8 @@ export default function CategoryClient({ profiles, categoryLabel, category = '' 
                     </Link>
                   </td>
                   <td className={styles.tdGold}>{p.stats?.[0]?.value || '—'}</td>
-                  <td>{p.stats?.[1]?.label ? `${p.stats[1].value}` : '—'}</td>
-                  <td>{p.stats?.[2]?.label ? `${p.stats[2].value}` : '—'}</td>
+                  <td title={p.stats?.[1]?.label}>{p.stats?.[1]?.value || '—'}</td>
+                  <td title={p.stats?.[2]?.label}>{p.stats?.[2]?.value || '—'}</td>
                   <td className={styles.tdFlag}>{p.flag}</td>
                   <td>
                     {p.growth ? (
