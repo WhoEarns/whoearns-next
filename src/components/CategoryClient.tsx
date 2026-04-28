@@ -8,9 +8,10 @@ import styles from './CategoryClient.module.css'
 interface Props {
   profiles: Profile[]
   categoryLabel: string
+  category?: string
 }
 
-export default function CategoryClient({ profiles, categoryLabel }: Props) {
+export default function CategoryClient({ profiles, categoryLabel, category = '' }: Props) {
   const [sortBy, setSortBy] = useState<'rank' | 'name' | 'growth'>('rank')
   const [view, setView] = useState<'chart' | 'table'>('chart')
 
@@ -41,6 +42,25 @@ export default function CategoryClient({ profiles, categoryLabel }: Props) {
 
   const maxVal = Math.max(...sorted.map(p => getNumericValue(p.stats?.[0]?.value || '0')))
   const top10 = sorted.slice(0, 10)
+
+  // Category-specific column headers
+  const COL_HEADERS: Record<string, [string, string]> = {
+    footballers:      ['Intl Caps', 'Intl Goals'],
+    basketball:       ['Annual Salary', 'Championships'],
+    singers:          ['Annual Earnings', 'Grammy / Awards'],
+    actors:           ['Per Film', 'Awards'],
+    creators:         ['Subscribers / Followers', 'Platform'],
+    'tech-founders':  ['Company Revenue', 'Key Asset'],
+    politicians:      ['Salary / Assets', 'Role'],
+    athletes:         ['Career Prize Money', 'Titles / Records'],
+    'ai-startups':    ['ARR / Revenue', 'Valuation'],
+    'tech-giants':    ['Annual Revenue', 'Net Income'],
+    'startup-mrr':    ['MRR', 'Growth'],
+    'indie-founders': ['MRR', 'Product'],
+    'media-companies':['Annual Revenue', 'Subscribers'],
+    'sports-teams':   ['Valuation', 'Revenue'],
+  }
+  const [col2Label, col3Label] = COL_HEADERS[category] || ['Stat 2', 'Stat 3']
 
   return (
     <div className={styles.wrap}>
@@ -122,8 +142,8 @@ export default function CategoryClient({ profiles, categoryLabel }: Props) {
                 <th>#</th>
                 <th>Name</th>
                 <th>Net Worth / Revenue</th>
-                <th>Stat 2</th>
-                <th>Stat 3</th>
+                <th>{col2Label}</th>
+                <th>{col3Label}</th>
                 <th>Country</th>
                 <th>Trend</th>
               </tr>
@@ -144,8 +164,8 @@ export default function CategoryClient({ profiles, categoryLabel }: Props) {
                     </Link>
                   </td>
                   <td className={styles.tdGold}>{p.stats?.[0]?.value || '—'}</td>
-                  <td>{p.stats?.[1]?.value || '—'}</td>
-                  <td>{p.stats?.[2]?.value || '—'}</td>
+                  <td>{p.stats?.[1]?.label ? `${p.stats[1].value}` : '—'}</td>
+                  <td>{p.stats?.[2]?.label ? `${p.stats[2].value}` : '—'}</td>
                   <td className={styles.tdFlag}>{p.flag}</td>
                   <td>
                     {p.growth ? (
