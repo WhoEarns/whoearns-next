@@ -13,7 +13,6 @@ export interface BlogPost {
 }
 
 export const BLOG_POSTS: Record<string, BlogPost> = {
-
   'nba-playoffs-2026-richest-players': {
     slug: 'nba-playoffs-2026-richest-players',
     title: 'NBA Playoffs 2026 — Net Worth of Every Star Still Playing',
@@ -726,5 +725,369 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
 </div>
     `
   },
+
+  'lewandowski-net-worth-2026': {
+    slug: 'lewandowski-net-worth-2026',
+    title: 'Robert Lewandowski Net Worth 2026 — Salary, Barcelona and Business Empire',
+    excerpt: 'Robert Lewandowski earns approximately $35 million per year at Barcelona. But his total wealth — estimated at $200 million — comes from a decade of top-level contracts, Nike partnerships and a growing business portfolio. Here is the full breakdown.',
+    category: 'Football',
+    date: 'April 29, 2026',
+    readTime: 7,
+    content: `
+<p>Robert Lewandowski is Poland&apos;s greatest footballer and one of the richest athletes the country has ever produced. His estimated net worth of $200 million places him comfortably among the top 50 wealthiest athletes alive — and at 37 years old, his earning years are far from over.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$200M</div>
+    <div class="stat-callout-label">Estimated net worth</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$35M</div>
+    <div class="stat-callout-label">Annual Barcelona salary</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">89</div>
+    <div class="stat-callout-label">International goals — Poland record</div>
+  </div>
+</div>
+
+<h2>Barcelona salary and contract</h2>
+
+<p>Lewandowski joined FC Barcelona in the summer of 2022 from Bayern Munich for a reported fee of €45 million — a significant investment by the Spanish club for a then 33-year-old striker. His contract, worth approximately €32 million per season before tax (roughly $35 million), reflects his status as one of the most reliable goal-scorers in world football regardless of age. He has continued to deliver at Barcelona, scoring consistently in La Liga and the Champions League.</p>
+
+<p>Before Barcelona, Lewandowski spent eight seasons at Bayern Munich — four as the world&apos;s best striker by almost any metric. In 2020-21 he scored 41 Bundesliga goals in a single season, breaking Gerd Müller&apos;s record that had stood for 49 years. His Bayern contract in his final years was worth approximately €25 million per year, putting his cumulative salary across his career well above $200 million before endorsements.</p>
+
+<div class="profile-card-grid">
+  <a href="/robert-lewandowski" class="profile-card">
+    <div class="profile-card-rank">🇵🇱</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Robert Lewandowski</div>
+      <div class="profile-card-detail">Full profile — salary, net worth, career stats</div>
+    </div>
+    <div class="profile-card-val">$200M</div>
+  </a>
+</div>
+
+<h2>Nike deal and endorsements</h2>
+
+<p>Lewandowski has held a long-term Nike partnership throughout his career. While the exact terms are not public, top-level Nike footballer deals for players of his profile typically range from $5 million to $10 million per year. He has also maintained commercial relationships with Huawei, Mastercard and various Polish brands, adding an estimated $8–12 million annually in endorsement income on top of his playing salary.</p>
+
+<p>His wife Anna Lewandowska — a former karate world champion turned fitness entrepreneur — has built a significant business empire of her own through her Healthy Plan by Ann brand, nutrition products and gym chain. The combined Lewandowski family net worth is significantly higher than Robert&apos;s individual estimate, with analysts placing the family total above $250 million.</p>
+
+<h2>Business investments</h2>
+
+<p>Unlike many athletes who accumulate wealth primarily through salary and endorsements, Lewandowski has made a series of direct business investments. He co-owns a sports analytics and management company, has invested in Polish real estate, and holds equity in several sports and fitness ventures. His management company RL9 Group handles his commercial activities and has expanded into athlete representation.</p>
+
+<h2>Poland&apos;s all-time top scorer</h2>
+
+<p>With 89 international goals, Lewandowski is Poland&apos;s all-time leading scorer by a significant margin — the second-placed Polish goalscorer has fewer than 50. He has played in three World Cups (2018, 2022 and 2026) and his cultural significance in Poland extends well beyond football. He appeared on Łatwogang&apos;s historic Cancer Fighters charity livestream in April 2026 — the Guinness World Record stream that raised $70 million for Polish children with cancer — a moment that demonstrated his ongoing connection to the country despite living abroad for 15 years.</p>
+
+<table class="data-table">
+  <thead>
+    <tr><th>Season</th><th>Club</th><th>Goals</th><th>Salary est.</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>2014–2019</td><td>Bayern Munich</td><td>200+</td><td>~€15M/yr</td></tr>
+    <tr><td>2019–2022</td><td>Bayern Munich</td><td>150+</td><td>~€25M/yr</td></tr>
+    <tr><td>2022–present</td><td>FC Barcelona</td><td>80+</td><td>~€32M/yr</td></tr>
+  </tbody>
+</table>
+
+<div class="related-profiles">
+  <h3>More Polish profiles</h3>
+  <div class="profile-card-grid">
+    <a href="/iga-swiatek" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">Iga Świątek</div><div class="profile-card-detail">5x Grand Slam — Poland&apos;s tennis queen</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/latogang" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">Łatwogang</div><div class="profile-card-detail">$70M Cancer Fighters world record</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/bedoes" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">Bedoes</div><div class="profile-card-detail">SB Maffija rapper — Cancer Fighters song</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+  </div>
+</div>
+    `
+  },
+
+  'richest-polish-celebrities-2026': {
+    slug: 'richest-polish-celebrities-2026',
+    title: 'Richest Polish Celebrities 2026 — Full Net Worth Rankings',
+    excerpt: 'From billionaire Michał Sołowow to YouTube king Friz and tennis champion Iga Świątek — we ranked Poland&apos;s wealthiest public figures by net worth. The results might surprise you.',
+    category: 'Poland',
+    date: 'April 29, 2026',
+    readTime: 8,
+    content: `
+<p>Poland has produced some remarkable wealth — and not just in traditional business. A new generation of digital creators, musicians and athletes sit alongside old-economy billionaires in the country&apos;s richest list. Here is the definitive 2026 ranking of the wealthiest Polish public figures.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$4B</div>
+    <div class="stat-callout-label">Kulczyk — richest Pole</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$200M</div>
+    <div class="stat-callout-label">Lewandowski net worth</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$70M</div>
+    <div class="stat-callout-label">Raised by Łatwogang for charity</div>
+  </div>
+</div>
+
+<h2>1. Sebastian Kulczyk — ~$4 billion</h2>
+
+<p>Sebastian Kulczyk is Poland&apos;s wealthiest individual, managing Kulczyk Investments — the diversified holding company built on the foundation of assets accumulated by his father Jan Kulczyk, once Poland&apos;s richest person. The portfolio spans oil and gas concessions in Africa (through Kulczyk Oil Ventures), renewable energy assets across Europe, and significant real estate. Sebastian has expanded into sustainability-focused investments, positioning the family office for long-term growth beyond fossil fuels.</p>
+
+<h2>2. Zygmunt Solorz — ~$1.75 billion</h2>
+
+<p>Zygmunt Solorz is Poland&apos;s most prominent self-made billionaire. Born in Radomsko in 1956, he founded Polsat television in 1992 with virtually no capital and built it into Poland&apos;s largest commercial broadcaster. He subsequently built Cyfrowy Polsat into the country&apos;s dominant mobile and satellite operator. His media empire reaches virtually every Polish household. In 2024 a public dispute with members of his own family over the management of his assets attracted significant media attention.</p>
+
+<h2>3. Michał Sołowow — ~$1.5 billion</h2>
+
+<p>Michał Sołowow is regularly listed as Poland&apos;s richest or second-richest individual depending on the year. His Synthos chemical company is the largest privately-owned chemical manufacturer in Poland. Outside business, he competes professionally in the World Rally Championship — one of very few billionaires who are also legitimate international-level racing drivers. He is also investing in small modular nuclear reactor technology through a separate venture.</p>
+
+<div class="profile-card-grid">
+  <a href="/sebastian-kulczyk" class="profile-card">
+    <div class="profile-card-rank">1</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Sebastian Kulczyk</div>
+      <div class="profile-card-detail">Kulczyk Investments — oil, gas, renewables</div>
+    </div>
+    <div class="profile-card-val">~$4B</div>
+  </a>
+  <a href="/zygmunt-solorz" class="profile-card">
+    <div class="profile-card-rank">2</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Zygmunt Solorz</div>
+      <div class="profile-card-detail">Polsat TV and Cyfrowy Polsat</div>
+    </div>
+    <div class="profile-card-val">~$1.75B</div>
+  </a>
+  <a href="/michal-solowow" class="profile-card">
+    <div class="profile-card-rank">3</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Michał Sołowow</div>
+      <div class="profile-card-detail">Synthos chemical — WRC rally driver</div>
+    </div>
+    <div class="profile-card-val">~$1.5B</div>
+  </a>
+  <a href="/robert-lewandowski" class="profile-card">
+    <div class="profile-card-rank">4</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Robert Lewandowski</div>
+      <div class="profile-card-detail">FC Barcelona — Poland top scorer</div>
+    </div>
+    <div class="profile-card-val">$200M</div>
+  </a>
+</div>
+
+<h2>4. Robert Lewandowski — $200 million</h2>
+
+<p>Poland&apos;s most famous athlete earns approximately $35 million per year at FC Barcelona, on top of Nike and other endorsement deals worth an estimated $10 million annually. With 89 international goals he is Poland&apos;s all-time leading scorer. His wife Anna Lewandowska&apos;s fitness business empire adds significantly to the family&apos;s combined wealth.</p>
+
+<h2>5. Iga Świątek — $15 million</h2>
+
+<p>Poland&apos;s tennis champion has earned over $25 million in career prize money and holds significant endorsement partnerships. Her cultural status in Poland rivals Lewandowski&apos;s — she is consistently one of the most recognised Polish faces internationally. In April 2026 she participated in Łatwogang&apos;s Cancer Fighters charity stream, reinforcing her position as a figure who bridges sport and national culture.</p>
+
+<h2>The new generation: creators and musicians</h2>
+
+<p>What distinguishes Poland&apos;s 2026 rich list from previous years is the presence of digital creators. Friz — Poland&apos;s most subscribed YouTuber with over 5 million subscribers — has built an estimated net worth of $5 million through the Ekipa brand, which spans clothing and the Ekipa Energy drink sold in major Polish retail chains. Dawid Podsiadło, Poland&apos;s biggest solo music artist, has sold out the national stadium PGE Narodowy multiple times and earns an estimated $3 million annually. Doda remains Poland&apos;s highest-profile female entertainer with 3.5 million Instagram followers.</p>
+
+<h2>The Łatwogang effect</h2>
+
+<p>One name that doesn&apos;t appear at the top of this list — but perhaps should be discussed — is Łatwogang. His personal net worth remains modest relative to the figures above. But in April 2026 he raised $70 million for Cancer Fighters Foundation in nine days, becoming a Guinness World Record holder and one of the most talked-about Polish names in international media. The commercial and cultural value of that achievement — in terms of brand partnerships, speaking opportunities and platform growth — will compound for years.</p>
+
+<table class="data-table">
+  <thead>
+    <tr><th>#</th><th>Name</th><th>Category</th><th>Net Worth</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><a href="/sebastian-kulczyk">Sebastian Kulczyk</a></td><td>Business</td><td class="gold">~$4B</td></tr>
+    <tr><td>2</td><td><a href="/zygmunt-solorz">Zygmunt Solorz</a></td><td>Media</td><td class="gold">~$1.75B</td></tr>
+    <tr><td>3</td><td><a href="/michal-solowow">Michał Sołowow</a></td><td>Industry</td><td class="gold">~$1.5B</td></tr>
+    <tr><td>4</td><td><a href="/robert-lewandowski">Robert Lewandowski</a></td><td>Football</td><td class="gold">$200M</td></tr>
+    <tr><td>5</td><td><a href="/iga-swiatek">Iga Świątek</a></td><td>Tennis</td><td class="gold">$15M</td></tr>
+    <tr><td>6</td><td><a href="/dawid-podsiadlo">Dawid Podsiadło</a></td><td>Music</td><td class="gold">~$3M</td></tr>
+    <tr><td>7</td><td><a href="/doda">Doda</a></td><td>Music</td><td class="gold">~$4M</td></tr>
+    <tr><td>8</td><td><a href="/friz-pl">Friz</a></td><td>Creator</td><td class="gold">~$5M</td></tr>
+    <tr><td>9</td><td><a href="/bedoes">Bedoes</a></td><td>Rap</td><td class="gold">~$750K</td></tr>
+    <tr><td>10</td><td><a href="/latogang">Łatwogang</a></td><td>Creator</td><td class="gold">~$1.75M</td></tr>
+  </tbody>
+</table>
+    `
+  },
+
+  'taylor-swift-net-worth-2026': {
+    slug: 'taylor-swift-net-worth-2026',
+    title: 'Taylor Swift Net Worth 2026 — Eras Tour, Catalog and Billionaire Status',
+    excerpt: 'Taylor Swift became a billionaire in 2023. By 2026 her estimated net worth exceeds $1.6 billion — built through the most successful concert tour in history, her re-recorded masters strategy, and one of the most valuable music catalogs in the world.',
+    category: 'Music',
+    date: 'April 29, 2026',
+    readTime: 9,
+    content: `
+<p>Taylor Swift is the wealthiest musician in the world. Her estimated net worth of $1.6 billion as of 2026 surpasses Jay-Z, Rihanna and Paul McCartney — and unlike many music billionaires whose wealth is tied to illiquid catalog assets, Swift&apos;s fortune is increasingly in cash and liquid investments following the Eras Tour.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$1.6B</div>
+    <div class="stat-callout-label">Estimated net worth 2026</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$2.08B</div>
+    <div class="stat-callout-label">Eras Tour gross — all-time record</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">14</div>
+    <div class="stat-callout-label">Grammy Awards won</div>
+  </div>
+</div>
+
+<h2>The Eras Tour — $2.08 billion</h2>
+
+<p>The Eras Tour (2023–2024) grossed $2.08 billion across 149 shows — the highest-grossing concert tour in history by a significant margin. The previous record was Elton John&apos;s Farewell Yellow Brick Road Tour at $939 million. Swift nearly doubled it. Each show averaged approximately $14 million in gross revenue. The tour&apos;s economic impact on host cities — hotels, restaurants, transport — was estimated at over $5 billion globally, with some economists specifically calculating "the Taylor Swift effect" on local economies.</p>
+
+<p>Swift&apos;s share of tour revenue after promoter costs, venue fees and crew expenses was estimated at 50–70% of gross — potentially $1–1.4 billion in personal income from a single touring cycle. This single source of income from 2023–24 may have exceeded her cumulative music earnings from the previous 15 years of her career.</p>
+
+<h2>The re-recording strategy</h2>
+
+<p>When talent manager Scooter Braun acquired Swift&apos;s original six-album masters in 2019 without her consent as part of a larger deal, she announced she would re-record all her albums under the name "Taylor&apos;s Version" — retaining ownership of the new recordings. This strategy, initially seen as a creative response to a business injustice, has become one of the most commercially successful moves in music industry history.</p>
+
+<p>Each Taylor&apos;s Version release has outsold the original, fans have streamed the new versions in preference to the originals, and the strategy generated enormous media coverage that functioned as free marketing for each release. By reclaiming her masters she has secured the long-term royalty income from her most commercially successful work — something most artists of her generation gave away permanently in early label deals.</p>
+
+<h2>The music catalog</h2>
+
+<p>Swift owns the masters for Taylor&apos;s Version recordings (Fearless, Red, Speak Now, 1989, Reputation and Lover re-recorded). She also owns the masters for her post-2018 albums — Folklore, Evermore and The Tortured Poets Department. Her original six albums remain owned by the Braun-related entities, though their commercial value has been partially eroded by the re-recording campaign.</p>
+
+<p>Music catalogs of Swift&apos;s scale typically trade at 25–35x annual royalties. With streaming income, sync licensing and physical sales generating tens of millions per year, her owned catalog is alone worth several hundred million dollars at market rates.</p>
+
+<h2>What comes next</h2>
+
+<p>At 36, Swift is at the peak of her commercial power. Another Eras-scale tour would generate comparable revenue to the first. A catalog sale — should she choose to monetise rather than hold — could generate $500 million or more for her owned masters. Her partnership with boyfriend Travis Kelce has also expanded her commercial profile into NFL audiences, creating new sponsorship opportunities that did not previously exist for a pop artist.</p>
+
+<div class="related-profiles">
+  <h3>Explore music wealth</h3>
+  <div class="profile-card-grid">
+    <a href="/taylor-swift" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">Taylor Swift</div><div class="profile-card-detail">Full profile — $1.6B breakdown</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/beyonce" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">Beyoncé</div><div class="profile-card-detail">$540M — Renaissance Tour $579M</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/jay-z" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">Jay-Z</div><div class="profile-card-detail">$2.5B — beverage exits and rap</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+    <a href="/rihanna" class="profile-card">
+      <div class="profile-card-info"><div class="profile-card-name">Rihanna</div><div class="profile-card-detail">$1.4B — Fenty Beauty empire</div></div>
+      <div class="profile-card-val">→</div>
+    </a>
+  </div>
+</div>
+    `
+  },
+
+  'richest-nfl-players-2026': {
+    slug: 'richest-nfl-players-2026',
+    title: 'Richest NFL Players 2026 — Net Worth Rankings and Salary Breakdown',
+    excerpt: 'Patrick Mahomes signed the largest contract in NFL history at $503 million. Tom Brady retired with $235 million in career earnings plus a $375M Fox deal. We ranked the wealthiest NFL players alive — active and retired — by total net worth.',
+    category: 'NFL',
+    date: 'April 29, 2026',
+    readTime: 8,
+    content: `
+<p>NFL salaries have exploded over the past decade. The salary cap in 2025-26 sits at $255 million per team — meaning a franchise can spend a quarter of a billion dollars on player salaries annually. For the elite quarterback tier, individual contracts now exceed $500 million. Here is the complete ranking of NFL wealth.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$503M</div>
+    <div class="stat-callout-label">Mahomes contract — largest ever</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">$375M</div>
+    <div class="stat-callout-label">Tom Brady Fox Sports deal</div>
+  </div>
+  <div class="stat-callout-item">
+    <div class="stat-callout-num">7x</div>
+    <div class="stat-callout-label">Brady Super Bowls — most ever</div>
+  </div>
+</div>
+
+<h2>Tom Brady — $300 million (retired)</h2>
+
+<p>Tom Brady is the wealthiest NFL player in history by net worth, despite not holding the largest active contract. His $235 million in career salary was supplemented by endorsements from Under Armour, Aston Martin and others, and his TB12 brand. In retirement he signed a $375 million deal with Fox Sports to become their lead NFL commentator — the largest broadcasting contract in sports television history. He also owns a stake in the Las Vegas Raiders and his production company has several active projects.</p>
+
+<h2>Patrick Mahomes — $100 million (active)</h2>
+
+<p>The Kansas City Chiefs quarterback signed a 10-year, $503 million contract extension in 2020 — the largest contract in professional sports history at the time of signing. Three Super Bowl championships and two Super Bowl MVP awards have validated every dollar. His endorsement portfolio includes State Farm, Adidas, Oakley and Whataburger (where he holds equity). At 30 years old, Mahomes has over a decade of peak earning ahead.</p>
+
+<div class="profile-card-grid">
+  <a href="/tom-brady-ret" class="profile-card">
+    <div class="profile-card-rank">1</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Tom Brady</div>
+      <div class="profile-card-detail">Retired — $375M Fox deal — 7x Super Bowl</div>
+    </div>
+    <div class="profile-card-val">$300M</div>
+  </a>
+  <a href="/patrick-mahomes" class="profile-card">
+    <div class="profile-card-rank">2</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Patrick Mahomes</div>
+      <div class="profile-card-detail">Active — $503M contract — 3x Super Bowl</div>
+    </div>
+    <div class="profile-card-val">$100M</div>
+  </a>
+  <a href="/peyton-manning" class="profile-card">
+    <div class="profile-card-rank">3</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Peyton Manning</div>
+      <div class="profile-card-detail">Retired — 5x MVP — Omaha Productions</div>
+    </div>
+    <div class="profile-card-val">$250M</div>
+  </a>
+  <a href="/aaron-rodgers" class="profile-card">
+    <div class="profile-card-rank">4</div>
+    <div class="profile-card-info">
+      <div class="profile-card-name">Aaron Rodgers</div>
+      <div class="profile-card-detail">Active — 4x MVP — $350M+ career</div>
+    </div>
+    <div class="profile-card-val">$200M</div>
+  </a>
+</div>
+
+<h2>The quarterback premium</h2>
+
+<p>NFL wealth is overwhelmingly concentrated at the quarterback position. Quarterbacks earn approximately 15–20% of the entire team salary cap on their own — a concentration of resource that no other professional sport matches. The reasoning is straightforward: no position in team sports has a more direct causal relationship with winning than the NFL quarterback. A great quarterback makes every other player around them better. Teams pay accordingly.</p>
+
+<p>Lamar Jackson negotiated his own $260 million contract without a sports agent — saving himself approximately $7.8 million in fees. Jalen Hurts signed for $255 million after leading the Eagles to Super Bowl LVII. Josh Allen signed for $258 million. Joe Burrow for $275 million. The escalation of quarterback contracts has been relentless, with each new signing establishing a new benchmark.</p>
+
+<h2>Travis Kelce — the Taylor Swift premium</h2>
+
+<p>Travis Kelce&apos;s estimated $100 million net worth would be significant for a tight end under any circumstances — he is the greatest at his position in NFL history by statistics. But his 2023 relationship with Taylor Swift has created a commercial premium that is almost impossible to quantify. Estimates suggest the Kansas City area alone saw $331 million in economic impact from Taylor Swift attending Chiefs games. His New Heights podcast with brother Jason entered the global top 10. Endorsement deals multiplied. At $34 million per year from the Chiefs, his salary is the foundation — but the Swift relationship has transformed his commercial ceiling entirely.</p>
+
+<table class="data-table">
+  <thead>
+    <tr><th>#</th><th>Player</th><th>Status</th><th>Net Worth</th><th>Source</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><a href="/peyton-manning">Peyton Manning</a></td><td>Retired</td><td class="gold">$250M</td><td>Career + Omaha Productions</td></tr>
+    <tr><td>2</td><td><a href="/tom-brady-ret">Tom Brady</a></td><td>Retired</td><td class="gold">$300M</td><td>Career + Fox $375M deal</td></tr>
+    <tr><td>3</td><td><a href="/aaron-rodgers">Aaron Rodgers</a></td><td>Active</td><td class="gold">$200M</td><td>$350M+ career earnings</td></tr>
+    <tr><td>4</td><td><a href="/russell-wilson">Russell Wilson</a></td><td>Active</td><td class="gold">$165M</td><td>$290M+ career</td></tr>
+    <tr><td>5</td><td><a href="/patrick-mahomes">Patrick Mahomes</a></td><td>Active</td><td class="gold">$100M</td><td>$503M contract + endorsements</td></tr>
+    <tr><td>6</td><td><a href="/travis-kelce">Travis Kelce</a></td><td>Active</td><td class="gold">$100M</td><td>Salary + Swift premium</td></tr>
+    <tr><td>7</td><td><a href="/jerry-rice">Jerry Rice</a></td><td>Retired</td><td class="gold">$50M</td><td>Career + investments</td></tr>
+    <tr><td>8</td><td><a href="/josh-allen">Josh Allen</a></td><td>Active</td><td class="gold">$50M</td><td>$258M contract</td></tr>
+    <tr><td>9</td><td><a href="/lamar-jackson">Lamar Jackson</a></td><td>Active</td><td class="gold">$45M</td><td>$260M — self-negotiated</td></tr>
+    <tr><td>10</td><td><a href="/joe-burrow">Joe Burrow</a></td><td>Active</td><td class="gold">$25M</td><td>$275M contract</td></tr>
+  </tbody>
+</table>
+    `
+  }
 
 }
