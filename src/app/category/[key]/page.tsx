@@ -27,6 +27,7 @@ const CATEGORY_MAP: Record<string, string[]> = {
   'tech-giants':   ['tech-giants', 'tech'],
   'startup-mrr':   ['startup-mrr', 'startup'],
   'indie-founders':['indie-founders', 'indie-founder', 'founder'],
+  'onlyfans':['onlyfans', 'creator', 'content-creator'],
   'media-companies':['media-companies', 'media'],
   'sports-teams':  ['sports-teams', 'sports-team'],
   poland:          ['pl'], // filtered by country
@@ -157,7 +158,27 @@ const CATEGORY_CONTENT: Record<string, {
     relatedCategories: ['singers', 'actors', 'tech-founders']
   },
 
-  'tech-founders': {
+  'onlyfans': {
+    intro: `OnlyFans has paid over $15 billion to creators since launching in 2016. The subscription platform allows creators to charge monthly fees for exclusive content, with creators keeping 80% of all revenue. The income distribution is extreme — the top 1% of creators earn the vast majority of platform revenue. This page tracks what the highest-earning OnlyFans creators actually make.`,
+    sections: [
+      {
+        h2: 'How OnlyFans Creator Income Works',
+        body: `OnlyFans operates on three revenue streams: monthly subscriptions (creators keep 80% of subscription fees), pay-per-view messages (individual content pieces sent directly to subscribers for an additional charge), and tips (direct payments from fans). The PPV model is where the highest earners make disproportionate income — a creator with 10,000 subscribers who sends a $15 PPV message with a 20% open rate earns $24,000 from a single message after the platform fee.\n\nSuccessful OnlyFans creators almost universally drive traffic from external platforms — Instagram, TikTok, X (Twitter) — rather than relying on in-platform discovery. The platform itself has minimal recommendation algorithms, meaning audience building happens almost entirely off-platform.`
+      },
+      {
+        h2: 'Celebrity launches vs career creators',
+        body: `The highest-publicised OnlyFans earnings — Bella Thorne's $1 million in 24 hours, Bhad Bhabie's $1 million in 6 hours — represent celebrity audience conversions, not sustainable creator income models. These figures are driven by millions of pre-existing fans converting on a novelty launch day.\n\nCareer OnlyFans creators operate differently. They build loyal subscriber bases over time, optimise PPV open rates through direct messaging strategies, and maintain consistent posting schedules. The top career creators — those who have built the platform as their primary business rather than a celebrity side venture — earn $50,000–$500,000 per month consistently.`
+      }
+    ],
+    faqs: [
+      { q: 'How much does OnlyFans take?', a: 'OnlyFans takes 20% of all creator revenue across subscriptions, pay-per-view content and tips. Creators keep 80% of everything they earn on the platform.' },
+      { q: 'Who are the highest-paid OnlyFans creators?', a: 'Bella Thorne made $1M in 24 hours at launch. Bhad Bhabie made $1M in 6 hours. However, the highest-earning career creators are not always household names — consistent earners at the top of the platform earn $500K+ per month.' },
+      { q: 'Can you make a living on OnlyFans?', a: 'Yes, but it requires significant external audience building. The median OnlyFans creator earns under $200 per month. Full-time income typically requires 500+ subscribers at a competitive subscription price, plus active PPV messaging.' },
+    ],
+    relatedCategories: ['creators', 'singers', 'actors']
+  },
+
+    'tech-founders': {
     intro: `Technology has created more billionaires in the past 30 years than any other industry in history. The combination of software scalability (one product can serve billions of customers with near-zero marginal cost), global distribution via the internet, and venture capital willing to fund losses during the growth phase has produced fortunes on a scale not seen since the industrial revolution. This page tracks the net worth and business data for the world's wealthiest technology founders.`,
     sections: [
       {
