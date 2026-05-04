@@ -70,7 +70,14 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
     .sort((a, b) => a.rank_order - b.rank_order)
     .slice(0, 10)
 
-  const trending = [...profiles].sort((a, b) => a.rank_order - b.rank_order).slice(0, 9)
+  const trending = [...profiles]
+    .filter(p => p.growth && p.growth.startsWith('+'))
+    .sort((a, b) => {
+      const ga = parseFloat((a.growth || '0').replace(/[^0-9.]/g, ''))
+      const gb = parseFloat((b.growth || '0').replace(/[^0-9.]/g, ''))
+      return gb - ga
+    })
+    .slice(0, 9)
 
   const getCat = (key: string) => categories.find(c => c.key === key)
   const activecat = getCat(activeCategory)
@@ -118,7 +125,7 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
                   <div className={styles.searchAva}>
                     <Avatar skin={p.avatar_skin} hair={p.avatar_hair} style={p.avatar_style}
                       jersey={p.avatar_jersey} number={p.avatar_number} bg={p.avatar_bg}
-                      accessory={p.avatar_accessory} size={34} />
+                      accessory={p.avatar_accessory} size={34} name={p.name} />
                   </div>
                   <div>
                     <div className={styles.searchName}>{p.name}</div>
@@ -260,8 +267,8 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
               <div className={`${styles.rankPos} ${i<3?styles.rankTop:''}`}>{i+1}</div>
               <div className={styles.rankAva}>
                 <Avatar skin={p.avatar_skin} hair={p.avatar_hair} style={p.avatar_style}
-                  jersey={p.avatar_jersey} number={p.avatar_number} bg={p.avatar_bg}
-                  accessory={p.avatar_accessory} size={38} />
+                      jersey={p.avatar_jersey} number={p.avatar_number} bg={p.avatar_bg}
+                      accessory={p.avatar_accessory} size={38} name={p.name} />
               </div>
               <div className={styles.rankInfo}>
                 <div className={styles.rankName}>{p.name}</div>
@@ -317,8 +324,8 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
                   <div className={styles.compareCardHead}>
                     <div className={styles.compareAva}>
                       <Avatar skin={p.avatar_skin} hair={p.avatar_hair} style={p.avatar_style}
-                        jersey={p.avatar_jersey} number={p.avatar_number} bg={p.avatar_bg}
-                        accessory={p.avatar_accessory} size={42} />
+                      jersey={p.avatar_jersey} number={p.avatar_number} bg={p.avatar_bg}
+                      accessory={p.avatar_accessory} size={42} name={p.name} />
                     </div>
                     <div>
                       <div className={styles.compareName}>{p.name}</div>
@@ -347,8 +354,8 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
             <Link key={p.slug} href={`/${p.slug}`} className={styles.trendCard}>
               <div className={styles.trendAva}>
                 <Avatar skin={p.avatar_skin} hair={p.avatar_hair} style={p.avatar_style}
-                  jersey={p.avatar_jersey} number={p.avatar_number} bg={p.avatar_bg}
-                  accessory={p.avatar_accessory} size={36} />
+                      jersey={p.avatar_jersey} number={p.avatar_number} bg={p.avatar_bg}
+                      accessory={p.avatar_accessory} size={36} name={p.name} />
               </div>
               <div>
                 <div className={styles.trendName}>{p.name}</div>
