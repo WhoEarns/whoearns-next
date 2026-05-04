@@ -107,7 +107,7 @@ export default function CategoryClient({ profiles, categoryLabel, category = '' 
                       <Avatar skin={p.avatar_skin} hair={p.avatar_hair}
                         style={p.avatar_style} jersey={p.avatar_jersey}
                         number={p.avatar_number} bg={p.avatar_bg}
-                        accessory={p.avatar_accessory} size={28} />
+                        accessory={p.avatar_accessory} size={28} name={p.name} />
                     </div>
                     <span className={styles.barNameText}>{p.name}</span>
                   </div>
@@ -158,7 +158,7 @@ export default function CategoryClient({ profiles, categoryLabel, category = '' 
                         <Avatar skin={p.avatar_skin} hair={p.avatar_hair}
                           style={p.avatar_style} jersey={p.avatar_jersey}
                           number={p.avatar_number} bg={p.avatar_bg}
-                          accessory={p.avatar_accessory} size={28} />
+                          accessory={p.avatar_accessory} size={28} name={p.name} />
                       </div>
                       {p.name}
                     </Link>
