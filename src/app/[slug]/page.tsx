@@ -129,6 +129,7 @@ export default async function ProfilePage(
                 bg={profile.avatar_bg}
                 accessory={profile.avatar_accessory}
                 size={80}
+                name={profile.name}
               />
             </div>
             <div className={styles.headerText}>
@@ -161,7 +162,6 @@ export default async function ProfilePage(
                   <div className={`${styles.statValue} ${stat.color ? styles[`val_${stat.color}`] : ''}`}>
                     {stat.value}
                   </div>
-                  {stat.note && <div className={styles.statNote}>{stat.note}</div>}
                 </div>
               ))}
             </div>
