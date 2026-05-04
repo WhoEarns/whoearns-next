@@ -6,6 +6,7 @@ import styles from './Nav.module.css'
 export default function Nav() {
   const [light, setLight] = useState(false)
   const [proOpen, setProOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const saved = localStorage.getItem('we-theme')
@@ -25,8 +26,15 @@ export default function Nav() {
         <Link href="/" className={styles.logo}>
           Who<em>Earns</em>
         </Link>
+
+        {/* Desktop links */}
+        <div className={styles.links}>
+          <Link href="/blog" className={styles.link}>Blog</Link>
+          <Link href="/tools" className={styles.link}>Calculators</Link>
+          <Link href="/submit" className={styles.link}>Submit Earnings</Link>
+        </div>
+
         <div className={styles.right}>
-          <Link href="/blog" className={styles.navLink}>Blog</Link>
           <button className={styles.mode} onClick={toggleMode} aria-label="Toggle theme">
             {light ? '🌙' : '☀'}
           </button>
