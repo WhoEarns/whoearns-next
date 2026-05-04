@@ -144,8 +144,8 @@ const CATEGORY_CONTENT: Record<string, {
         body: `The most financially successful creators follow a consistent pattern: build audience, launch a product that the audience buys, use the business income to fund both personal wealth and further content production. MrBeast reinvests virtually all his YouTube income into content — the personal wealth comes from Feastables. Logan Paul and KSI built Prime Hydration into a $250 million revenue business using their combined audiences as distribution.\n\nThis model — audience as distribution for a consumer brand — is now well understood and increasingly copied. The question is whether a creator's audience trusts them enough to buy what they recommend. MrBeast's audience, built on genuine entertainment rather than lifestyle aspiration, proved surprisingly effective at converting to chocolate buyers. Not every creator has this kind of brand loyalty.`
       },
       {
-        h2: 'The Poland creator economy',
-        body: `Poland has produced a disproportionately large creator economy for its size. Friz (Ekipa) has built a 5 million subscriber YouTube channel and a clothing brand generating an estimated $5 million annually. The Ekipa collective — approximately eight creators collaborating on content — is one of Central Europe's most commercially successful creator groups.\n\nThe Polish creator economy remains almost entirely invisible to international audiences and advertisers, which represents both a challenge and an opportunity. Polish creators operate in a domestic market but with production values and commercial sophistication matching much larger markets.`
+        h2: 'How do social media creators actually make money?',
+        body: `The public assumption is that creators make money from ads. In reality, for any creator above 100,000 followers, advertising revenue is rarely the biggest income source. Brand sponsorships pay 5–20x more per viewer than platform ad revenue. A YouTube creator with 1 million monthly views earns perhaps $3,000–$7,000 from AdSense — but a single sponsored integration can pay $15,000–$50,000.\n\nThe most financially sophisticated creators have moved beyond ads and sponsorships into owned businesses. MrBeast's Feastables chocolate brand, Mark Rober's CrunchLabs subscription box, and Logan Paul and KSI's Prime Hydration drink generate revenues that dwarf anything their YouTube channels earn directly. The creator becomes a distribution channel for a product business — a fundamentally more scalable economic model.`
       }
     ],
     faqs: [
@@ -377,7 +377,7 @@ export default async function CategoryPage(
 
         {/* INTERACTIVE CHART + TABLE — client component */}
         {profiles.length > 0 && (
-          <CategoryClient profiles={profiles} categoryLabel={cat!.label} />
+          <CategoryClient profiles={profiles} categoryLabel={cat!.label} category={key} />
         )}
 
         {/* LONG-FORM SEO CONTENT */}
@@ -410,7 +410,7 @@ export default async function CategoryPage(
                   <Avatar skin={p.avatar_skin} hair={p.avatar_hair}
                     style={p.avatar_style} jersey={p.avatar_jersey}
                     number={p.avatar_number} bg={p.avatar_bg}
-                    accessory={p.avatar_accessory} size={48} />
+                    accessory={p.avatar_accessory} size={48} name={p.name} />
                 </div>
                 <div className={styles.profileInfo}>
                   <div className={styles.profileName}>{p.name}</div>
