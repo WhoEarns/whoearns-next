@@ -48,12 +48,11 @@ export default async function SimilarProfiles({ currentSlug, category, currentNa
             </div>
             <div className={styles.info}>
               <div className={styles.name}>{p.name}</div>
-              <div className={styles.val}>{p.stats?.[0]?.value}</div>
-              {p.growth && (
-                <span className={`${styles.growth} ${p.growth.startsWith('-') ? styles.dn : styles.up}`}>
-                  {p.growth}
-                </span>
-              )}
+              <div className={styles.detail}>{(p.meta as string[])?.[0]}</div>
+            </div>
+            <div className={styles.val}>
+              <div className={styles.valMain}>{(p.stats as any[])?.[0]?.value}</div>
+              <div className={styles.valLabel}>{(p.stats as any[])?.[0]?.label}</div>
             </div>
           </Link>
         ))}
