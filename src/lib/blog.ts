@@ -1088,9 +1088,9 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
   </tbody>
 </table>
     `
-  }
-,
-{
+  },
+
+  {
     slug: 'how-much-does-joe-rogan-make',
     title: 'How Much Does Joe Rogan Make? — $250M Spotify Deal and Full Income Breakdown',
     description: 'Joe Rogan earns an estimated $50M+ per year from his Spotify deal, comedy tours and endorsements. Full breakdown of JRE podcast income.',
@@ -1454,9 +1454,7 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
 
 <p>Browse all <a href="/category/startup-mrr">startup MRR profiles</a> and <a href="/category/ai-startups">AI company profiles</a> on WhoEarns.</p>
     `
-  }
-
-  ,
+  },
 
   {
     slug: 'how-much-does-canelo-alvarez-make',
