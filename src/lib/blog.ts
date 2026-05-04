@@ -1089,5 +1089,654 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
 </table>
     `
   }
+,
+{
+    slug: 'how-much-does-joe-rogan-make',
+    title: 'How Much Does Joe Rogan Make? — $250M Spotify Deal and Full Income Breakdown',
+    description: 'Joe Rogan earns an estimated $50M+ per year from his Spotify deal, comedy tours and endorsements. Full breakdown of JRE podcast income.',
+    date: 'May 2026',
+    readTime: '7 min',
+    category: 'Podcasters',
+    tags: ['podcast', 'joe rogan', 'spotify', 'JRE'],
+    content: `
+<p>Joe Rogan is the highest-paid podcaster in the world. His Spotify deal — originally $100 million in 2020 and renewed for a reported $250 million in 2024 — makes him the most commercially successful podcast host in history. But the Spotify deal is only part of the story.</p>
+
+<h2>How Much Does Joe Rogan Make Per Year?</h2>
+<p>Rogan's total annual income is estimated at $50 million or more, combining his Spotify licensing fee, stand-up comedy tours, merchandise and endorsements. His comedy tours routinely sell out arenas, generating tens of millions per run.</p>
+
+<table>
+  <thead><tr><th>Income Source</th><th>Estimated Amount</th></tr></thead>
+  <tbody>
+    <tr><td>Spotify deal (annual)</td><td class="gold">$25M+</td></tr>
+    <tr><td>Comedy tours</td><td class="gold">$10M+/yr</td></tr>
+    <tr><td>Endorsements (Onnit, etc)</td><td class="gold">$5M+</td></tr>
+    <tr><td>Merchandise</td><td class="gold">$2M+</td></tr>
+    <tr><td><strong>Total estimated</strong></td><td class="gold"><strong>$50M+/yr</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>The Spotify Deal — What We Actually Know</h2>
+<p>The original 2020 Spotify exclusive deal was widely reported at $100 million over multiple years. The 2024 renewal is reported at $250 million — though Spotify has not confirmed the exact figure. The deal makes JRE exclusive to Spotify's platform, meaning no YouTube uploads of full episodes.</p>
+
+<h2>How Does JRE Compare to Other Podcasts?</h2>
+<p>With 11 million+ listeners per episode, JRE dwarfs the competition. Howard Stern is the only podcaster who approaches similar compensation, but his SiriusXM deal was built over decades. <a href="/tools/podcast-earnings-calculator">Use our podcast earnings calculator</a> to see what your own show could earn at different download levels.</p>
+
+<h2>Joe Rogan's Net Worth</h2>
+<p>Rogan's estimated net worth is $200 million — built from 15+ years of stand-up, the Spotify windfall and business interests including Onnit (the supplement brand he part-owned and sold to Unilever). See the full <a href="/joe-rogan">Joe Rogan profile</a> for a complete breakdown.</p>
+    `
+  },
+
+  {
+    slug: 'richest-tennis-players-2026',
+    title: 'Richest Tennis Players in the World 2026 — Djokovic, Federer, Nadal, Serena',
+    description: 'The wealthiest tennis players ranked by net worth in 2026. Federer leads with $550M thanks to On Running investment. Full prize money and endorsement breakdown.',
+    date: 'May 2026',
+    readTime: '8 min',
+    category: 'Athletes',
+    tags: ['tennis', 'net worth', 'Federer', 'Djokovic', 'Serena'],
+    content: `
+<p>Tennis produces more individual wealth than almost any other sport. The combination of prize money, endorsement deals and (for the elite few) smart business decisions has created fortunes that far exceed career earnings alone.</p>
+
+<h2>Top 10 Richest Tennis Players 2026</h2>
+<table>
+  <thead><tr><th>#</th><th>Player</th><th>Net Worth</th><th>Key Source</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td><a href="/roger-federer">Roger Federer</a></td><td class="gold">$550M</td><td>On Running investment + Rolex + Uniqlo</td></tr>
+    <tr><td>2</td><td><a href="/serena-williams">Serena Williams</a></td><td class="gold">$260M</td><td>Nike lifetime + Serena Ventures VC</td></tr>
+    <tr><td>3</td><td><a href="/novak-djokovic">Novak Djokovic</a></td><td class="gold">$230M</td><td>$180M prize money + Lacoste</td></tr>
+    <tr><td>4</td><td><a href="/rafael-nadal">Rafael Nadal</a></td><td class="gold">$220M</td><td>$134M prize money + Nike lifetime</td></tr>
+    <tr><td>5</td><td><a href="/naomi-osaka">Naomi Osaka</a></td><td class="gold">$60M</td><td>$50M+/yr endorsements at peak</td></tr>
+    <tr><td>6</td><td><a href="/iga-swiatek">Iga Świątek</a></td><td class="gold">$15M</td><td>#1 ranked + Porsche ambassador</td></tr>
+    <tr><td>7</td><td><a href="/carlos-alcaraz">Carlos Alcaraz</a></td><td class="gold">$15M</td><td>4 Grand Slams age 22</td></tr>
+  </tbody>
+</table>
+
+<h2>Why Federer is Richer Than Djokovic Despite Fewer Grand Slams</h2>
+<p>Roger Federer's $550M net worth vastly exceeds Djokovic's despite having fewer Grand Slams. The reason: Federer took an equity stake in Swiss shoe brand On Running instead of a cash endorsement. That stake is now worth over $300 million. His Uniqlo deal pays $30 million per year. His Rolex ambassadorship is one of the longest in tennis. Djokovic, by contrast, has focused more on performance than commercial partnerships — a deliberate choice that has cost him hundreds of millions in endorsement income.</p>
+
+<h2>The Prize Money Reality</h2>
+<p>Djokovic leads all tennis players with $180M+ in career prize money. Federer earned $130M. But prize money is taxed heavily and represents a minority of total wealth for the biggest names. Federer's business decisions generated 4x more wealth than his entire on-court earnings.</p>
+
+<p>Browse the full <a href="/category/athletes">athletes category</a> for rankings across all sports.</p>
+    `
+  },
+
+  {
+    slug: 'richest-f1-drivers-2026',
+    title: 'Richest F1 Drivers 2026 — Hamilton, Verstappen, Alonso Net Worth',
+    description: 'The wealthiest Formula 1 drivers ranked by net worth. Hamilton leads with $300M. Verstappen close behind. Full salary and endorsement breakdown for 2026.',
+    date: 'May 2026',
+    readTime: '7 min',
+    category: 'Athletes',
+    tags: ['F1', 'Formula 1', 'Hamilton', 'Verstappen', 'net worth'],
+    content: `
+<p>Formula 1 has become the world's fastest-growing sport in terms of both viewership and driver wealth. The Netflix Drive to Survive series, expanding into the US market, and new team ownership have all contributed to a sharp rise in driver incomes.</p>
+
+<h2>Richest F1 Drivers 2026</h2>
+<table>
+  <thead><tr><th>#</th><th>Driver</th><th>Net Worth</th><th>Annual Salary</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td><a href="/lewis-hamilton">Lewis Hamilton</a></td><td class="gold">$300M</td><td>$50M+ (Ferrari)</td></tr>
+    <tr><td>2</td><td><a href="/max-verstappen">Max Verstappen</a></td><td class="gold">$250M</td><td>$60M+ (Red Bull)</td></tr>
+    <tr><td>3</td><td><a href="/fernando-alonso">Fernando Alonso</a></td><td class="gold">$280M</td><td>$20M+ (Aston Martin)</td></tr>
+    <tr><td>4</td><td>Sebastian Vettel</td><td class="gold">$200M</td><td>Retired</td></tr>
+    <tr><td>5</td><td>Michael Schumacher</td><td class="gold">$600M</td><td>Retired / injured</td></tr>
+  </tbody>
+</table>
+
+<h2>Hamilton vs Verstappen — Who Earns More?</h2>
+<p>Max Verstappen's Red Bull contract reportedly pays $60 million per year — more than Hamilton's Ferrari deal. But Hamilton's net worth leads because he has spent 15+ years at the peak earning $40-60M annually, while Verstappen is younger with fewer accumulated years at the top.</p>
+
+<p>Hamilton's 2025 move to Ferrari for reportedly $50M+ annually was one of motorsport's most anticipated transfers. His 104 race wins and 7 World Championships make him the most decorated driver in history.</p>
+
+<h2>How Do F1 Drivers Make Money?</h2>
+<p>Unlike most sports, F1 drivers earn from multiple streams: base salary from the team, a bonus structure tied to championship positions, endorsement deals (Tommy Hilfiger, IWC, Monster Energy), and appearance fees. Verstappen's Oracle Red Bull deal includes Oracle branding, adding a technology company endorsement layer on top of traditional racing income.</p>
+
+<p>See all athlete profiles in the <a href="/category/athletes">WhoEarns athletes category</a>.</p>
+    `
+  },
+
+  {
+    slug: 'how-much-do-youtubers-make',
+    title: 'How Much Do YouTubers Make in 2026? — The Full Truth',
+    description: 'The real YouTube earnings breakdown in 2026. AdSense pays less than you think. MrBeast makes $80M+ but most creators make almost nothing. Full data.',
+    date: 'May 2026',
+    readTime: '9 min',
+    category: 'Creators',
+    tags: ['YouTube', 'earnings', 'AdSense', 'MrBeast', 'CPM'],
+    content: `
+<p>The YouTube earnings question is one of the most searched on the internet — and the honest answer is more complex than most people expect. The range runs from literally zero to $80 million per year, and where you fall depends on factors most creators don't discuss openly.</p>
+
+<h2>What YouTube Actually Pays</h2>
+<p>YouTube pays creators through AdSense at a rate of roughly $2–$10 per 1,000 views, depending on topic, audience location and time of year. A channel getting 1 million views per month can expect $2,000–$10,000 from AdSense alone. That's $24,000–$120,000 per year — which sounds significant until you factor in the hours required to produce that content.</p>
+
+<table>
+  <thead><tr><th>Monthly Views</th><th>Monthly AdSense (US audience)</th><th>Annual</th></tr></thead>
+  <tbody>
+    <tr><td>100,000</td><td class="gold">$200–$1,000</td><td>$2.4K–$12K</td></tr>
+    <tr><td>1,000,000</td><td class="gold">$2,000–$10,000</td><td>$24K–$120K</td></tr>
+    <tr><td>10,000,000</td><td class="gold">$20,000–$100,000</td><td>$240K–$1.2M</td></tr>
+    <tr><td>100,000,000</td><td class="gold">$200,000–$1M</td><td>$2.4M–$12M</td></tr>
+  </tbody>
+</table>
+
+<p>Use the <a href="/tools/youtube-earnings-calculator">YouTube earnings calculator</a> to estimate your own channel's potential AdSense revenue.</p>
+
+<h2>Why AdSense Is Not the Point</h2>
+<p>For any creator above 100,000 subscribers, brand sponsorships pay 5–20x more than AdSense. A single sponsored integration in one video can pay $15,000–$100,000 depending on the channel size and niche. Finance and technology channels command the highest rates because advertisers pay most to reach that audience.</p>
+
+<h2>The MrBeast Model — Products Over AdSense</h2>
+<p><a href="/mrbeast">MrBeast</a> earns an estimated $80 million per year, but the vast majority comes from Feastables (his chocolate brand) and other product businesses, not AdSense. His YouTube channel is essentially a $0 marketing channel for product businesses that generate enormous revenue. This is the model that the most financially sophisticated creators are building toward.</p>
+
+<h2>Realistic Earnings by Channel Size</h2>
+<table>
+  <thead><tr><th>Subscribers</th><th>Realistic Total Income/Year</th><th>Main Sources</th></tr></thead>
+  <tbody>
+    <tr><td>Under 10K</td><td class="gold">$0–$5K</td><td>AdSense (minimal)</td></tr>
+    <tr><td>10K–100K</td><td class="gold">$5K–$50K</td><td>AdSense + occasional sponsors</td></tr>
+    <tr><td>100K–1M</td><td class="gold">$50K–$500K</td><td>AdSense + regular sponsors</td></tr>
+    <tr><td>1M–10M</td><td class="gold">$500K–$5M</td><td>Sponsors + AdSense + products</td></tr>
+    <tr><td>10M+</td><td class="gold">$5M+</td><td>Sponsors + products + tours</td></tr>
+  </tbody>
+</table>
+
+<p>Browse all <a href="/category/creators">creator profiles</a> to see what real YouTubers and social media stars are worth.</p>
+    `
+  },
+
+  {
+    slug: 'jensen-huang-net-worth-2026',
+    title: 'Jensen Huang Net Worth 2026 — Nvidia, AI Chip Monopoly and $90B Wealth',
+    description: 'Jensen Huang net worth $90B+ in 2026. Nvidia co-founder built the world''s most important AI company. FY2025 revenue $130B. Full wealth breakdown.',
+    date: 'May 2026',
+    readTime: '8 min',
+    category: 'Tech Founders',
+    tags: ['Jensen Huang', 'Nvidia', 'net worth', 'AI', 'chips'],
+    content: `
+<p>Jensen Huang is not a household name in the way Elon Musk or Mark Zuckerberg are — but the Nvidia CEO may be more important to the future of the economy than either of them. Every major AI model trained since 2022 runs on Nvidia hardware. That has made him one of the wealthiest people on earth.</p>
+
+<h2>Jensen Huang's Net Worth in 2026</h2>
+<p>Huang's net worth is estimated at over $90 billion as of 2026 — a figure that has grown from roughly $3 billion in 2022. The 2022–2025 AI boom transformed Nvidia from a gaming GPU company into the world's most critical infrastructure provider for artificial intelligence.</p>
+
+<h2>How Nvidia Became the World's Most Valuable Company</h2>
+<p>The key was the H100 GPU — a chip so well-suited to training large language models that every major AI company (OpenAI, Google, Meta, Anthropic, Microsoft) was willing to pay $30,000+ per unit and wait months for delivery. Nvidia's revenue grew from $26 billion to $130 billion in just two fiscal years. No company in history has grown from that base at that speed.</p>
+
+<table>
+  <thead><tr><th>Year</th><th>Nvidia Revenue</th><th>Nvidia Market Cap</th></tr></thead>
+  <tbody>
+    <tr><td>2022</td><td>$26B</td><td>~$300B</td></tr>
+    <tr><td>2023</td><td>$60B</td><td>~$1.2T</td></tr>
+    <tr><td>2024</td><td>$130B</td><td>~$3T peak</td></tr>
+    <tr><td>2025</td><td>$170B est.</td><td>$2.5T+</td></tr>
+  </tbody>
+</table>
+
+<h2>The Leather Jacket</h2>
+<p>Huang's signature black leather jacket has become one of Silicon Valley's most recognisable style choices — a deliberate contrast to the business-casual norm. He has worn it to every major product launch, shareholder meeting and press conference, giving Nvidia an unusual personality for a semiconductor company.</p>
+
+<p>See the full <a href="/jensen-huang">Jensen Huang profile</a> and browse all <a href="/category/tech-founders">tech founder profiles</a>.</p>
+    `
+  },
+
+  {
+    slug: 'drake-net-worth-2026',
+    title: 'Drake Net Worth 2026 — $300M, Most Streamed Artist and Business Empire',
+    description: 'Drake net worth $300M in 2026. Most streamed Spotify artist ever. OVO Sound label. Virginia Black whisky. The 2024 Kendrick Lamar feud explained.',
+    date: 'May 2026',
+    readTime: '7 min',
+    category: 'Singers',
+    tags: ['Drake', 'net worth', 'Spotify', 'OVO', 'rap'],
+    content: `
+<p>Drake is the most commercially successful rapper in streaming history and has built a business empire that extends well beyond music. His net worth of $300 million reflects over 15 years at the very top of the music industry.</p>
+
+<h2>How Drake Makes His Money</h2>
+<table>
+  <thead><tr><th>Income Source</th><th>Estimated Amount</th></tr></thead>
+  <tbody>
+    <tr><td>Music streaming royalties</td><td class="gold">$20M+/yr</td></tr>
+    <tr><td>Concert tours</td><td class="gold">$50M+ per major tour</td></tr>
+    <tr><td>OVO Sound label</td><td class="gold">Ongoing royalties</td></tr>
+    <tr><td>Alcohol brands</td><td class="gold">Virginia Black, Mod Sele</td></tr>
+    <tr><td>Real estate</td><td class="gold">$200M+ portfolio</td></tr>
+  </tbody>
+</table>
+
+<h2>The Kendrick Lamar Feud — 2024</h2>
+<p>The 2024 beef between Drake and <a href="/kendrick-lamar">Kendrick Lamar</a> was the most watched rap beef in internet history. Not Like Us, Kendrick's diss track, accumulated billions of streams. The feud culminated in Kendrick performing a concert in Toronto (Drake's home city) to 50,000 fans — a symbolic victory that boosted Lamar's profile significantly while complicating Drake's reputation.</p>
+
+<h2>Most Streamed Artist on Spotify — All Time</h2>
+<p>Drake holds the record for the most-streamed artist in Spotify's history, having topped the annual chart multiple times and accumulated over 80 billion total streams. This streaming dominance generates substantial ongoing royalty income.</p>
+
+<h2>OVO Sound</h2>
+<p>Drake's OVO Sound record label has been one of hip-hop's most influential platforms, signing and developing artists including dvsn, PARTYNEXTDOOR and Roy Woods. The label generates ongoing income from artist royalties.</p>
+
+<p>Full profile: <a href="/drake">Drake on WhoEarns</a>. See all <a href="/category/singers">music artist profiles</a>.</p>
+    `
+  },
+
+  {
+    slug: 'onlyfans-top-earners-2026',
+    title: 'OnlyFans Top Earners 2026 — Who Makes the Most and How Much',
+    description: 'The highest-earning OnlyFans creators in 2026. Bella Thorne set the $1M/day record. Blac Chyna, Cardi B and others. Full earnings breakdown and how OnlyFans works.',
+    date: 'May 2026',
+    readTime: '8 min',
+    category: 'Creators',
+    tags: ['OnlyFans', 'earnings', 'creators', 'Bella Thorne'],
+    content: `
+<p>OnlyFans has processed over $15 billion in payments since its launch, with the vast majority going to creators after the platform's 20% cut. But the income distribution is extremely skewed — the top 1% of creators earn the majority of the revenue.</p>
+
+<h2>OnlyFans Revenue Records</h2>
+<table>
+  <thead><tr><th>Creator</th><th>Record</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/bella-thorne">Bella Thorne</a></td><td class="gold">$1M in 24 hours (first ever)</td></tr>
+    <tr><td><a href="/bhad-bhabie">Bhad Bhabie</a></td><td class="gold">$1M in 6 hours (broke Thorne's record)</td></tr>
+    <tr><td>Blac Chyna</td><td class="gold">$20M/month at peak (reported)</td></tr>
+    <tr><td>Cardi B</td><td class="gold">Highest single-day tip record</td></tr>
+  </tbody>
+</table>
+
+<h2>How OnlyFans Actually Works</h2>
+<p>Creators set a monthly subscription price (typically $4.99–$49.99), sell pay-per-view content directly to subscribers, and receive tips. OnlyFans takes 20% of all transactions. The platform pays out weekly via bank transfer once earnings pass the minimum threshold.</p>
+
+<p>The most successful creators combine all three revenue streams. A creator with 1,000 subscribers at $9.99/month earns approximately $8,000/month from subscriptions alone (after OnlyFans' cut) — but aggressive pay-per-view pricing and tips can multiply this significantly.</p>
+
+<h2>The Income Reality</h2>
+<p>According to data leaked from the platform, the median OnlyFans creator earns under $200 per month. The top 1% earn over $50,000 per month. Success requires consistent content production, strong pre-existing social media following to drive subscriptions, and active engagement with fans. Most creators who earn significant income had large Instagram or TikTok followings before launching their OnlyFans.</p>
+
+<p>Use the <a href="/tools/onlyfans-earnings-calculator">OnlyFans earnings calculator</a> to estimate what different subscriber and price combinations would generate. See all <a href="/category/creators">creator profiles</a>.</p>
+    `
+  },
+
+  {
+    slug: 'max-verstappen-net-worth-2026',
+    title: 'Max Verstappen Net Worth 2026 — $60M F1 Salary, 4 World Titles and Wealth',
+    description: 'Max Verstappen net worth $250M in 2026. $60M+ Red Bull salary. 4 consecutive F1 World Championships 2021-2024. 60+ race wins. Youngest winner ever.',
+    date: 'May 2026',
+    readTime: '7 min',
+    category: 'Athletes',
+    tags: ['Max Verstappen', 'F1', 'net worth', 'Red Bull', 'Formula 1'],
+    content: `
+<p>Max Verstappen has dominated Formula 1 in a way not seen since Michael Schumacher. Four consecutive world championships from 2021 to 2024, 60+ race wins, and the most lucrative contract in F1 history have made him one of sport's wealthiest young stars.</p>
+
+<h2>Max Verstappen's Earnings</h2>
+<table>
+  <thead><tr><th>Source</th><th>Amount</th></tr></thead>
+  <tbody>
+    <tr><td>Red Bull Racing salary</td><td class="gold">$60M+/year</td></tr>
+    <tr><td>Endorsements (Jumbo, Tag Heuer)</td><td class="gold">$15M+/year</td></tr>
+    <tr><td>Race win bonuses</td><td class="gold">Significant additional</td></tr>
+    <tr><td><strong>Total annual</strong></td><td class="gold"><strong>$80M+ estimated</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>How Good Is Verstappen Really?</h2>
+<p>His statistical dominance is extraordinary. In 2023, Verstappen won 19 of 22 races — the highest win percentage in a single season since the sport became truly competitive. His 60+ career wins at age 28 put him on a trajectory to challenge <a href="/lewis-hamilton">Lewis Hamilton</a>'s all-time record of 104.</p>
+
+<h2>Verstappen vs Hamilton — The Contract Comparison</h2>
+<p>Verstappen's Red Bull contract extends to 2028 and reportedly pays $60 million or more annually. Hamilton's Ferrari deal pays a similar amount. The key difference is that Verstappen is 28 and likely has 10+ peak years ahead, while Hamilton at 41 is approaching the end. Red Bull's long-term investment in Verstappen looks like exceptional business.</p>
+
+<h2>The Youngest Record</h2>
+<p>At 18 years and 228 days, Verstappen became the youngest driver to win an F1 race — a record set in 2016 that stands today. He was the youngest driver on the grid when he debuted at 17, having been brought in by Red Bull from their junior programme.</p>
+
+<p>Full profile: <a href="/max-verstappen">Max Verstappen on WhoEarns</a>. See all <a href="/category/athletes">athlete profiles</a>.</p>
+    `
+  },
+
+  {
+    slug: 'richest-actors-2026',
+    title: 'Richest Actors in the World 2026 — Dwayne Johnson, Tom Hanks, Ryan Reynolds',
+    description: 'The wealthiest actors in Hollywood ranked by net worth 2026. Dwayne Johnson leads with $800M. Ryan Reynolds $350M from Deadpool and gin. Full breakdown.',
+    date: 'May 2026',
+    readTime: '8 min',
+    category: 'Actors',
+    tags: ['actors', 'Hollywood', 'net worth', 'Dwayne Johnson', 'richest'],
+    content: `
+<p>Hollywood's wealthiest actors have something in common beyond acting talent — they've built significant business interests outside of film. The era of the actor who simply collects per-film fees is largely over at the highest levels of wealth.</p>
+
+<h2>Richest Actors 2026 — Full Rankings</h2>
+<table>
+  <thead><tr><th>#</th><th>Actor</th><th>Net Worth</th><th>Key Business</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td><a href="/dwayne-johnson">Dwayne Johnson</a></td><td class="gold">$800M</td><td>Teremana Tequila $3.5B valuation</td></tr>
+    <tr><td>2</td><td><a href="/ryan-reynolds">Ryan Reynolds</a></td><td class="gold">$350M</td><td>Aviation Gin $610M, Mint Mobile $1.35B</td></tr>
+    <tr><td>3</td><td><a href="/will-smith">Will Smith</a></td><td class="gold">$350M</td><td>Westbrook Studios</td></tr>
+    <tr><td>4</td><td><a href="/tom-hanks">Tom Hanks</a></td><td class="gold">$400M</td><td>Forrest Gump backend deal</td></tr>
+    <tr><td>5</td><td><a href="/denzel-washington">Denzel Washington</a></td><td class="gold">$280M</td><td>40+ year Hollywood career</td></tr>
+    <tr><td>6</td><td><a href="/morgan-freeman">Morgan Freeman</a></td><td class="gold">$250M</td><td>Narration + production</td></tr>
+    <tr><td>7</td><td><a href="/angelina-jolie">Angelina Jolie</a></td><td class="gold">$120M</td><td>Acting + Atelier Jolie</td></tr>
+    <tr><td>8</td><td><a href="/kevin-hart">Kevin Hart</a></td><td class="gold">$200M</td><td>HartBeat + stand-up tours</td></tr>
+  </tbody>
+</table>
+
+<h2>Ryan Reynolds — The Entrepreneur Actor</h2>
+<p>Reynolds represents the new model for actor wealth. He bought Aviation Gin as an investor, built it into a premium brand, and sold to Diageo for $610 million in 2020. He did the same with Mint Mobile (sold to T-Mobile for $1.35 billion in 2023). His Deadpool franchise backend deals — where he receives a percentage of box office revenue — have generated estimated earnings of $150 million or more from Deadpool & Wolverine alone.</p>
+
+<h2>The Forrest Gump Backend Deal</h2>
+<p>Tom Hanks negotiated a backend deal on Forrest Gump (1994) instead of a flat upfront fee. As the film grossed $678 million worldwide on a $55 million budget, Hanks' backend percentage generated an estimated $70 million — more than a flat fee of $20 million would have paid. It remains one of Hollywood's most celebrated deal structures.</p>
+
+<p>See all <a href="/category/actors">actor profiles</a> with full earnings data.</p>
+    `
+  },
+
+  {
+    slug: 'ai-tools-revenue-2026',
+    title: 'AI Tools Revenue 2026 — Cursor $400M, Lovable $150M, ElevenLabs $100M ARR',
+    description: 'The fastest-growing AI tools by revenue in 2026. Cursor $400M ARR. Lovable fastest to $10M ever. ElevenLabs $100M. Full startup revenue database.',
+    date: 'May 2026',
+    readTime: '7 min',
+    category: 'Startups',
+    tags: ['AI tools', 'MRR', 'Cursor', 'Lovable', 'startup revenue'],
+    content: `
+<p>The AI tools category has produced the fastest revenue growth in software history. Products that didn't exist in 2022 are generating hundreds of millions in annual recurring revenue in 2026. Here's the state of AI tool revenue in 2026.</p>
+
+<h2>AI Tools Revenue Rankings 2026</h2>
+<table>
+  <thead><tr><th>Product</th><th>ARR</th><th>Founded</th><th>What It Does</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/cursor-ide">Cursor</a></td><td class="gold">$400M</td><td>2022</td><td>AI code editor</td></tr>
+    <tr><td><a href="/lovable-mrr">Lovable</a></td><td class="gold">$150M</td><td>2023</td><td>AI no-code app builder</td></tr>
+    <tr><td><a href="/eleven-labs">ElevenLabs</a></td><td class="gold">$100M</td><td>2022</td><td>AI voice cloning</td></tr>
+    <tr><td><a href="/midjourney">Midjourney</a></td><td class="gold">$300M</td><td>2022</td><td>AI image generation</td></tr>
+    <tr><td>Perplexity AI</td><td class="gold">$100M</td><td>2022</td><td>AI search engine</td></tr>
+    <tr><td><a href="/cal-ai-mrr">Cal AI</a></td><td class="gold">$24M</td><td>2024</td><td>AI calorie tracking</td></tr>
+  </tbody>
+</table>
+
+<h2>Lovable — Fastest Growth in SaaS History</h2>
+<p>Lovable holds the record for the fastest SaaS product to reach $10 million in annual recurring revenue — achieving it in just six weeks. The Swedish AI app builder allows anyone to describe a product in plain language and have AI build it. It reflects a broader trend of AI dramatically lowering the barrier to building software.</p>
+
+<h2>Why Cursor Beat GitHub Copilot</h2>
+<p><a href="/cursor-ide">Cursor</a> launched as a fork of VS Code with AI built deeply into the editing experience — not bolted on as a plugin like GitHub Copilot. Developers who switched reported dramatic productivity gains, and word-of-mouth growth was exceptional. At $400M ARR with a $2.5B valuation, it demonstrates that the best AI tools don't need to be owned by the biggest companies.</p>
+
+<h2>The Polish Connection</h2>
+<p>Two of the fastest-growing AI voice companies have Polish co-founders. ElevenLabs was co-founded by Piotr Dabkowski from Poland. Screen Studio, the $100K MRR screen recording tool, was built by Polish founder Adam Pietrasiak. Polish engineers are playing a disproportionate role in the AI tools wave. See the <a href="/category/poland">Poland category</a> for Polish entrepreneurs and creators.</p>
+
+<p>Browse all <a href="/category/startup-mrr">startup MRR profiles</a> and <a href="/category/ai-startups">AI company profiles</a> on WhoEarns.</p>
+    `
+  }
+
+  ,
+
+  {
+    slug: 'how-much-does-canelo-alvarez-make',
+    title: 'Canelo Alvarez Net Worth 2026 — How Boxing's Highest-Paid Fighter Makes $280M',
+    description: 'Canelo Alvarez earns $40M+ per fight. His $365M DAZN deal, undisputed super middleweight titles and business empire explained.',
+    date: 'May 4, 2026',
+    category: 'Boxing',
+    readTime: '5 min',
+    content: `
+<p>Canelo Alvarez has an estimated net worth of $280 million in 2026 — more than any active boxer in the world. His wealth comes from fight purses, a landmark streaming deal, and his increasingly sophisticated business portfolio. See his full <a href="/canelo-alvarez">Canelo Alvarez profile</a> for verified earnings data.</p>
+
+<h2>The $365M DAZN Deal</h2>
+<p>In 2018, Canelo signed a deal with streaming platform DAZN worth a reported $365 million for 11 fights — the largest contract in boxing history at the time. While the deal was later renegotiated after a dispute, it established him as boxing's most commercially powerful fighter. Per-fight purses now routinely exceed $40 million.</p>
+
+<h2>The GGG Trilogy</h2>
+<p>His three fights with Gennady Golovkin generated enormous pay-per-view revenue, establishing Canelo as one of the few fighters capable of driving major PPV numbers. The trilogy cemented his status as the defining fighter of his era. Compare his earnings to <a href="/tyson-fury">Tyson Fury</a> and <a href="/anthony-joshua">Anthony Joshua</a> on WhoEarns.</p>
+
+<h2>Undisputed Champion</h2>
+<p>Canelo became undisputed super middleweight champion by collecting all four major sanctioning body belts — a feat that significantly increased his negotiating power with promoters and broadcasters.</p>
+
+<h2>Business Outside the Ring</h2>
+<p>Beyond boxing, Canelo has invested in real estate in Mexico and the United States, owns several racehorses, and has been building a brand portfolio. His team manages a production company that controls his promotional rights — a model similar to Floyd Mayweather's Mayweather Promotions. See <a href="/floyd-mayweather">Floyd Mayweather's net worth</a> for comparison.</p>
+
+<h2>What Boxers Actually Earn vs What's Reported</h2>
+<p>Publicly reported boxing purses are often gross figures before trainer fees (typically 10%), promoter splits, sanctioning body fees, and taxes. A reported $50M purse might net a fighter $25–30M. Canelo has structured his deals to retain significantly more by becoming his own promoter. Browse all <a href="/category/athletes">athlete net worth profiles</a> on WhoEarns.</p>
+    `
+  },
+
+  {
+    slug: 'tiger-woods-net-worth-2026',
+    title: 'Tiger Woods Net Worth 2026 — How Golf's First Billionaire Built $1.1B',
+    description: 'Tiger Woods has a net worth of $1.1 billion. His prize money, Nike deal history, Sun Day Red brand and business empire explained.',
+    date: 'May 4, 2026',
+    category: 'Golf',
+    readTime: '6 min',
+    content: `
+<p>Tiger Woods has an estimated net worth of $1.1 billion in 2026 — making him the first golfer and one of only a handful of athletes ever to reach billionaire status. His <a href="/tiger-woods">full Tiger Woods profile</a> covers verified career earnings and current income sources.</p>
+
+<h2>Prize Money: $120M+</h2>
+<p>Woods has earned over $120 million in official PGA Tour prize money — the most in golf history. But prize money is actually the smallest component of his wealth. Compare with <a href="/rory-mcilroy">Rory McIlroy's earnings</a> and <a href="/jon-rahm">Jon Rahm's LIV deal</a>.</p>
+
+<h2>The Nike Partnership — 27 Years</h2>
+<p>From 1996 to 2024, Woods had one of the most lucrative endorsement deals in sports history with Nike. The total value across 27 years has been estimated at over $500 million. Nike built an entire division around him. When he ended the partnership in 2024, it marked the end of an era for sports marketing.</p>
+
+<h2>Sun Day Red — His Own Brand</h2>
+<p>In 2024, Woods launched Sun Day Red, an apparel brand in partnership with TaylorMade Golf. Rather than taking another endorsement fee, he took equity — meaning his wealth grows directly with the brand's success. This mirrors the creator economy model where athletes become brand owners rather than brand ambassadors.</p>
+
+<h2>Course Design as a Revenue Stream</h2>
+<p>TGR Design, his golf course design company, has designed and redesigned courses globally. Course design fees range from $1–5 million per project plus ongoing royalties. This provides consistent income independent of his playing career.</p>
+
+<h2>The 2019 Masters — Sport's Greatest Comeback</h2>
+<p>His victory at the 2019 Masters — 11 years after his previous major win, following back surgery, personal scandal, and questions about whether he'd ever play again — is considered by many the greatest comeback in sports history. It added hundreds of millions to his commercial value overnight.</p>
+
+<p>Use our <a href="/tools/youtube-earnings-calculator">creator earnings calculators</a> to see how athletes and creators compare, or browse all <a href="/category/athletes">athlete profiles</a> on WhoEarns.</p>
+    `
+  },
+
+  {
+    slug: 'how-much-do-podcasters-make',
+    title: 'How Much Do Podcasters Make in 2026? Real Numbers from Joe Rogan to Small Shows',
+    description: 'Podcast earnings explained: CPM rates, sponsorship deals, Spotify contracts and what it really takes to make money podcasting in 2026.',
+    date: 'May 4, 2026',
+    category: 'Creators',
+    readTime: '7 min',
+    content: `
+<p>Podcasting is simultaneously one of the most accessible and most misunderstood creator businesses. The gap between what top podcasters earn and what most podcasters earn is staggering. Use our <a href="/tools/podcast-earnings-calculator">podcast earnings calculator</a> to estimate your own income, then read on for the real picture.</p>
+
+<h2>Joe Rogan: The Benchmark</h2>
+<p>Joe Rogan's $250 million Spotify deal is the most cited number in podcasting — but it's not a template. Rogan had 190 million monthly downloads before Spotify signed him. His <a href="/joe-rogan">full profile</a> breaks down his income beyond the Spotify deal. The deal was essentially Spotify paying to acquire his existing audience, not paying for content creation.</p>
+
+<h2>What CPM Actually Means</h2>
+<p>CPM (cost per mille) is the price advertisers pay per 1,000 downloads. Podcast CPM rates by niche in 2026:</p>
+<ul>
+<li>Finance and investing: $35–$45 CPM</li>
+<li>Business: $30–$40 CPM</li>
+<li>Technology: $28–$35 CPM</li>
+<li>Health and wellness: $24–$32 CPM</li>
+<li>True crime: $18–$25 CPM</li>
+<li>Comedy and entertainment: $15–$22 CPM</li>
+</ul>
+<p>A podcast with 10,000 downloads per episode in the business niche earns roughly $300–$400 per episode from a single sponsor. At four episodes a month, that's $1,200–$1,600 monthly — barely full-time income. Try the <a href="/tools/podcast-earnings-calculator">podcast calculator</a> with your own numbers.</p>
+
+<h2>Alex Cooper's Model: The Content Creator Deal</h2>
+<p><a href="/alex-cooper">Alex Cooper</a> of Call Her Daddy secured a $60 million deal with SiriusXM in 2023 — showing that mid-tier podcasters with strong audience demographics can command serious money. Her audience skews young female, which commands premium CPM from fashion, beauty and lifestyle advertisers.</p>
+
+<h2>The Real Money: Owned Products</h2>
+<p>The most successful podcasters have moved beyond advertising. Codie Sanchez sells business courses. My First Million hosts invest in and promote their own portfolio companies. The podcast becomes a marketing channel for owned businesses — the same model used by <a href="/mrbeast">MrBeast</a> with Feastables. Compare with how <a href="/tools/youtube-earnings-calculator">YouTube creators monetise</a> differently.</p>
+
+<h2>When Podcasting Pays</h2>
+<p>The real income threshold for full-time podcasting is around 50,000 downloads per episode in a business or finance niche. Below that, most podcasters should treat it as a marketing tool rather than a revenue source. Browse <a href="/category/creators">all creator profiles</a> to see what successful media personalities actually earn.</p>
+    `
+  },
+
+  {
+    slug: 'onlyfans-how-it-works-money',
+    title: 'How OnlyFans Actually Works — Revenue Model, Top Earners and Real Income in 2026',
+    description: 'OnlyFans takes 20% of all creator revenue. How subscriptions, PPV and tips work, plus what the top creators actually earn in 2026.',
+    date: 'May 4, 2026',
+    category: 'OnlyFans',
+    readTime: '6 min',
+    content: `
+<p>OnlyFans has paid over $15 billion to creators since launching in 2016. The platform's business model is straightforward: creators keep 80%, OnlyFans takes 20%. But the income distribution is extreme — the top 1% of creators earn the vast majority of revenue. Use our <a href="/tools/onlyfans-earnings-calculator">OnlyFans earnings calculator</a> to model your own income.</p>
+
+<h2>The Three Revenue Streams</h2>
+<p><strong>Subscriptions</strong> are the foundation. Most successful creators charge $7–$15 per month. With 1,000 paying subscribers at $9.99, that's $7,992/month after OnlyFans' 20% cut.</p>
+<p><strong>Pay-per-view (PPV)</strong> messages sent directly to subscribers are where top creators make the real money. A creator with 10,000 subscribers who sends a $10 PPV message with a 20% open rate earns $16,000 from a single message.</p>
+<p><strong>Tips</strong> are unpredictable but significant for popular creators with highly engaged subscribers.</p>
+
+<h2>Record Launches</h2>
+<p><a href="/bella-thorne">Bella Thorne</a> made $1 million in her first 24 hours on the platform in 2020. <a href="/bhad-bhabie">Bhad Bhabie</a> reportedly broke that record on her 18th birthday, earning $1 million in just 6 hours. Both cases demonstrate the power of existing celebrity audiences for OnlyFans launches — a normal creator cannot replicate these numbers.</p>
+
+<h2>What Average Creators Earn</h2>
+<p>The median OnlyFans creator earns under $200 per month. The top 1% of creators (approximately 10,000 accounts) earn the majority of platform revenue. Success requires a large external audience — most top earners drive traffic from Instagram, TikTok or Twitter rather than being discovered on OnlyFans itself. See our <a href="/tools/instagram-earnings-calculator">Instagram earnings calculator</a> and <a href="/tools/tiktok-earnings-calculator">TikTok calculator</a>.</p>
+
+<h2>Tax and Practical Considerations</h2>
+<p>OnlyFans creators are self-employed. The 80% payout is gross income before income tax, self-employment tax, and any subscription fees for tools. A creator who earns $100,000 from OnlyFans might net $55,000–$65,000 after taxes depending on their jurisdiction.</p>
+
+<p>Browse all <a href="/category/onlyfans">OnlyFans creator profiles</a> on WhoEarns for verified earnings data.</p>
+    `
+  },
+
+  {
+    slug: 'richest-boxers-2026',
+    title: 'Richest Boxers in the World 2026 — Floyd Mayweather to Canelo Net Worth Ranked',
+    description: 'The 10 richest boxers in the world in 2026 ranked by net worth. From Floyd Mayweather's $450M to emerging stars.',
+    date: 'May 4, 2026',
+    category: 'Boxing',
+    readTime: '5 min',
+    content: `
+<p>Boxing has produced more self-made wealth than almost any other combat sport. But the income distribution is brutal — a handful of elite fighters earn nine figures per fight while most professional boxers struggle to make ends meet. Here are the richest active and retired boxers in 2026.</p>
+
+<h2>1. Floyd Mayweather — $450M</h2>
+<p><a href="/floyd-mayweather">Floyd Mayweather</a> remains boxing's wealthiest figure with an estimated $450 million net worth. His 50-0 perfect record and two mega-fights — against Manny Pacquiao ($220M purse, 2015) and Conor McGregor ($300M purse, 2017) — generated career earnings exceeding $1.1 billion. He continues earning through exhibition fights.</p>
+
+<h2>2. Canelo Alvarez — $280M</h2>
+<p><a href="/canelo-alvarez">Canelo Alvarez</a> is the highest-paid active boxer at $280 million net worth. His $365M DAZN deal and undisputed super middleweight status have made him the sport's most bankable star.</p>
+
+<h2>3. Manny Pacquiao — $190M</h2>
+<p>The Filipino legend and former senator earned over $800M in purses across a 26-year career and multiple world title reigns. His political career and business investments in the Philippines add to his wealth.</p>
+
+<h2>4. Tyson Fury — $80M</h2>
+<p><a href="/tyson-fury">Tyson Fury</a> became undisputed heavyweight champion in 2024 by defeating Oleksandr Usyk, with career purses exceeding $100M. His Netflix documentary series added significant income.</p>
+
+<h2>5. Anthony Joshua — $80M</h2>
+<p><a href="/anthony-joshua">Anthony Joshua</a> earned $250M+ in career purses despite two defeats to Usyk. His endorsement portfolio with Lynx, Beats and Lucozade remains strong. Olympic gold in 2012 provided the launchpad.</p>
+
+<h2>How Boxers Actually Get Rich</h2>
+<p>The fighters at the top of this list share one characteristic: they became their own promoters or co-promoters. Mayweather Promotions, Canelo's self-promotional structure, and Fury's deal structures all allow the fighter to capture a larger share of total revenue. Traditional promotional deals — where a promoter takes 50% of purse — dramatically limit wealth accumulation. Compare with how <a href="/category/athletes">other athletes build wealth</a> on WhoEarns.</p>
+    `
+  },
+
+  {
+    slug: 'stripe-net-worth-revenue-2026',
+    title: 'Stripe Revenue 2026 — How the Collison Brothers Built a $65B Payments Empire',
+    description: 'Stripe processes hundreds of billions in payments annually. Patrick and John Collison's $65B company and how they built it from an Irish village.',
+    date: 'May 4, 2026',
+    category: 'Tech',
+    readTime: '6 min',
+    content: `
+<p>Stripe is one of the most valuable private technology companies in the world with a $65 billion valuation in its 2023 funding round. Founded by Irish brothers <a href="/patrick-collison">Patrick</a> and <a href="/john-collison">John Collison</a> from a small village in rural Ireland, it is one of the most remarkable startup stories of the modern era.</p>
+
+<h2>The Numbers</h2>
+<p>Stripe processes hundreds of billions in payment volume annually and generates estimated revenue of $14+ billion. It powers payments for millions of businesses worldwide including Amazon, Google, Shopify and most major internet companies. See the full <a href="/stripe">Stripe revenue profile</a> on WhoEarns.</p>
+
+<h2>From Dromineer to San Francisco</h2>
+<p>Patrick and John Collison grew up in Dromineer, a village of approximately 100 people in County Tipperary, Ireland. Patrick won Ireland's Young Scientist competition at 16. He was accepted to MIT but left for a Thiel Fellowship — a $100,000 grant from Peter Thiel for entrepreneurs willing to stop out of university. John dropped out of Harvard after one semester. Together they built Stripe in 2010.</p>
+
+<h2>Why Stripe Beat Everyone</h2>
+<p>Before Stripe, integrating payment processing into a website took days of work and required merchant accounts with banks. Stripe reduced that to seven lines of code. The developer-first approach — letting engineers integrate payments without business negotiations — was a genuinely new idea in fintech. Compare with other fintech companies on WhoEarns' <a href="/category/tech-giants">tech giants category</a>.</p>
+
+<h2>The IPO Question</h2>
+<p>Stripe has been expected to IPO for years but has repeatedly delayed. Its employees and early investors are watching closely — an IPO at anything close to the 2021 peak valuation of $95 billion would be transformative. Browse all <a href="/category/tech-founders">tech founder net worth profiles</a> on WhoEarns.</p>
+    `
+  },
+
+  {
+    slug: 'victor-wembanyama-net-worth-2026',
+    title: 'Victor Wembanyama Net Worth 2026 — Salary, Nike Deal and Why He's Different',
+    description: 'Victor Wembanyama earns $55M/yr from the San Antonio Spurs and has a Nike signature deal. Why basketball's alien is already the sport's next megastar.',
+    date: 'May 4, 2026',
+    category: 'Basketball',
+    readTime: '5 min',
+    content: `
+<p>Victor Wembanyama has an estimated net worth of $12 million in 2026 — modest for a top NBA player, but he is only 22. His current salary of $55 million per year from the San Antonio Spurs will compound dramatically over a career that analysts project to rival the all-time greats. See his full <a href="/victor-wembanyama">Wembanyama profile</a> on WhoEarns.</p>
+
+<h2>Why He's Different</h2>
+<p>Standing 7'4" with an 8-foot wingspan, Wembanyama combines center size with point guard skills — a combination that has no precedent in NBA history. LeBron James called him "an alien." In his rookie season he won Defensive Player of the Year while averaging over 20 points, 10 rebounds and 3.6 blocks. No player has ever been simultaneously in contention for both Defensive Player of the Year and Rookie of the Year while posting those offensive numbers.</p>
+
+<h2>Nike Signature Deal</h2>
+<p>Nike signed Wembanyama to a signature shoe deal before his first NBA game — only given to players expected to be generational marketable assets. Compare with <a href="/lebron-james">LeBron James</a> (lifetime Nike deal worth $1B+) and <a href="/kevin-durant">Kevin Durant</a> to understand the commercial trajectory of elite Nike signings.</p>
+
+<h2>Financial Upside</h2>
+<p>Wembanyama becomes eligible for a supermax extension that could pay him $300M+ over five years. If he sustains his level of performance, his career contract value alone will exceed $500 million — before endorsements. His commercial upside globally, particularly in France and Europe, rivals Anthony Edwards for the title of NBA's next commercial superstar. See our rankings of <a href="/category/basketball">NBA player net worth</a> on WhoEarns.</p>
+    `
+  },
+
+  {
+    slug: 'carlos-alcaraz-net-worth-2026',
+    title: 'Carlos Alcaraz Net Worth 2026 — 4 Majors at 22 and His Earning Potential',
+    description: 'Carlos Alcaraz has won 4 Grand Slams at age 22. His prize money, Nike deal, Rolex partnership and commercial potential explained.',
+    date: 'May 4, 2026',
+    category: 'Tennis',
+    readTime: '5 min',
+    content: `
+<p>Carlos Alcaraz has an estimated net worth of $30 million in 2026 — but he is only 22 years old with what analysts expect to be a 15-year peak career ahead of him. His <a href="/carlos-alcaraz">full profile</a> covers all verified earnings data. Compare with <a href="/jannik-sinner">Jannik Sinner</a>, his defining rival.</p>
+
+<h2>Four Grand Slams at 22</h2>
+<p>Alcaraz has won Wimbledon (2023, 2024), the US Open (2022) and Roland Garros (2024) — four major championships before his 23rd birthday. For context, <a href="/roger-federer">Roger Federer</a> had won five majors by age 23. Alcaraz is on pace to challenge all-time records.</p>
+
+<h2>Prize Money</h2>
+<p>Grand Slam winners earn approximately $3–4 million per victory. Over four slams, that's $12–16 million from prize money alone. Season earnings across the full tour add another $3–5 million annually. Use our <a href="/tools/youtube-earnings-calculator">earnings calculators</a> to compare creator vs athlete income structures.</p>
+
+<h2>The Endorsement Portfolio</h2>
+<p>Alcaraz holds partnerships with Nike (apparel), Rolex (watches), BBVA (banking) and Wilson (rackets). His Spanish-speaking audience combined with his global appeal makes him commercially attractive across multiple markets. His estimated endorsement income of $15–20M per year will grow significantly as he wins more majors.</p>
+
+<h2>The Alcaraz-Sinner Era</h2>
+<p>The defining commercial opportunity for ATP tennis in the next decade is the Alcaraz-Sinner rivalry. In the same way Federer-Nadal defined the 2000s and Djokovic-Federer-Nadal the 2010s, Alcaraz and <a href="/jannik-sinner">Sinner</a> are positioned to drive the next wave of global tennis interest and sponsor investment. Browse all <a href="/category/athletes">athlete profiles</a> on WhoEarns.</p>
+    `
+  },
+
+  {
+    slug: 'ed-sheeran-net-worth-2026',
+    title: 'Ed Sheeran Net Worth 2026 — $736M Tour Record, 150M Albums and Real Earnings',
+    description: 'Ed Sheeran has a net worth of $320M. His record-breaking Divide Tour, Mathematics Tour, songwriting income and business explained.',
+    date: 'May 4, 2026',
+    category: 'Music',
+    readTime: '5 min',
+    content: `
+<p>Ed Sheeran has an estimated net worth of $320 million in 2026. He is one of the wealthiest musicians in the world — and uniquely, his wealth comes primarily from touring and songwriting rather than streaming or brand deals. See his full <a href="/ed-sheeran">Ed Sheeran profile</a> on WhoEarns.</p>
+
+<h2>The ÷ Tour: $736M</h2>
+<p>The ÷ (Divide) Tour (2017–2019) grossed $736 million and set the all-time record for concert tour revenue. It ran for 255 shows across 43 countries. His Mathematics Tour (2023–2025) is projected to exceed $1 billion in total revenue, which would set a new record. Compare with <a href="/beyonce">Beyoncé's Renaissance Tour</a> ($579M) for context.</p>
+
+<h2>Songwriting: The Silent Income</h2>
+<p>Sheeran co-writes songs for other artists and collects publishing royalties on those compositions. He co-wrote songs on multiple Taylor Swift albums, One Direction hits, and Justin Bieber tracks. Publishing income from these songs continues indefinitely — each time they're streamed, licensed or performed, he earns royalties. This is some of the most durable income in music.</p>
+
+<h2>The Copyright Cases</h2>
+<p>Sheeran has faced multiple copyright infringement lawsuits, winning the most significant ones. His victories in court have reinforced that chord progressions and basic song structures cannot be copyrighted. The cases have been costly in legal fees but his songwriting income continues unaffected.</p>
+
+<h2>Business Outside Music</h2>
+<p>Sheeran is a part-owner of Ipswich Town Football Club (which was promoted to the Premier League in 2024 for the first time since 2002) and owns significant property in Suffolk, England. Use our <a href="/tools/newsletter-revenue-calculator">creator income calculators</a> to explore different income models, or browse all <a href="/category/singers">musician net worth profiles</a>.</p>
+    `
+  },
+
+  {
+    slug: 'how-much-do-instagram-influencers-make',
+    title: 'How Much Do Instagram Influencers Make in 2026? Real Rates Explained',
+    description: 'Instagram influencer earnings from nano to mega influencers. Real brand deal rates, CPM benchmarks and what follower counts actually mean for income.',
+    date: 'May 4, 2026',
+    category: 'Creators',
+    readTime: '7 min',
+    content: `
+<p>Instagram influencer income is wildly misunderstood. Follower count is the least important variable. Engagement rate, niche, audience demographics and negotiation skill matter far more. Use our <a href="/tools/instagram-earnings-calculator">Instagram earnings calculator</a> for real-time estimates, or read on for the full picture.</p>
+
+<h2>The Rate Card Reality</h2>
+<p>Industry standard rates for sponsored Instagram posts in 2026:</p>
+<ul>
+<li>Nano (1K–10K followers): $50–$200 per post</li>
+<li>Micro (10K–100K followers): $200–$2,000 per post</li>
+<li>Mid-tier (100K–500K followers): $2,000–$10,000 per post</li>
+<li>Macro (500K–1M followers): $10,000–$20,000 per post</li>
+<li>Mega (1M+ followers): $20,000–$200,000+ per post</li>
+</ul>
+<p>These are baselines. A finance creator with 200,000 highly engaged followers in the US can command $15,000 per post — double the "macro" baseline — because their audience converts at higher rates for financial products.</p>
+
+<h2>Engagement Rate Changes Everything</h2>
+<p>An account with 1M followers and 1% engagement has fewer engaged users than an account with 100K followers and 8% engagement. Sophisticated brands measure cost-per-engagement, not cost-per-follower. Engagement above 5% commands premium rates; below 2% gets discounted. The <a href="/tools/instagram-earnings-calculator">calculator</a> models this accurately.</p>
+
+<h2>What the Top Instagram Earners Actually Make</h2>
+<p>Kylie Jenner reportedly charges $1M+ per sponsored post. <a href="/cristiano-ronaldo">Cristiano Ronaldo</a>, the most followed person on Instagram with 600M+ followers, earns an estimated $3M per sponsored post. <a href="/selena-gomez">Selena Gomez</a> with 400M+ followers charges $1.5M+. These figures are not accessible to normal influencers — they reflect pre-existing celebrity.</p>
+
+<h2>The Reels Shift</h2>
+<p>Instagram Reels has changed creator monetisation. Reels reach extends far beyond an account's followers, meaning smaller accounts can achieve viral distribution. Brands are increasingly prioritising Reels integrations over static posts — and paying 30–50% more for them. See how Instagram compares to <a href="/tools/tiktok-earnings-calculator">TikTok earnings</a> and <a href="/tools/youtube-earnings-calculator">YouTube earnings</a>.</p>
+
+<h2>Moving Beyond Sponsorships</h2>
+<p>The most financially sophisticated Instagram creators have moved beyond sponsorships into owned products — exactly the model used by <a href="/kylie-jenner">Kylie Jenner</a> with Kylie Cosmetics. Instagram becomes a free advertising channel for your own product business. Browse all <a href="/category/creators">creator net worth profiles</a> on WhoEarns.</p>
+    `
+  }
+
+
+]
 
 }
