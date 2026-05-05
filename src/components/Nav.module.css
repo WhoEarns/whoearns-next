@@ -27,7 +27,7 @@
 }
 .logo em { color: var(--gold); font-style: normal; }
 
-/* Nav links — desktop only */
+/* Desktop nav links */
 .links {
   display: flex;
   align-items: center;
@@ -45,15 +45,14 @@
   transition: color 0.15s, background 0.15s;
   white-space: nowrap;
 }
-.link:hover {
-  color: var(--t1);
-  background: var(--s2);
-}
+.link:hover { color: var(--t1); background: var(--s2); }
 
+/* Hide desktop links on mobile */
 @media (max-width: 680px) {
   .links { display: none; }
 }
 
+/* Right side controls */
 .right {
   display: flex;
   align-items: center;
@@ -73,6 +72,72 @@
 }
 .mode:hover { background: var(--s3); }
 
+/* Hamburger — mobile only */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 34px; height: 34px;
+  background: var(--s2);
+  border: 1px solid var(--b2);
+  border-radius: 8px;
+  padding: 0;
+}
+@media (max-width: 680px) {
+  .hamburger { display: flex; }
+}
+.bar {
+  width: 16px; height: 2px;
+  background: var(--t1);
+  border-radius: 2px;
+  transition: transform 0.2s, opacity 0.2s;
+  display: block;
+}
+.barOpen1 { transform: translateY(6px) rotate(45deg); }
+.barOpen2 { opacity: 0; }
+.barOpen3 { transform: translateY(-6px) rotate(-45deg); }
+
+/* Mobile dropdown menu */
+.mobileMenu {
+  position: fixed;
+  top: var(--nav-h);
+  left: 0; right: 0;
+  z-index: 490;
+  background: rgba(9, 9, 11, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--b1);
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0 12px;
+  animation: menuSlide 0.18s ease both;
+}
+@keyframes menuSlide {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+:global(body.light) .mobileMenu {
+  background: rgba(245, 242, 236, 0.97);
+}
+.mobileLink {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--t2);
+  text-decoration: none;
+  padding: 12px 20px;
+  transition: color 0.15s, background 0.15s;
+}
+.mobileLink:hover { color: var(--t1); background: var(--s2); }
+
+/* Only show mobile menu on mobile */
+@media (min-width: 681px) {
+  .mobileMenu { display: none; }
+}
+
+/* Go Pro button */
 .pro {
   background: var(--gold);
   color: #000;
@@ -97,6 +162,7 @@
   justify-content: center;
   animation: fadeIn 0.2s ease both;
 }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
 .modal {
   background: var(--s1);
@@ -110,6 +176,7 @@
   position: relative;
   animation: slideUp 0.3s ease both;
 }
+@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
 
 .handle {
   width: 34px; height: 4px;
@@ -117,7 +184,6 @@
   background: var(--b3);
   margin: 0 auto 18px;
 }
-
 .close {
   position: absolute; top: 14px; right: 14px;
   background: var(--s2);
@@ -128,7 +194,6 @@
   font-size: 13px;
   color: var(--t2);
 }
-
 .modalTitle {
   font-family: 'Playfair Display', serif;
   font-size: 24px; font-weight: 700;
@@ -139,14 +204,12 @@
   font-size: 13px; color: var(--t2);
   margin-bottom: 18px; line-height: 1.6;
 }
-
 .plans {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 9px;
   margin-bottom: 14px;
 }
-
 .plan {
   background: var(--s2);
   border: 1px solid var(--b1);
@@ -157,7 +220,6 @@
   border-color: rgba(242,180,32,0.3);
   background: var(--gd);
 }
-
 .tier {
   font-family: 'JetBrains Mono', monospace;
   font-size: 8px; letter-spacing: 2px;
@@ -172,7 +234,6 @@
 }
 .gold { color: var(--gold); }
 .period { font-size: 11px; color: var(--t2); margin-bottom: 13px; }
-
 .features {
   list-style: none;
   display: flex; flex-direction: column;
@@ -185,7 +246,6 @@
 .features li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; }
 .no { opacity: 0.4; }
 .no::before { content: '✗' !important; color: var(--t3) !important; }
-
 .planBtn {
   width: 100%;
   background: var(--b2); color: var(--t1);
@@ -202,7 +262,6 @@
   border-color: var(--gold) !important;
 }
 .planBtn:hover { opacity: 0.85; }
-
 .also {
   font-size: 11px; color: var(--t3);
   background: var(--s2);
@@ -210,12 +269,10 @@
   padding: 10px; margin-bottom: 12px; line-height: 1.6;
 }
 .also strong { color: var(--t2); }
-
 .stripe {
   display: flex; align-items: center; justify-content: center;
   gap: 6px; font-size: 10px; color: var(--t3);
 }
-
 @media (max-width: 600px) {
   .plans { grid-template-columns: 1fr; }
 }
