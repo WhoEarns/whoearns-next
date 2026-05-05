@@ -1247,7 +1247,7 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
   {
     slug: 'jensen-huang-net-worth-2026',
     title: 'Jensen Huang Net Worth 2026 — Nvidia, AI Chip Monopoly and $90B Wealth',
-    description: 'Jensen Huang net worth $90B+ in 2026. Nvidia co-founder built the world''s most important AI company. FY2025 revenue $130B. Full wealth breakdown.',
+    description: 'Jensen Huang net worth $90B+ in 2026. Nvidia co-founder built the worlds most important AI company. FY2025 revenue $130B. Full wealth breakdown.',
     date: 'May 2026',
     readTime: '8 min',
     category: 'Tech Founders',
@@ -1458,8 +1458,8 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
 
   {
     slug: 'how-much-does-canelo-alvarez-make',
-    title: 'Canelo Alvarez Net Worth 2026 — How Boxing's Highest-Paid Fighter Makes $280M',
-    description: 'Canelo Alvarez earns $40M+ per fight. His $365M DAZN deal, undisputed super middleweight titles and business empire explained.',
+    title: 'Canelo Alvarez Net Worth 2026 — How Boxing Greatest-Paid Fighter Makes $280M',
+    description: 'Canelo Alvarez earns $40M+ per fight. $365M DAZN deal, undisputed super middleweight titles and business empire explained.',
     date: 'May 4, 2026',
     category: 'Boxing',
     readTime: '5 min',
@@ -1485,7 +1485,7 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
 
   {
     slug: 'tiger-woods-net-worth-2026',
-    title: 'Tiger Woods Net Worth 2026 — How Golf's First Billionaire Built $1.1B',
+    title: 'Tiger Woods Net Worth 2026 — How Golfs First Billionaire Built $1.1B',
     description: 'Tiger Woods has a net worth of $1.1 billion. His prize money, Nike deal history, Sun Day Red brand and business empire explained.',
     date: 'May 4, 2026',
     category: 'Golf',
@@ -1579,7 +1579,7 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
   {
     slug: 'richest-boxers-2026',
     title: 'Richest Boxers in the World 2026 — Floyd Mayweather to Canelo Net Worth Ranked',
-    description: 'The 10 richest boxers in the world in 2026 ranked by net worth. From Floyd Mayweather's $450M to emerging stars.',
+    description: 'The 10 richest boxers in the world in 2026 ranked by net worth. From Floyd Mayweathers $450M to emerging stars.',
     date: 'May 4, 2026',
     category: 'Boxing',
     readTime: '5 min',
@@ -1609,7 +1609,7 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
   {
     slug: 'stripe-net-worth-revenue-2026',
     title: 'Stripe Revenue 2026 — How the Collison Brothers Built a $65B Payments Empire',
-    description: 'Stripe processes hundreds of billions in payments annually. Patrick and John Collison's $65B company and how they built it from an Irish village.',
+    description: 'Stripe processes hundreds of billions in payments annually. Patrick and John Collisons $65B company and how they built it from an Irish village.',
     date: 'May 4, 2026',
     category: 'Tech',
     readTime: '6 min',
@@ -1632,8 +1632,8 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
 
   {
     slug: 'victor-wembanyama-net-worth-2026',
-    title: 'Victor Wembanyama Net Worth 2026 — Salary, Nike Deal and Why He's Different',
-    description: 'Victor Wembanyama earns $55M/yr from the San Antonio Spurs and has a Nike signature deal. Why basketball's alien is already the sport's next megastar.',
+    title: 'Victor Wembanyama Net Worth 2026 — Salary, Nike Deal and Why Hes Different',
+    description: 'Victor Wembanyama earns $55M/yr from the San Antonio Spurs and has a Nike signature deal. Why basketballs alien is already the sports next megastar.',
     date: 'May 4, 2026',
     category: 'Basketball',
     readTime: '5 min',
@@ -1677,7 +1677,7 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
 
   {
     slug: 'ed-sheeran-net-worth-2026',
-    title: 'Ed Sheeran Net Worth 2026 — $736M Tour Record, 150M Albums and Real Earnings',
+    title: 'Ed Sheeran Net Worth 2026 — 736M Tour Record, 150M Albums and Real Earnings',
     description: 'Ed Sheeran has a net worth of $320M. His record-breaking Divide Tour, Mathematics Tour, songwriting income and business explained.',
     date: 'May 4, 2026',
     category: 'Music',
@@ -1732,8 +1732,33 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
 <h2>Moving Beyond Sponsorships</h2>
 <p>The most financially sophisticated Instagram creators have moved beyond sponsorships into owned products — exactly the model used by <a href="/kylie-jenner">Kylie Jenner</a> with Kylie Cosmetics. Instagram becomes a free advertising channel for your own product business. Browse all <a href="/category/creators">creator net worth profiles</a> on WhoEarns.</p>
     `
-  }
+  },
 
+  {
+    slug: 'scroll-the-globe-travel-blog',
+    title: 'Scroll The Globe — Travel Blog Revenue and How Travel Creators Make Money',
+    description: 'How travel creators like Scroll The Globe monetise Instagram, TikTok and blog traffic. Sponsorships, hotel partnerships, affiliate and brand deals explained.',
+    date: 'May 4, 2026',
+    category: 'Creators',
+    readTime: '5 min',
+    content: `
+<p><a href="/scroll-the-globe">Scroll The Globe</a> is a travel blog and creator brand run by Greg, covering hotel reviews, destination guides and travel tips with 152,000 Instagram followers at <a href="https://instagram.com/scroll_theglobe" target="_blank">@scroll_theglobe</a> and 30,000 TikTok followers. The full website is at <a href="https://scrolltheglobe.com" target="_blank">scrolltheglobe.com</a>.</p>
+
+<h2>How Travel Creators Monetise</h2>
+<p>Travel content sits at the intersection of several monetisation models. Unlike gaming or finance creators who can earn from platform ad revenue alone, travel creators typically combine hotel and tourism brand partnerships, affiliate commissions from booking platforms, sponsored destination content from tourism boards, and their own digital products.</p>
+
+<h2>Instagram at 152K — The Brand Deal Sweet Spot</h2>
+<p>At 152,000 Instagram followers, Scroll The Globe sits in the macro-influencer tier — large enough to command serious brand deal rates ($2,000–$8,000 per sponsored post depending on engagement and niche fit) while remaining authentic enough for boutique hotel and luxury travel brands who avoid mega-influencers. Use our <a href="/tools/instagram-earnings-calculator">Instagram earnings calculator</a> to model specific rates.</p>
+
+<h2>Hotel Reviews as a Business Model</h2>
+<p>Hotel review content has strong commercial value because it has direct purchase intent — readers are actively planning travel and are in a buying mindset. A positive review from a travel creator with 150K+ followers is worth thousands in equivalent advertising spend to a boutique hotel. This creates a natural partnership model where stays are comped in exchange for content.</p>
+
+<h2>SEO Blog + Social = Compounding Traffic</h2>
+<p>The combination of an SEO-optimised travel blog with active social channels creates compounding traffic. Blog posts rank on Google and drive long-term organic traffic; social content drives immediate engaged audiences. Over time, the blog becomes a passive income engine through affiliate commissions and display advertising while social handles active brand partnership income.</p>
+
+<p>Follow the journey at <a href="https://scrolltheglobe.com" target="_blank">scrolltheglobe.com</a> and <a href="https://instagram.com/scroll_theglobe" target="_blank">@scroll_theglobe</a> on Instagram.</p>
+    `
+  }
 
 ]
 
