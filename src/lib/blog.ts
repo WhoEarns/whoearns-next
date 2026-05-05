@@ -1090,14 +1090,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
+  'how-much-does-joe-rogan-make': {
     slug: 'how-much-does-joe-rogan-make',
     title: 'How Much Does Joe Rogan Make? — $250M Spotify Deal and Full Income Breakdown',
-    description: 'Joe Rogan earns an estimated $50M+ per year from his Spotify deal, comedy tours and endorsements. Full breakdown of JRE podcast income.',
+    excerpt: 'Joe Rogan earns an estimated $50M+ per year from his Spotify deal, comedy tours and endorsements. Full breakdown of JRE podcast income.',
     date: 'May 2026',
-    readTime: '7 min',
+    readTime: 7,
     category: 'Podcasters',
-    tags: ['podcast', 'joe rogan', 'spotify', 'JRE'],
     content: `
 <p>Joe Rogan is the highest-paid podcaster in the world. His Spotify deal — originally $100 million in 2020 and renewed for a reported $250 million in 2024 — makes him the most commercially successful podcast host in history. But the Spotify deal is only part of the story.</p>
 
@@ -1126,14 +1125,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'richest-tennis-players-2026',
+  'richest-tennis-players-2026': {
+slug: 'richest-tennis-players-2026',
     title: 'Richest Tennis Players in the World 2026 — Djokovic, Federer, Nadal, Serena',
-    description: 'The wealthiest tennis players ranked by net worth in 2026. Federer leads with $550M thanks to On Running investment. Full prize money and endorsement breakdown.',
+    excerpt: 'The wealthiest tennis players ranked by net worth in 2026. Federer leads with $550M thanks to On Running investment. Full prize money and endorsement breakdown.',
     date: 'May 2026',
-    readTime: '8 min',
+    readTime: 8,
     category: 'Athletes',
-    tags: ['tennis', 'net worth', 'Federer', 'Djokovic', 'Serena'],
     content: `
 <p>Tennis produces more individual wealth than almost any other sport. The combination of prize money, endorsement deals and (for the elite few) smart business decisions has created fortunes that far exceed career earnings alone.</p>
 
@@ -1161,14 +1159,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'richest-f1-drivers-2026',
+  'richest-f1-drivers-2026': {
+slug: 'richest-f1-drivers-2026',
     title: 'Richest F1 Drivers 2026 — Hamilton, Verstappen, Alonso Net Worth',
-    description: 'The wealthiest Formula 1 drivers ranked by net worth. Hamilton leads with $300M. Verstappen close behind. Full salary and endorsement breakdown for 2026.',
+    excerpt: 'The wealthiest Formula 1 drivers ranked by net worth. Hamilton leads with $300M. Verstappen close behind. Full salary and endorsement breakdown for 2026.',
     date: 'May 2026',
-    readTime: '7 min',
+    readTime: 7,
     category: 'Athletes',
-    tags: ['F1', 'Formula 1', 'Hamilton', 'Verstappen', 'net worth'],
     content: `
 <p>Formula 1 has become the world's fastest-growing sport in terms of both viewership and driver wealth. The Netflix Drive to Survive series, expanding into the US market, and new team ownership have all contributed to a sharp rise in driver incomes.</p>
 
@@ -1196,14 +1193,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'how-much-do-youtubers-make',
+  'how-much-do-youtubers-make': {
+slug: 'how-much-do-youtubers-make',
     title: 'How Much Do YouTubers Make in 2026? — The Full Truth',
-    description: 'The real YouTube earnings breakdown in 2026. AdSense pays less than you think. MrBeast makes $80M+ but most creators make almost nothing. Full data.',
+    excerpt: 'The real YouTube earnings breakdown in 2026. AdSense pays less than you think. MrBeast makes $80M+ but most creators make almost nothing. Full data.',
     date: 'May 2026',
-    readTime: '9 min',
+    readTime: 9,
     category: 'Creators',
-    tags: ['YouTube', 'earnings', 'AdSense', 'MrBeast', 'CPM'],
     content: `
 <p>The YouTube earnings question is one of the most searched on the internet — and the honest answer is more complex than most people expect. The range runs from literally zero to $80 million per year, and where you fall depends on factors most creators don't discuss openly.</p>
 
@@ -1244,14 +1240,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'jensen-huang-net-worth-2026',
+  'jensen-huang-net-worth-2026': {
+slug: 'jensen-huang-net-worth-2026',
     title: 'Jensen Huang Net Worth 2026 — Nvidia, AI Chip Monopoly and $90B Wealth',
-    description: 'Jensen Huang net worth $90B+ in 2026. Nvidia co-founder built the worlds most important AI company. FY2025 revenue $130B. Full wealth breakdown.',
+    excerpt: 'Jensen Huang net worth $90B+ in 2026. Nvidia co-founder built the worlds most important AI company. FY2025 revenue $130B. Full wealth breakdown.',
     date: 'May 2026',
-    readTime: '8 min',
+    readTime: 8,
     category: 'Tech Founders',
-    tags: ['Jensen Huang', 'Nvidia', 'net worth', 'AI', 'chips'],
     content: `
 <p>Jensen Huang is not a household name in the way Elon Musk or Mark Zuckerberg are — but the Nvidia CEO may be more important to the future of the economy than either of them. Every major AI model trained since 2022 runs on Nvidia hardware. That has made him one of the wealthiest people on earth.</p>
 
@@ -1278,14 +1273,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'drake-net-worth-2026',
+  'drake-net-worth-2026': {
+slug: 'drake-net-worth-2026',
     title: 'Drake Net Worth 2026 — $300M, Most Streamed Artist and Business Empire',
-    description: 'Drake net worth $300M in 2026. Most streamed Spotify artist ever. OVO Sound label. Virginia Black whisky. The 2024 Kendrick Lamar feud explained.',
+    excerpt: 'Drake net worth $300M in 2026. Most streamed Spotify artist ever. OVO Sound label. Virginia Black whisky. The 2024 Kendrick Lamar feud explained.',
     date: 'May 2026',
-    readTime: '7 min',
+    readTime: 7,
     category: 'Singers',
-    tags: ['Drake', 'net worth', 'Spotify', 'OVO', 'rap'],
     content: `
 <p>Drake is the most commercially successful rapper in streaming history and has built a business empire that extends well beyond music. His net worth of $300 million reflects over 15 years at the very top of the music industry.</p>
 
@@ -1314,14 +1308,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'onlyfans-top-earners-2026',
+  'onlyfans-top-earners-2026': {
+slug: 'onlyfans-top-earners-2026',
     title: 'OnlyFans Top Earners 2026 — Who Makes the Most and How Much',
-    description: 'The highest-earning OnlyFans creators in 2026. Bella Thorne set the $1M/day record. Blac Chyna, Cardi B and others. Full earnings breakdown and how OnlyFans works.',
+    excerpt: 'The highest-earning OnlyFans creators in 2026. Bella Thorne set the $1M/day record. Blac Chyna, Cardi B and others. Full earnings breakdown and how OnlyFans works.',
     date: 'May 2026',
-    readTime: '8 min',
+    readTime: 8,
     category: 'Creators',
-    tags: ['OnlyFans', 'earnings', 'creators', 'Bella Thorne'],
     content: `
 <p>OnlyFans has processed over $15 billion in payments since its launch, with the vast majority going to creators after the platform's 20% cut. But the income distribution is extremely skewed — the top 1% of creators earn the majority of the revenue.</p>
 
@@ -1348,14 +1341,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'max-verstappen-net-worth-2026',
+  'max-verstappen-net-worth-2026': {
+slug: 'max-verstappen-net-worth-2026',
     title: 'Max Verstappen Net Worth 2026 — $60M F1 Salary, 4 World Titles and Wealth',
-    description: 'Max Verstappen net worth $250M in 2026. $60M+ Red Bull salary. 4 consecutive F1 World Championships 2021-2024. 60+ race wins. Youngest winner ever.',
+    excerpt: 'Max Verstappen net worth $250M in 2026. $60M+ Red Bull salary. 4 consecutive F1 World Championships 2021-2024. 60+ race wins. Youngest winner ever.',
     date: 'May 2026',
-    readTime: '7 min',
+    readTime: 7,
     category: 'Athletes',
-    tags: ['Max Verstappen', 'F1', 'net worth', 'Red Bull', 'Formula 1'],
     content: `
 <p>Max Verstappen has dominated Formula 1 in a way not seen since Michael Schumacher. Four consecutive world championships from 2021 to 2024, 60+ race wins, and the most lucrative contract in F1 history have made him one of sport's wealthiest young stars.</p>
 
@@ -1383,14 +1375,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'richest-actors-2026',
+  'richest-actors-2026': {
+slug: 'richest-actors-2026',
     title: 'Richest Actors in the World 2026 — Dwayne Johnson, Tom Hanks, Ryan Reynolds',
-    description: 'The wealthiest actors in Hollywood ranked by net worth 2026. Dwayne Johnson leads with $800M. Ryan Reynolds $350M from Deadpool and gin. Full breakdown.',
+    excerpt: 'The wealthiest actors in Hollywood ranked by net worth 2026. Dwayne Johnson leads with $800M. Ryan Reynolds $350M from Deadpool and gin. Full breakdown.',
     date: 'May 2026',
-    readTime: '8 min',
+    readTime: 8,
     category: 'Actors',
-    tags: ['actors', 'Hollywood', 'net worth', 'Dwayne Johnson', 'richest'],
     content: `
 <p>Hollywood's wealthiest actors have something in common beyond acting talent — they've built significant business interests outside of film. The era of the actor who simply collects per-film fees is largely over at the highest levels of wealth.</p>
 
@@ -1419,14 +1410,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'ai-tools-revenue-2026',
+  'ai-tools-revenue-2026': {
+slug: 'ai-tools-revenue-2026',
     title: 'AI Tools Revenue 2026 — Cursor $400M, Lovable $150M, ElevenLabs $100M ARR',
-    description: 'The fastest-growing AI tools by revenue in 2026. Cursor $400M ARR. Lovable fastest to $10M ever. ElevenLabs $100M. Full startup revenue database.',
+    excerpt: 'The fastest-growing AI tools by revenue in 2026. Cursor $400M ARR. Lovable fastest to $10M ever. ElevenLabs $100M. Full startup revenue database.',
     date: 'May 2026',
-    readTime: '7 min',
+    readTime: 7,
     category: 'Startups',
-    tags: ['AI tools', 'MRR', 'Cursor', 'Lovable', 'startup revenue'],
     content: `
 <p>The AI tools category has produced the fastest revenue growth in software history. Products that didn't exist in 2022 are generating hundreds of millions in annual recurring revenue in 2026. Here's the state of AI tool revenue in 2026.</p>
 
@@ -1456,13 +1446,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'how-much-does-canelo-alvarez-make',
+  'how-much-does-canelo-alvarez-make': {
+slug: 'how-much-does-canelo-alvarez-make',
     title: 'Canelo Alvarez Net Worth 2026 — How Boxing Greatest-Paid Fighter Makes $280M',
-    description: 'Canelo Alvarez earns $40M+ per fight. $365M DAZN deal, undisputed super middleweight titles and business empire explained.',
+    excerpt: 'Canelo Alvarez earns $40M+ per fight. $365M DAZN deal, undisputed super middleweight titles and business empire explained.',
     date: 'May 4, 2026',
     category: 'Boxing',
-    readTime: '5 min',
+    readTime: 5,
     content: `
 <p>Canelo Alvarez has an estimated net worth of $280 million in 2026 — more than any active boxer in the world. His wealth comes from fight purses, a landmark streaming deal, and his increasingly sophisticated business portfolio. See his full <a href="/canelo-alvarez">Canelo Alvarez profile</a> for verified earnings data.</p>
 
@@ -1483,13 +1473,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'tiger-woods-net-worth-2026',
+  'tiger-woods-net-worth-2026': {
+slug: 'tiger-woods-net-worth-2026',
     title: 'Tiger Woods Net Worth 2026 — How Golfs First Billionaire Built $1.1B',
-    description: 'Tiger Woods has a net worth of $1.1 billion. His prize money, Nike deal history, Sun Day Red brand and business empire explained.',
+    excerpt: 'Tiger Woods has a net worth of $1.1 billion. His prize money, Nike deal history, Sun Day Red brand and business empire explained.',
     date: 'May 4, 2026',
     category: 'Golf',
-    readTime: '6 min',
+    readTime: 6,
     content: `
 <p>Tiger Woods has an estimated net worth of $1.1 billion in 2026 — making him the first golfer and one of only a handful of athletes ever to reach billionaire status. His <a href="/tiger-woods">full Tiger Woods profile</a> covers verified career earnings and current income sources.</p>
 
@@ -1512,13 +1502,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'how-much-do-podcasters-make',
+  'how-much-do-podcasters-make': {
+slug: 'how-much-do-podcasters-make',
     title: 'How Much Do Podcasters Make in 2026? Real Numbers from Joe Rogan to Small Shows',
-    description: 'Podcast earnings explained: CPM rates, sponsorship deals, Spotify contracts and what it really takes to make money podcasting in 2026.',
+    excerpt: 'Podcast earnings explained: CPM rates, sponsorship deals, Spotify contracts and what it really takes to make money podcasting in 2026.',
     date: 'May 4, 2026',
     category: 'Creators',
-    readTime: '7 min',
+    readTime: 7,
     content: `
 <p>Podcasting is simultaneously one of the most accessible and most misunderstood creator businesses. The gap between what top podcasters earn and what most podcasters earn is staggering. Use our <a href="/tools/podcast-earnings-calculator">podcast earnings calculator</a> to estimate your own income, then read on for the real picture.</p>
 
@@ -1548,13 +1538,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'onlyfans-how-it-works-money',
+  'onlyfans-how-it-works-money': {
+slug: 'onlyfans-how-it-works-money',
     title: 'How OnlyFans Actually Works — Revenue Model, Top Earners and Real Income in 2026',
-    description: 'OnlyFans takes 20% of all creator revenue. How subscriptions, PPV and tips work, plus what the top creators actually earn in 2026.',
+    excerpt: 'OnlyFans takes 20% of all creator revenue. How subscriptions, PPV and tips work, plus what the top creators actually earn in 2026.',
     date: 'May 4, 2026',
     category: 'OnlyFans',
-    readTime: '6 min',
+    readTime: 6,
     content: `
 <p>OnlyFans has paid over $15 billion to creators since launching in 2016. The platform's business model is straightforward: creators keep 80%, OnlyFans takes 20%. But the income distribution is extreme — the top 1% of creators earn the vast majority of revenue. Use our <a href="/tools/onlyfans-earnings-calculator">OnlyFans earnings calculator</a> to model your own income.</p>
 
@@ -1576,13 +1566,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'richest-boxers-2026',
+  'richest-boxers-2026': {
+slug: 'richest-boxers-2026',
     title: 'Richest Boxers in the World 2026 — Floyd Mayweather to Canelo Net Worth Ranked',
-    description: 'The 10 richest boxers in the world in 2026 ranked by net worth. From Floyd Mayweathers $450M to emerging stars.',
+    excerpt: 'The 10 richest boxers in the world in 2026 ranked by net worth. From Floyd Mayweathers $450M to emerging stars.',
     date: 'May 4, 2026',
     category: 'Boxing',
-    readTime: '5 min',
+    readTime: 5,
     content: `
 <p>Boxing has produced more self-made wealth than almost any other combat sport. But the income distribution is brutal — a handful of elite fighters earn nine figures per fight while most professional boxers struggle to make ends meet. Here are the richest active and retired boxers in 2026.</p>
 
@@ -1606,13 +1596,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'stripe-net-worth-revenue-2026',
+  'stripe-net-worth-revenue-2026': {
+slug: 'stripe-net-worth-revenue-2026',
     title: 'Stripe Revenue 2026 — How the Collison Brothers Built a $65B Payments Empire',
-    description: 'Stripe processes hundreds of billions in payments annually. Patrick and John Collisons $65B company and how they built it from an Irish village.',
+    excerpt: 'Stripe processes hundreds of billions in payments annually. Patrick and John Collisons $65B company and how they built it from an Irish village.',
     date: 'May 4, 2026',
     category: 'Tech',
-    readTime: '6 min',
+    readTime: 6,
     content: `
 <p>Stripe is one of the most valuable private technology companies in the world with a $65 billion valuation in its 2023 funding round. Founded by Irish brothers <a href="/patrick-collison">Patrick</a> and <a href="/john-collison">John Collison</a> from a small village in rural Ireland, it is one of the most remarkable startup stories of the modern era.</p>
 
@@ -1630,13 +1620,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'victor-wembanyama-net-worth-2026',
+  'victor-wembanyama-net-worth-2026': {
+slug: 'victor-wembanyama-net-worth-2026',
     title: 'Victor Wembanyama Net Worth 2026 — Salary, Nike Deal and Why Hes Different',
-    description: 'Victor Wembanyama earns $55M/yr from the San Antonio Spurs and has a Nike signature deal. Why basketballs alien is already the sports next megastar.',
+    excerpt: 'Victor Wembanyama earns $55M/yr from the San Antonio Spurs and has a Nike signature deal. Why basketballs alien is already the sports next megastar.',
     date: 'May 4, 2026',
     category: 'Basketball',
-    readTime: '5 min',
+    readTime: 5,
     content: `
 <p>Victor Wembanyama has an estimated net worth of $12 million in 2026 — modest for a top NBA player, but he is only 22. His current salary of $55 million per year from the San Antonio Spurs will compound dramatically over a career that analysts project to rival the all-time greats. See his full <a href="/victor-wembanyama">Wembanyama profile</a> on WhoEarns.</p>
 
@@ -1651,13 +1641,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'carlos-alcaraz-net-worth-2026',
+  'carlos-alcaraz-net-worth-2026': {
+slug: 'carlos-alcaraz-net-worth-2026',
     title: 'Carlos Alcaraz Net Worth 2026 — 4 Majors at 22 and His Earning Potential',
-    description: 'Carlos Alcaraz has won 4 Grand Slams at age 22. His prize money, Nike deal, Rolex partnership and commercial potential explained.',
+    excerpt: 'Carlos Alcaraz has won 4 Grand Slams at age 22. His prize money, Nike deal, Rolex partnership and commercial potential explained.',
     date: 'May 4, 2026',
     category: 'Tennis',
-    readTime: '5 min',
+    readTime: 5,
     content: `
 <p>Carlos Alcaraz has an estimated net worth of $30 million in 2026 — but he is only 22 years old with what analysts expect to be a 15-year peak career ahead of him. His <a href="/carlos-alcaraz">full profile</a> covers all verified earnings data. Compare with <a href="/jannik-sinner">Jannik Sinner</a>, his defining rival.</p>
 
@@ -1675,13 +1665,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'ed-sheeran-net-worth-2026',
+  'ed-sheeran-net-worth-2026': {
+slug: 'ed-sheeran-net-worth-2026',
     title: 'Ed Sheeran Net Worth 2026 — 736M Tour Record, 150M Albums and Real Earnings',
-    description: 'Ed Sheeran has a net worth of $320M. His record-breaking Divide Tour, Mathematics Tour, songwriting income and business explained.',
+    excerpt: 'Ed Sheeran has a net worth of $320M. His record-breaking Divide Tour, Mathematics Tour, songwriting income and business explained.',
     date: 'May 4, 2026',
     category: 'Music',
-    readTime: '5 min',
+    readTime: 5,
     content: `
 <p>Ed Sheeran has an estimated net worth of $320 million in 2026. He is one of the wealthiest musicians in the world — and uniquely, his wealth comes primarily from touring and songwriting rather than streaming or brand deals. See his full <a href="/ed-sheeran">Ed Sheeran profile</a> on WhoEarns.</p>
 
@@ -1699,13 +1689,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'how-much-do-instagram-influencers-make',
+  'how-much-do-instagram-influencers-make': {
+slug: 'how-much-do-instagram-influencers-make',
     title: 'How Much Do Instagram Influencers Make in 2026? Real Rates Explained',
-    description: 'Instagram influencer earnings from nano to mega influencers. Real brand deal rates, CPM benchmarks and what follower counts actually mean for income.',
+    excerpt: 'Instagram influencer earnings from nano to mega influencers. Real brand deal rates, CPM benchmarks and what follower counts actually mean for income.',
     date: 'May 4, 2026',
     category: 'Creators',
-    readTime: '7 min',
+    readTime: 7,
     content: `
 <p>Instagram influencer income is wildly misunderstood. Follower count is the least important variable. Engagement rate, niche, audience demographics and negotiation skill matter far more. Use our <a href="/tools/instagram-earnings-calculator">Instagram earnings calculator</a> for real-time estimates, or read on for the full picture.</p>
 
@@ -1734,13 +1724,13 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
     `
   },
 
-  {
-    slug: 'scroll-the-globe-travel-blog',
+  'scroll-the-globe-travel-blog': {
+slug: 'scroll-the-globe-travel-blog',
     title: 'Scroll The Globe — Travel Blog Revenue and How Travel Creators Make Money',
-    description: 'How travel creators like Scroll The Globe monetise Instagram, TikTok and blog traffic. Sponsorships, hotel partnerships, affiliate and brand deals explained.',
+    excerpt: 'How travel creators like Scroll The Globe monetise Instagram, TikTok and blog traffic. Sponsorships, hotel partnerships, affiliate and brand deals explained.',
     date: 'May 4, 2026',
     category: 'Creators',
-    readTime: '5 min',
+    readTime: 5,
     content: `
 <p><a href="/scroll-the-globe">Scroll The Globe</a> is a travel blog and creator brand run by Greg, covering hotel reviews, destination guides and travel tips with 152,000 Instagram followers at <a href="https://instagram.com/scroll_theglobe" target="_blank">@scroll_theglobe</a> and 30,000 TikTok followers. The full website is at <a href="https://scrolltheglobe.com" target="_blank">scrolltheglobe.com</a>.</p>
 
@@ -1758,8 +1748,8 @@ export const BLOG_POSTS: Record<string, BlogPost> = {
 
 <p>Follow the journey at <a href="https://scrolltheglobe.com" target="_blank">scrolltheglobe.com</a> and <a href="https://instagram.com/scroll_theglobe" target="_blank">@scroll_theglobe</a> on Instagram.</p>
     `
-  }
+  },
 
-]
+
 
 }
