@@ -20,6 +20,20 @@ export default function Nav() {
     localStorage.setItem('we-theme', next ? 'light' : 'dark')
   }
 
+  // Close menu on route change / outside click
+  useEffect(() => {
+    if (!menuOpen) return
+    const close = () => setMenuOpen(false)
+    document.addEventListener('click', close)
+    return () => document.removeEventListener('click', close)
+  }, [menuOpen])
+
+  const links = [
+    { href: '/blog', label: 'Blog' },
+    { href: '/tools', label: 'Calculators' },
+    { href: '/submit', label: 'Submit Earnings' },
+  ]
+
   return (
     <>
       <nav className={styles.nav}>
@@ -29,21 +43,46 @@ export default function Nav() {
 
         {/* Desktop links */}
         <div className={styles.links}>
-          <Link href="/blog" className={styles.link}>Blog</Link>
-          <Link href="/tools" className={styles.link}>Calculators</Link>
-          <Link href="/submit" className={styles.link}>Submit Earnings</Link>
+          {links.map(l => (
+            <Link key={l.href} href={l.href} className={styles.link}>{l.label}</Link>
+          ))}
         </div>
 
         <div className={styles.right}>
           <button className={styles.mode} onClick={toggleMode} aria-label="Toggle theme">
             {light ? '🌙' : '☀'}
           </button>
+
+          {/* Hamburger — mobile only */}
+          <button
+            className={styles.hamburger}
+            onClick={e => { e.stopPropagation(); setMenuOpen(o => !o) }}
+            aria-label="Menu"
+            aria-expanded={menuOpen}
+          >
+            <span className={`${styles.bar} ${menuOpen ? styles.barOpen1 : ''}`} />
+            <span className={`${styles.bar} ${menuOpen ? styles.barOpen2 : ''}`} />
+            <span className={`${styles.bar} ${menuOpen ? styles.barOpen3 : ''}`} />
+          </button>
+
           <button className={styles.pro} onClick={() => setProOpen(true)}>
             Go Pro
           </button>
         </div>
       </nav>
 
+      {/* Mobile dropdown menu */}
+      {menuOpen && (
+        <div className={styles.mobileMenu} onClick={e => e.stopPropagation()}>
+          {links.map(l => (
+            <Link key={l.href} href={l.href} className={styles.mobileLink} onClick={() => setMenuOpen(false)}>
+              {l.label}
+            </Link>
+          ))}
+        </div>
+      )}
+
+      {/* Pro modal */}
       {proOpen && (
         <div className={styles.overlay} onClick={() => setProOpen(false)}>
           <div className={styles.modal} onClick={e => e.stopPropagation()}>
