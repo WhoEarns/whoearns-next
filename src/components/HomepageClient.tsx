@@ -61,12 +61,29 @@ export default function HomepageClient({ profiles, feed, categories }: Props) {
     setSearchOpen(results.length > 0)
   }, [searchQuery, profiles])
 
-  const leaderboard = profiles
-    .filter(p => {
-      if (activeCategory === 'poland') return p.country === 'pl'
-      const cats = CATEGORY_MAP[activeCategory] || [activeCategory]
-      return cats.some(c => p.category === c)
-    })
+  const parseVal = (v: string): number => {
+  if (!v) return 0
+  const n = parseFloat(v.replace(/[^0-9.]/g, ''))
+  if (isNaN(n)) return 0
+  if (/B/i.test(v)) return n * 1_000_000_000
+  if (/M/i.test(v)) return n * 1_000_000
+  if (/K/i.test(v)) return n * 1_000
+  return n
+}
+
+const leaderboard = profiles
+  .filter(p => {
+    if (activeCategory === 'poland') return p.country === 'pl'
+    const cats = CATEGORY_MAP[activeCategory] || [activeCategory]
+    return cats.some(c => p.category === c)
+  })
+  .sort((a, b) => {
+    if (activeCategory === 'poland') {
+      return parseVal(b.stats?.[0]?.value ?? '0') - parseVal(a.stats?.[0]?.value ?? '0')
+    }
+    return a.rank_order - b.rank_order
+  })
+  .slice(0, 10)
     .sort((a, b) => a.rank_order - b.rank_order)
     .slice(0, 10)
 
