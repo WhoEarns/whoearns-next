@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-const RESEND_API_KEY = 're_atiCUjwQ_DPUg6ErmrmwHCYu1754ngcYn'
+const RESEND_API_KEY = process.env.RESEND_API_KEY!
 const TO_EMAIL = 'hello@whoearns.com'
 const FROM_EMAIL = 'WhoEarns <submissions@whoearns.com>'
 
