@@ -120,6 +120,15 @@
   line-height: 1.9; margin-bottom: 18px;
 }
 .postBody :global(strong) { color: var(--t1); font-weight: 600; }
+/* Inline links inside blog post body */
+/* .postBody :global(a) {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+  transition: opacity 0.15s;
+}
+.postBody :global(a:hover) { opacity: 0.75; } */
 .postBody :global(a) {
   color: var(--gold);
   text-decoration: underline;
