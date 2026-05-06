@@ -307,8 +307,19 @@ export default async function CategoryPage(
   // Get profiles — filter by country for regional categories
   let profiles: Profile[]
   if (key === 'poland') {
-    profiles = await getProfilesByCountry('pl')
-  } else {
+  const raw = await getProfilesByCountry('pl')
+  profiles = raw.sort((a, b) => {
+    const parse = (v: string) => {
+      if (!v) return 0
+      const n = parseFloat(v.replace(/[^0-9.]/g, ''))
+      if (/B/i.test(v)) return n * 1_000_000_000
+      if (/M/i.test(v)) return n * 1_000_000
+      if (/K/i.test(v)) return n * 1_000
+      return n
+    }
+    return parse(b.stats?.[0]?.value || '0') - parse(a.stats?.[0]?.value || '0')
+  })
+} else {
     const cats = CATEGORY_MAP[key] || [key]
     profiles = allProfiles.filter(p => cats.some(c => p.category === c))
       .sort((a, b) => a.rank_order - b.rank_order)
