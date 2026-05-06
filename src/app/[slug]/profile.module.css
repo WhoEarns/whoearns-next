@@ -119,6 +119,37 @@
 .val_purple { color: var(--purple); }
 .statNote { font-size: 10px; color: var(--t3); }
 
+/* SOCIAL LINKS */
+.socialLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--b1);
+}
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: var(--s2);
+  border: 1px solid var(--b2);
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--t2);
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.socialLink:hover {
+  border-color: var(--gold);
+  color: var(--t1);
+}
+.socialIcon { font-size: 13px; line-height: 1; }
+.socialLabel { font-size: 11px; }
+
 /* SEO CONTENT */
 .seoContent {
   background: var(--s1);
