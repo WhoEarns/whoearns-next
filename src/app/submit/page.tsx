@@ -44,13 +44,19 @@ export default function SubmitEarningsPage() {
   }
 
   const handleSubmit = async () => {
-    setSubmitting(true)
-    // In production: POST to /api/submit-earnings
-    // For now simulate
-    await new Promise(r => setTimeout(r, 1200))
-    setStep('done')
-    setSubmitting(false)
+  setSubmitting(true)
+  try {
+    await fetch('/api/submit-earnings', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
+    })
+  } catch (e) {
+    console.error(e)
   }
+  setStep('done')
+  setSubmitting(false)
+}
 
   return (
     <div style={{ maxWidth: 640, margin: '0 auto', padding: '40px 20px' }}>
