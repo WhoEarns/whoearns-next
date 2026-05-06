@@ -15,15 +15,25 @@ export default function CategoryClient({ profiles, categoryLabel, category = '' 
   const [sortBy, setSortBy] = useState<'rank' | 'name' | 'growth'>('rank')
   const [view, setView] = useState<'chart' | 'table'>('chart')
 
-  const sorted = [...profiles].sort((a, b) => {
-    if (sortBy === 'name') return a.name.localeCompare(b.name)
-    if (sortBy === 'growth') {
-      const ga = parseFloat(a.growth?.replace(/[^0-9.-]/g, '') || '0')
-      const gb = parseFloat(b.growth?.replace(/[^0-9.-]/g, '') || '0')
-      return gb - ga
-    }
-    return a.rank_order - b.rank_order
-  })
+  const parseVal = (v: string): number => {
+  if (!v) return 0
+  const n = parseFloat(v.replace(/[^0-9.]/g, ''))
+  if (isNaN(n)) return 0
+  if (/B/i.test(v)) return n * 1_000_000_000
+  if (/M/i.test(v)) return n * 1_000_000
+  if (/K/i.test(v)) return n * 1_000
+  return n
+}
+
+const sorted = [...profiles].sort((a, b) => {
+  if (sortBy === 'name') return a.name.localeCompare(b.name)
+  if (sortBy === 'growth') {
+    const ga = parseFloat(a.growth?.replace(/[^0-9.-]/g, '') || '0')
+    const gb = parseFloat(b.growth?.replace(/[^0-9.-]/g, '') || '0')
+    return gb - ga
+  }
+  return parseVal(b.stats?.[0]?.value ?? '0') - parseVal(a.stats?.[0]?.value ?? '0')
+})
 
   // Get numeric value from string like "$1.1B", "$200M", "~3M PLN", "£15M"
   const getNumericValue = (str: string): number => {
