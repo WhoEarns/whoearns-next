@@ -48,10 +48,26 @@ export async function getProfilesByCountry(country: string): Promise<Profile[]> 
     .from('profiles')
     .select('*')
     .eq('country', country)
-    .order('rank_order', { ascending: true })
 
   if (error) return []
-  return data || []
+
+  // Sort by the main stat value (net worth / revenue) parsed from the stats array
+  // rank_order is per-category and meaningless for cross-category country views
+  const parse = (v: string): number => {
+    if (!v) return 0
+    const n = parseFloat(v.replace(/[^0-9.]/g, ''))
+    if (isNaN(n)) return 0
+    if (/B/i.test(v)) return n * 1_000_000_000
+    if (/M/i.test(v)) return n * 1_000_000
+    if (/K/i.test(v)) return n * 1_000
+    return n
+  }
+
+  return (data || []).sort((a, b) => {
+    const aVal = parse(a.stats?.[0]?.value || '0')
+    const bVal = parse(b.stats?.[0]?.value || '0')
+    return bVal - aVal
+  })
 }
 
 export async function searchProfiles(query: string): Promise<Partial<Profile>[]> {
@@ -125,6 +141,32 @@ export async function submitDataCorrection(data: {
   const { error } = await supabase
     .from('data_submissions')
     .insert(data)
+
+  return !error
+}
+
+export async function submitEarnings(data: {
+  type: string
+  niche: string
+  followers_range: string
+  monthly_revenue: string
+  revenue_sources: string[]
+  revenue_split: string
+  submitter_name: string
+  anonymous: boolean
+  note: string
+}): Promise<boolean> {
+  const { error } = await supabase
+    .from('data_submissions')
+    .insert({
+      profile_slug: 'earnings-submission',
+      profile_name: data.anonymous ? 'Anonymous' : data.submitter_name,
+      field_name: 'earnings',
+      current_value: '',
+      suggested_value: JSON.stringify(data),
+      source_url: '',
+      submitter_email: '',
+    })
 
   return !error
 }
