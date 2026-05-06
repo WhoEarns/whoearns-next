@@ -8,88 +8,48 @@ import ProfileInteractive from '@/components/ProfileInteractive'
 import SimilarProfiles from '@/components/SimilarProfiles'
 import styles from './profile.module.css'
 
-// ── STATIC GENERATION ─────────────────────────────────────
-// Next.js pre-renders every profile at build time → static HTML
-// Google indexes real HTML, not JavaScript
-
 export async function generateStaticParams() {
   const slugs = await getAllSlugs()
   return slugs.map((slug: string) => ({ slug }))
 }
-
-// ── PER-PAGE SEO METADATA ─────────────────────────────────
-// Each profile gets its own unique title, description, and og tags
-// This is what Google ranks and what shows in search results
 
 export async function generateMetadata(
   { params }: { params: Promise<{ slug: string }> }
 ): Promise<Metadata> {
   const { slug } = await params
   const profile = await getProfileBySlug(slug)
-
-  if (!profile) {
-    return { title: 'Profile Not Found · WhoEarns' }
-  }
-
+  if (!profile) return { title: 'Profile Not Found · WhoEarns' }
   const mainStat = profile.stats?.[0]
   const statSummary = mainStat ? `${mainStat.value} ${mainStat.label}` : ''
-
   const title = profile.seo_title ||
     `${profile.name} Net Worth ${new Date().getFullYear()} — Career Stats and Earnings`
-
   const description = profile.seo_description ||
     `${profile.name} net worth and career earnings. ${statSummary}. Full career stats, salary breakdown and earnings analysis on WhoEarns.`
-
   return {
-    title,
-    description,
-    alternates: {
-      canonical: `https://whoearns.com/${slug}`,
-    },
+    title, description,
+    alternates: { canonical: `https://whoearns.com/${slug}` },
     openGraph: {
-      title,
-      description,
+      title, description,
       url: `https://whoearns.com/${slug}`,
-      type: 'profile',
-      siteName: 'WhoEarns',
-      images: [{
-        url: `/og/${slug}.jpg`,
-        width: 1200,
-        height: 630,
-        alt: `${profile.name} — Net Worth and Career Stats`,
-      }],
+      type: 'profile', siteName: 'WhoEarns',
+      images: [{ url: `/og/${slug}.jpg`, width: 1200, height: 630, alt: `${profile.name} — Net Worth and Career Stats` }],
     },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      images: [`/og/${slug}.jpg`],
-    },
+    twitter: { card: 'summary_large_image', title, description, images: [`/og/${slug}.jpg`] },
   }
 }
-
-// ── PROFILE PAGE COMPONENT ────────────────────────────────
 
 export default async function ProfilePage(
   { params }: { params: Promise<{ slug: string }> }
 ) {
   const { slug } = await params
   const profile = await getProfileBySlug(slug)
-
   if (!profile) notFound()
-
-  // Build JSON-LD structured data for Google rich results
   const jsonLd = buildJsonLd(profile, slug)
 
   return (
     <>
-      {/* JSON-LD Schema — Google uses this for rich results */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* BREADCRUMB NAV — both for users and Google */}
       <nav className={styles.breadcrumb} aria-label="Breadcrumb">
         <ol className={styles.breadcrumbList} itemScope itemType="https://schema.org/BreadcrumbList">
           <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
@@ -112,11 +72,6 @@ export default async function ProfilePage(
       </nav>
 
       <main className={styles.main}>
-
-        {/* ── SEO CONTENT BLOCK ─────────────────────────────
-            This is real HTML rendered server-side.
-            Google indexes every word here.
-            It appears above the fold and provides genuine value to readers. */}
         <header className={styles.header}>
           <div className={styles.headerInner}>
             <div className={styles.avatarWrap}>
@@ -141,15 +96,12 @@ export default async function ProfilePage(
               </div>
               <div className={styles.tags}>
                 {profile.tags?.map((t, i) => (
-                  <span key={i} className={`${styles.tag} ${styles[`tag_${t.type}`]}`}>
-                    {t.label}
-                  </span>
+                  <span key={i} className={`${styles.tag} ${styles[`tag_${t.type}`]}`}>{t.label}</span>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Key stats — rendered in HTML for SEO */}
           {profile.stats?.length > 0 && (
             <div className={styles.statsGrid}>
               {profile.stats.map((stat, i) => (
@@ -166,40 +118,40 @@ export default async function ProfilePage(
               ))}
             </div>
           )}
+
+          {/* SOCIAL LINKS */}
+          {profile.social_links && profile.social_links.length > 0 && (
+            <div className={styles.socialLinks}>
+              {profile.social_links.map((link, i) => (
+                <a
+                  key={i}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialLink}
+                >
+                  <span className={styles.socialIcon}>{iconFor(link.icon)}</span>
+                  <span className={styles.socialLabel}>{link.label}</span>
+                </a>
+              ))}
+            </div>
+          )}
         </header>
 
-        {/* ── LONG-FORM SEO CONTENT ──────────────────────────
-            This is the content that ranks in Google.
-            4-6 paragraphs, keyword-rich, genuinely useful.
-            Stored in Supabase seo_content field.
-            You can update it without redeploying. */}
         {profile.seo_content && (
           <article className={styles.seoContent} itemScope itemType="https://schema.org/Article">
-            <h2 className={styles.seoH2}>
-              {profile.name} — Net Worth and Career Earnings
-            </h2>
-            <div
-              className={styles.seoBody}
-              dangerouslySetInnerHTML={{ __html: profile.seo_content }}
-            />
+            <h2 className={styles.seoH2}>{profile.name} — Net Worth and Career Earnings</h2>
+            <div className={styles.seoBody} dangerouslySetInnerHTML={{ __html: profile.seo_content }} />
           </article>
         )}
 
-        {/* ── CAREER TABLE (HTML — indexable) ────────────── */}
         {profile.career_table && profile.career_table.length > 0 && (
           <section className={styles.careerSection}>
             <h2 className={styles.sectionTitle}>{profile.name} — Club Career Statistics</h2>
             <div className={styles.tableWrap}>
               <table className={styles.careerTable}>
                 <thead>
-                  <tr>
-                    <th>Club</th>
-                    <th>Country</th>
-                    <th>Years</th>
-                    <th>Apps</th>
-                    <th>Goals</th>
-                    <th>Assists</th>
-                  </tr>
+                  <tr><th>Club</th><th>Country</th><th>Years</th><th>Apps</th><th>Goals</th><th>Assists</th></tr>
                 </thead>
                 <tbody>
                   {profile.career_table.map((row, i) => (
@@ -224,7 +176,6 @@ export default async function ProfilePage(
           </section>
         )}
 
-        {/* ── INFO BOXES (HTML — indexable) ──────────────── */}
         {(profile.info_box_1 || profile.info_box_2) && (
           <div className={styles.infoGrid}>
             {[profile.info_box_1, profile.info_box_2].filter(Boolean).map((box, i) => (
@@ -247,75 +198,60 @@ export default async function ProfilePage(
           </div>
         )}
 
-        {/* ── INTERACTIVE ELEMENTS (Client Component) ──────
-            AI analysis, share, compare, notify.
-            These need JavaScript but are below the fold.
-            Google still sees and indexes all the HTML above. */}
         <ProfileInteractive profile={profile} />
 
-        {/* ── DATA DISCLAIMER ────────────────────────────── */}
         <footer className={styles.profileFooter}>
           <p>
             {profile.is_verified
               ? 'Data sourced from verified official filings and records.'
-              : `Figures marked est. are estimated from publicly available sources including Forbes, Bloomberg and reported deals.`}{' '}
+              : 'Figures marked est. are estimated from publicly available sources including Forbes, Bloomberg and reported deals.'}{' '}
             Last reviewed: {profile.last_reviewed}.{' '}
             <Link href="mailto:hello@whoearns.com">Dispute this data</Link>
           </p>
         </footer>
-
       </main>
 
-      {/* ── SIMILAR PROFILES ────────────────────────────── */}
       <div style={{ maxWidth: 'var(--max-w)', margin: '0 auto', padding: '0 20px 32px' }}>
-        <SimilarProfiles
-          currentSlug={profile.slug}
-          category={profile.category}
-          currentName={profile.name}
-        />
+        <SimilarProfiles currentSlug={profile.slug} category={profile.category} currentName={profile.name} />
       </div>
     </>
   )
 }
 
-// ── HELPERS ───────────────────────────────────────────────
+function iconFor(icon: string): string {
+  const map: Record<string, string> = {
+    Instagram: '📸',
+    X: '𝕏',
+    YouTube: '▶',
+    TikTok: '♪',
+    LinkedIn: 'in',
+    Web: '🌐',
+    Facebook: 'f',
+    Twitch: '◈',
+  }
+  return map[icon] || '🔗'
+}
 
 function categoryLabel(cat: string): string {
   const map: Record<string, string> = {
-    // New category keys
-    footballers: 'Football Players',
-    basketball: 'Basketball Players',
-    singers: 'Singers and Rappers',
-    actors: 'Actors',
-    creators: 'Social Media Creators',
-    'tech-founders': 'Tech Founders',
-    politicians: 'Politicians',
-    athletes: 'Athletes',
-    'ai-startups': 'AI Startups',
-    'tech-giants': 'Tech Giants',
-    'startup-mrr': 'Startup MRR',
-    'indie-founders': 'Indie Founders',
-    'media-companies': 'Media Companies',
-    'sports-teams': 'Sports Teams',
-    poland: 'Poland',
-    // Legacy keys (fallback)
-    footballer: 'Football Players',
-    creator: 'Social Media Creators',
-    tech: 'Tech Giants',
-    ai: 'AI Startups',
-    founder: 'Tech Founders',
-    startup: 'Startup MRR',
-    business: 'Business',
-    athlete: 'Athletes',
+    footballers: 'Football Players', basketball: 'Basketball Players',
+    singers: 'Singers and Rappers', actors: 'Actors',
+    creators: 'Social Media Creators', 'tech-founders': 'Tech Founders',
+    politicians: 'Politicians', athletes: 'Athletes',
+    'ai-startups': 'AI Startups', 'tech-giants': 'Tech Giants',
+    'startup-mrr': 'Startup MRR', 'indie-founders': 'Indie Founders',
+    'media-companies': 'Media Companies', 'sports-teams': 'Sports Teams',
+    poland: 'Poland', footballer: 'Football Players', creator: 'Social Media Creators',
+    tech: 'Tech Giants', ai: 'AI Startups', founder: 'Tech Founders',
+    startup: 'Startup MRR', business: 'Business', athlete: 'Athletes',
     musician: 'Singers and Rappers',
   }
   return map[cat] || 'Profiles'
 }
 
 function buildJsonLd(profile: Profile, slug: string) {
-  const isOrg = ['tech', 'ai', 'startup', 'business'].includes(profile.category)
+  const isOrg = ['tech', 'ai', 'startup', 'business', 'ai-startups', 'tech-giants', 'startup-mrr'].includes(profile.category)
   const mainStat = profile.stats?.[0]
-
   const base = {
     '@context': 'https://schema.org',
     '@type': isOrg ? 'Organization' : 'Person',
@@ -324,7 +260,6 @@ function buildJsonLd(profile: Profile, slug: string) {
     description: profile.seo_description || `${profile.name} — ${mainStat?.label}: ${mainStat?.value}`,
     sameAs: profile.social_links?.map(s => s.url).filter(Boolean) || [],
   }
-
   const breadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -334,16 +269,13 @@ function buildJsonLd(profile: Profile, slug: string) {
       { '@type': 'ListItem', position: 3, name: profile.name, item: `https://whoearns.com/${slug}` },
     ],
   }
-
   const webpage = {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
+    '@context': 'https://schema.org', '@type': 'WebPage',
     name: profile.seo_title || `${profile.name} Net Worth — WhoEarns`,
     description: profile.seo_description,
     url: `https://whoearns.com/${slug}`,
     dateModified: profile.updated_at,
     about: { '@type': isOrg ? 'Organization' : 'Person', name: profile.name },
   }
-
   return [base, breadcrumb, webpage]
 }
