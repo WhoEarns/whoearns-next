@@ -84,8 +84,6 @@ const leaderboard = profiles
     return a.rank_order - b.rank_order
   })
   .slice(0, 10)
-    .sort((a, b) => a.rank_order - b.rank_order)
-    .slice(0, 10)
 
   const trending = [...profiles]
     .filter(p => p.growth && p.growth.startsWith('+'))
