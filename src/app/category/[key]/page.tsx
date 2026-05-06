@@ -305,22 +305,22 @@ export default async function CategoryPage(
   if (!cat) notFound()
 
   // Get profiles — filter by country for regional categories
-  let profiles: Profile[]
-  if (key === 'poland') {
-  const raw = await getProfilesByCountry('pl')
-  const parse = (v: string): number => {
-    if (!v) return 0
-    const n = parseFloat(v.replace(/[^0-9.]/g, ''))
-    if (isNaN(n)) return 0
-    if (/B/i.test(v)) return n * 1_000_000_000
-    if (/M/i.test(v)) return n * 1_000_000
-    if (/K/i.test(v)) return n * 1_000
-    return n
-  }
-  profiles = raw.sort((a, b) =>
-    parse(b.stats?.[0]?.value ?? '0') - parse(a.stats?.[0]?.value ?? '0')
-  )
+  const parseStatValue = (v: string): number => {
+  if (!v) return 0
+  const n = parseFloat(v.replace(/[^0-9.]/g, ''))
+  if (isNaN(n)) return 0
+  if (/B/i.test(v)) return n * 1_000_000_000
+  if (/M/i.test(v)) return n * 1_000_000
+  if (/K/i.test(v)) return n * 1_000
+  return n
 }
+
+let profiles: Profile[]
+if (key === 'poland') {
+  const raw = await getProfilesByCountry('pl')
+  profiles = raw.sort((a, b) =>
+    parseStatValue(b.stats?.[0]?.value ?? '0') - parseStatValue(a.stats?.[0]?.value ?? '0')
+  )
 } else {
     const cats = CATEGORY_MAP[key] || [key]
     profiles = allProfiles.filter(p => cats.some(c => p.category === c))
