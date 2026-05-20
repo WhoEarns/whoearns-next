@@ -241,7 +241,7 @@ function categoryLabel(cat: string): string {
     'ai-startups': 'AI Startups', 'tech-giants': 'Tech Giants',
     'startup-mrr': 'Startup MRR', 'indie-founders': 'Indie Founders',
     'media-companies': 'Media Companies', 'sports-teams': 'Sports Teams',
-    poland: 'Poland', footballer: 'Football Players', creator: 'Social Media Creators',
+    poland: 'Poland', onlyfans: 'OnlyFans Creators', footballer: 'Football Players', creator: 'Social Media Creators',
     tech: 'Tech Giants', ai: 'AI Startups', founder: 'Tech Founders',
     startup: 'Startup MRR', business: 'Business', athlete: 'Athletes',
     musician: 'Singers and Rappers',
