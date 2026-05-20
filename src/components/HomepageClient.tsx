@@ -28,9 +28,10 @@ const CATEGORY_MAP: Record<string, string[]> = {
   'media-companies':['media-companies', 'media'],
   'sports-teams': ['sports-teams', 'sports-team'],
   poland:         ['pl'],   // filtered by country
+  onlyfans:       ['onlyfans'],
 }
 
-const PEOPLE_CATS  = ['footballers','basketball','singers','actors','creators','tech-founders','politicians','athletes']
+const PEOPLE_CATS  = ['footballers','basketball','singers','actors','creators','onlyfans','tech-founders','politicians','athletes']
 const COMPANY_CATS = ['ai-startups','tech-giants','startup-mrr','indie-founders','media-companies','sports-teams']
 
 export default function HomepageClient({ profiles, feed, categories }: Props) {
