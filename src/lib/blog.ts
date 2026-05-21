@@ -1753,3 +1753,530 @@ slug: 'scroll-the-globe-travel-blog',
 
 
 }
+
+  'richest-footballers-2026': {
+    slug: 'richest-footballers-2026',
+    title: 'Richest Footballers in the World 2026 — Net Worth Rankings',
+    excerpt: 'Cristiano Ronaldo leads at $1.1B as the first football billionaire. Full net worth rankings for the wealthiest footballers in the world in 2026.',
+    category: 'Football',
+    date: 'May 2026',
+    readTime: 8,
+    content: `
+<p>Football has produced more centimillionaires than almost any other profession on earth. The combination of elite salaries, global endorsement deals, social media reach and increasingly sophisticated investment portfolios has turned the world's top players into genuine business empires. Here are the richest footballers in the world in 2026.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item"><div class="stat-callout-num">$1.1B</div><div class="stat-callout-label">Ronaldo Net Worth</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$700M</div><div class="stat-callout-label">Messi Net Worth</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$450M</div><div class="stat-callout-label">Beckham Net Worth</div></div>
+</div>
+
+<h2>Top 10 Richest Footballers 2026</h2>
+
+<table class="data-table">
+  <thead><tr><th>#</th><th>Player</th><th>Net Worth</th><th>Source</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td><a href="/cristiano-ronaldo">Cristiano Ronaldo</a></td><td class="gold">$1.1B</td><td>Al Nassr + CR7 brand + Nike lifetime</td></tr>
+    <tr><td>2</td><td><a href="/lionel-messi">Lionel Messi</a></td><td class="gold">$700M</td><td>Inter Miami + Adidas lifetime</td></tr>
+    <tr><td>3</td><td><a href="/david-beckham">David Beckham</a></td><td class="gold">$450M</td><td>DRJB Holdings + Inter Miami owner</td></tr>
+    <tr><td>4</td><td><a href="/neymar-jr">Neymar Jr.</a></td><td class="gold">$200M</td><td>Career earnings + endorsements</td></tr>
+    <tr><td>5</td><td><a href="/kylian-mbappe">Kylian Mbappe</a></td><td class="gold">$250M</td><td>Real Madrid + Nike lifetime</td></tr>
+    <tr><td>6</td><td><a href="/karim-benzema">Karim Benzema</a></td><td class="gold">$80M</td><td>Al Ittihad + career earnings</td></tr>
+    <tr><td>7</td><td><a href="/robert-lewandowski">Robert Lewandowski</a></td><td class="gold">$200M</td><td>Barcelona + Nike + endorsements</td></tr>
+    <tr><td>8</td><td><a href="/antoine-griezmann">Antoine Griezmann</a></td><td class="gold">$80M</td><td>Atletico Madrid + Puma</td></tr>
+    <tr><td>9</td><td><a href="/romelu-lukaku">Romelu Lukaku</a></td><td class="gold">$60M</td><td>Napoli + career earnings</td></tr>
+    <tr><td>10</td><td><a href="/mo-salah">Mohamed Salah</a></td><td class="gold">$140M</td><td>Liverpool + Adidas + Pepsi</td></tr>
+  </tbody>
+</table>
+
+<h2>How Do Footballers Build Their Wealth?</h2>
+<p>The naive assumption is that footballers make money from their club salary. In reality, for elite players, salary is only the starting point. Cristiano Ronaldo earns an estimated $200 million per year in total — but his Al Nassr salary accounts for less than half. The rest comes from his lifetime Nike deal, his CR7 brand spanning hotels, clothing and fragrance, and Instagram posts estimated at $3.2 million each.</p>
+
+<p>David Beckham is the clearest example of football wealth transcending the sport itself. His DRJB Holdings brand licensing company generated $92 million in revenue in 2024 — more than his entire playing career salary. He was confirmed as the UK's first billion-pound athlete by the Sunday Times Rich List in 2026. <a href="/david-beckham">See Beckham's full earnings breakdown →</a></p>
+
+<h2>The First Football Billionaire</h2>
+<p>Cristiano Ronaldo became the first active footballer to reach billionaire status, confirmed by Forbes in 2023. His $1.1 billion net worth is built on a lifetime Nike deal estimated at over $1 billion in total value, his CR7 brand, and an Al Nassr contract paying approximately $200 million per year — the highest football salary ever paid. <a href="/cristiano-ronaldo">See Ronaldo's full profile →</a></p>
+
+<p>Lionel Messi's $700 million net worth is driven by his majority ownership stake in Inter Miami CF, his lifetime Adidas deal worth approximately $35 million per year, and a growing media presence through Apple TV+. His 513 million Instagram followers make him the most followed athlete on the platform. <a href="/lionel-messi">See Messi's full profile →</a></p>
+
+<div class="related-profiles">
+  <h3>Related Profiles</h3>
+  <div class="profile-card-grid">
+    <a href="/cristiano-ronaldo" class="profile-card"><div class="profile-card-rank">1</div><div class="profile-card-info"><div class="profile-card-name">Cristiano Ronaldo</div><div class="profile-card-detail">Portugal · Al Nassr</div></div><div class="profile-card-val">$1.1B</div></a>
+    <a href="/lionel-messi" class="profile-card"><div class="profile-card-rank">2</div><div class="profile-card-info"><div class="profile-card-name">Lionel Messi</div><div class="profile-card-detail">Argentina · Inter Miami</div></div><div class="profile-card-val">$700M</div></a>
+    <a href="/david-beckham" class="profile-card"><div class="profile-card-rank">3</div><div class="profile-card-info"><div class="profile-card-name">David Beckham</div><div class="profile-card-detail">England · Retired</div></div><div class="profile-card-val">$450M</div></a>
+    <a href="/kylian-mbappe" class="profile-card"><div class="profile-card-rank">4</div><div class="profile-card-info"><div class="profile-card-name">Kylian Mbappe</div><div class="profile-card-detail">France · Real Madrid</div></div><div class="profile-card-val">$250M</div></a>
+  </div>
+</div>
+    `
+  },
+
+  'richest-nba-players-2026': {
+    slug: 'richest-nba-players-2026',
+    title: 'Richest NBA Players 2026 — Net Worth Rankings',
+    excerpt: 'Michael Jordan leads at $3B. LeBron James became the first active NBA player billionaire. Full net worth rankings for the wealthiest basketball players in 2026.',
+    category: 'Basketball',
+    date: 'May 2026',
+    readTime: 7,
+    content: `
+<p>The NBA produces more individual wealth per player than almost any other sport. A combination of maximum salary contracts, increasingly lucrative shoe deals and a growing culture of athlete entrepreneurship has turned the league's top stars into genuine business empires.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item"><div class="stat-callout-num">$3B</div><div class="stat-callout-label">Michael Jordan</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$1.5B</div><div class="stat-callout-label">LeBron James</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$300M</div><div class="stat-callout-label">Kevin Durant</div></div>
+</div>
+
+<h2>Top 10 Richest NBA Players 2026</h2>
+
+<table class="data-table">
+  <thead><tr><th>#</th><th>Player</th><th>Net Worth</th><th>Key Wealth Source</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td><a href="/michael-jordan-legacy">Michael Jordan</a></td><td class="gold">$3B</td><td>Nike Air Jordan revenue share</td></tr>
+    <tr><td>2</td><td><a href="/lebron-james">LeBron James</a></td><td class="gold">$1.5B</td><td>SpringHill + Nike lifetime + Liverpool stake</td></tr>
+    <tr><td>3</td><td><a href="/magic-johnson">Magic Johnson</a></td><td class="gold">$1.2B</td><td>Starbucks franchises + investments</td></tr>
+    <tr><td>4</td><td><a href="/shaquille-oneal">Shaquille O'Neal</a></td><td class="gold">$500M</td><td>Franchises + media + endorsements</td></tr>
+    <tr><td>5</td><td><a href="/kevin-durant">Kevin Durant</a></td><td class="gold">$300M</td><td>Nike lifetime + Thirty Five Ventures</td></tr>
+    <tr><td>6</td><td><a href="/stephen-curry">Stephen Curry</a></td><td class="gold">$250M</td><td>Under Armour equity + $62.6M salary</td></tr>
+    <tr><td>7</td><td><a href="/carmelo-anthony">Carmelo Anthony</a></td><td class="gold">$160M</td><td>$262M career salary + Jordan Brand</td></tr>
+    <tr><td>8</td><td><a href="/chris-paul">Chris Paul</a></td><td class="gold">$180M</td><td>$330M+ career salary + investments</td></tr>
+    <tr><td>9</td><td><a href="/dwyane-wade">Dwyane Wade</a></td><td class="gold">$170M</td><td>Li-Ning lifetime deal + Utah Jazz stake</td></tr>
+    <tr><td>10</td><td><a href="/hakeem-olajuwon">Hakeem Olajuwon</a></td><td class="gold">$300M</td><td>Houston real estate empire</td></tr>
+  </tbody>
+</table>
+
+<h2>Michael Jordan — The $3 Billion Template</h2>
+<p>Michael Jordan's $3 billion net worth is driven almost entirely by his continuing share of Nike's Air Jordan revenue rather than his playing salary — which peaked at $33 million per season. Air Jordan generates over $5 billion in annual revenue for Nike, and Jordan receives a royalty on every pair sold. This structure — creating a lasting commercial asset from athletic fame — is the model every subsequent athlete has tried to replicate.</p>
+
+<h2>LeBron James — The First Active NBA Billionaire</h2>
+<p>LeBron James became the first active NBA player to reach billionaire status in 2022. His wealth comes from his SpringHill entertainment company, a lifetime Nike deal estimated at $30 million per year, his stake in Liverpool FC, and his Blaze Pizza investment. His $50 million annual NBA salary with the Lakers is significant but represents less than 10% of his total annual earnings. <a href="/lebron-james">See LeBron's full profile →</a></p>
+
+<h2>Stephen Curry's Under Armour Bet</h2>
+<p>Stephen Curry signed an equity partnership with Under Armour in 2023 that could make him a billionaire if the brand's value increases. His Warriors salary of $62.6 million makes him one of the highest-paid players in NBA history, but his long-term wealth story is about the Under Armour stake — not the playing contract. <a href="/stephen-curry">See Curry's full earnings →</a></p>
+
+<div class="related-profiles">
+  <h3>Related Profiles</h3>
+  <div class="profile-card-grid">
+    <a href="/michael-jordan-legacy" class="profile-card"><div class="profile-card-rank">1</div><div class="profile-card-info"><div class="profile-card-name">Michael Jordan</div><div class="profile-card-detail">USA · Retired</div></div><div class="profile-card-val">$3B</div></a>
+    <a href="/lebron-james" class="profile-card"><div class="profile-card-rank">2</div><div class="profile-card-info"><div class="profile-card-name">LeBron James</div><div class="profile-card-detail">USA · Lakers</div></div><div class="profile-card-val">$1.5B</div></a>
+    <a href="/stephen-curry" class="profile-card"><div class="profile-card-rank">3</div><div class="profile-card-info"><div class="profile-card-name">Stephen Curry</div><div class="profile-card-detail">USA · Warriors</div></div><div class="profile-card-val">$250M</div></a>
+    <a href="/kevin-durant" class="profile-card"><div class="profile-card-rank">4</div><div class="profile-card-info"><div class="profile-card-name">Kevin Durant</div><div class="profile-card-detail">USA · Rockets</div></div><div class="profile-card-val">$300M</div></a>
+  </div>
+</div>
+    `
+  },
+
+  'richest-singers-2026': {
+    slug: 'richest-singers-2026',
+    title: 'Richest Singers and Rappers in the World 2026',
+    excerpt: 'Jay-Z leads at $2.5B. Rihanna built a $1.4B fortune through Fenty Beauty. Taylor Swift, Paul McCartney and Selena Gomez round out the top tier. Full rankings.',
+    category: 'Music',
+    date: 'May 2026',
+    readTime: 7,
+    content: `
+<p>The music industry's wealthiest artists have one thing in common — their fortunes were built through business ownership, not record sales. Jay-Z sold cognac brands to LVMH. Rihanna built a $1.4 billion cosmetics empire. Taylor Swift owns her masters. The richest musicians of 2026 are entrepreneurs who happen to also make music.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item"><div class="stat-callout-num">$2.5B</div><div class="stat-callout-label">Jay-Z</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$1.4B</div><div class="stat-callout-label">Rihanna</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$1.3B</div><div class="stat-callout-label">Paul McCartney</div></div>
+</div>
+
+<h2>Top 10 Richest Singers and Rappers 2026</h2>
+
+<table class="data-table">
+  <thead><tr><th>#</th><th>Artist</th><th>Net Worth</th><th>Key Wealth Source</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td><a href="/jay-z">Jay-Z</a></td><td class="gold">$2.5B</td><td>D'usse cognac + Armand de Brignac → LVMH</td></tr>
+    <tr><td>2</td><td><a href="/rihanna">Rihanna</a></td><td class="gold">$1.4B</td><td>Fenty Beauty — $600M/yr revenue</td></tr>
+    <tr><td>3</td><td><a href="/paul-mccartney">Paul McCartney</a></td><td class="gold">$1.3B</td><td>Beatles catalog royalties</td></tr>
+    <tr><td>4</td><td><a href="/selena-gomez">Selena Gomez</a></td><td class="gold">$1.3B</td><td>Rare Beauty — $2.7B valuation</td></tr>
+    <tr><td>5</td><td><a href="/taylor-swift">Taylor Swift</a></td><td class="gold">$1.6B</td><td>Eras Tour $2B + re-recorded masters</td></tr>
+    <tr><td>6</td><td><a href="/kanye-west">Kanye West</a></td><td class="gold">$500M</td><td>Yeezy brand — post-Adidas split</td></tr>
+    <tr><td>7</td><td><a href="/beyonce">Beyonce</a></td><td class="gold">$540M</td><td>Renaissance tour + Ivy Park</td></tr>
+    <tr><td>8</td><td><a href="/mariah-carey">Mariah Carey</a></td><td class="gold">$350M</td><td>AIWFCIY royalties + catalog</td></tr>
+    <tr><td>9</td><td><a href="/katy-perry">Katy Perry</a></td><td class="gold">$340M</td><td>Vegas residency + American Idol</td></tr>
+    <tr><td>10</td><td><a href="/usher-raymond">Usher</a></td><td class="gold">$180M</td><td>Super Bowl + Vegas residency</td></tr>
+  </tbody>
+</table>
+
+<h2>Taylor Swift — The Billion-Dollar Tour</h2>
+<p>Taylor Swift's Eras Tour grossed over $2 billion across 150+ shows — the highest-grossing concert tour in history. Combined with her re-recorded masters strategy and a $1.1 billion catalog valuation, she reached billionaire status in 2024 according to Forbes — one of the first artists to do so primarily through music rather than outside business ventures. <a href="/taylor-swift">See Taylor Swift's full earnings →</a></p>
+
+<h2>Rihanna and Selena Gomez — Beauty Billionaires</h2>
+<p>The two most striking entries in the 2026 music wealth rankings are Rihanna and Selena Gomez — both billionaires primarily because of beauty companies rather than music. Fenty Beauty generates $600 million annually and is 51% owned by Rihanna through her partnership with LVMH. Rare Beauty has a $2.7 billion valuation with Selena Gomez as majority owner. <a href="/rihanna">Rihanna's profile →</a> | <a href="/selena-gomez">Selena Gomez's profile →</a></p>
+
+<div class="related-profiles">
+  <h3>Related Profiles</h3>
+  <div class="profile-card-grid">
+    <a href="/taylor-swift" class="profile-card"><div class="profile-card-rank">1</div><div class="profile-card-info"><div class="profile-card-name">Taylor Swift</div><div class="profile-card-detail">USA · Pop</div></div><div class="profile-card-val">$1.6B</div></a>
+    <a href="/rihanna" class="profile-card"><div class="profile-card-rank">2</div><div class="profile-card-info"><div class="profile-card-name">Rihanna</div><div class="profile-card-detail">Barbados · Pop/R&B</div></div><div class="profile-card-val">$1.4B</div></a>
+    <a href="/selena-gomez" class="profile-card"><div class="profile-card-rank">3</div><div class="profile-card-info"><div class="profile-card-name">Selena Gomez</div><div class="profile-card-detail">USA · Pop</div></div><div class="profile-card-val">$1.3B</div></a>
+    <a href="/jay-z" class="profile-card"><div class="profile-card-rank">4</div><div class="profile-card-info"><div class="profile-card-name">Jay-Z</div><div class="profile-card-detail">USA · Hip-Hop</div></div><div class="profile-card-val">$2.5B</div></a>
+  </div>
+</div>
+    `
+  },
+
+  'richest-tech-founders-2026': {
+    slug: 'richest-tech-founders-2026',
+    title: 'Richest Tech Founders 2026 — Billionaire Rankings',
+    excerpt: 'Elon Musk leads at $300B+. Jeff Bezos at $291B. The AI era has created the fastest wealth accumulation in corporate history. Full rankings for 2026.',
+    category: 'Technology',
+    date: 'May 2026',
+    readTime: 8,
+    content: `
+<p>Technology has created more billionaires in the past 30 years than any other industry in history. The AI era has accelerated this dramatically — Jensen Huang's net worth grew from $3 billion in 2020 to over $120 billion in 2026 as NVIDIA became the world's most valuable company by market capitalisation.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item"><div class="stat-callout-num">$300B+</div><div class="stat-callout-label">Elon Musk</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$291B</div><div class="stat-callout-label">Jeff Bezos</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$215B</div><div class="stat-callout-label">Mark Zuckerberg</div></div>
+</div>
+
+<h2>Top 10 Richest Tech Founders 2026</h2>
+
+<table class="data-table">
+  <thead><tr><th>#</th><th>Founder</th><th>Net Worth</th><th>Company</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td><a href="/elon-musk">Elon Musk</a></td><td class="gold">$300B+</td><td>Tesla, SpaceX, xAI, X</td></tr>
+    <tr><td>2</td><td><a href="/jeff-bezos">Jeff Bezos</a></td><td class="gold">$291B</td><td>Amazon founder</td></tr>
+    <tr><td>3</td><td><a href="/mark-zuckerberg">Mark Zuckerberg</a></td><td class="gold">$215B</td><td>Meta — Facebook, Instagram, WhatsApp</td></tr>
+    <tr><td>4</td><td><a href="/larry-ellison">Larry Ellison</a></td><td class="gold">$180B</td><td>Oracle founder</td></tr>
+    <tr><td>5</td><td><a href="/bill-gates">Bill Gates</a></td><td class="gold">$130B</td><td>Microsoft co-founder</td></tr>
+    <tr><td>6</td><td><a href="/jensen-huang">Jensen Huang</a></td><td class="gold">$120B</td><td>NVIDIA — AI chip monopoly</td></tr>
+    <tr><td>7</td><td><a href="/larry-page">Larry Page</a></td><td class="gold">$120B</td><td>Google co-founder</td></tr>
+    <tr><td>8</td><td><a href="/sergey-brin">Sergey Brin</a></td><td class="gold">$115B</td><td>Google co-founder</td></tr>
+    <tr><td>9</td><td><a href="/steve-ballmer">Steve Ballmer</a></td><td class="gold">$120B</td><td>Microsoft CEO 2000-2014</td></tr>
+    <tr><td>10</td><td><a href="/sam-altman">Sam Altman</a></td><td class="gold">$2B</td><td>OpenAI CEO</td></tr>
+  </tbody>
+</table>
+
+<h2>The AI Wealth Explosion</h2>
+<p>The emergence of large language models in 2022-2023 created a wealth generation event comparable to the dot-com boom. Jensen Huang's net worth at NVIDIA grew from approximately $3 billion in 2020 to over $120 billion by 2026 as demand for AI chips drove NVIDIA's revenue from $10 billion to $130 billion in five years — the fastest revenue growth of any company at that scale in history. <a href="/jensen-huang">See Jensen Huang's full profile →</a></p>
+
+<h2>Elon Musk — The World's Richest Person</h2>
+<p>Elon Musk's fortune exceeds $300 billion, driven by his stakes in Tesla, SpaceX and xAI. His xAI company was acquired by SpaceX in February 2026 at a $250 billion valuation — the largest private corporate merger in history. His wealth is almost entirely paper wealth in shares he cannot easily sell without moving the market. <a href="/elon-musk">See Musk's full profile →</a></p>
+
+<div class="related-profiles">
+  <h3>Related Profiles</h3>
+  <div class="profile-card-grid">
+    <a href="/elon-musk" class="profile-card"><div class="profile-card-rank">1</div><div class="profile-card-info"><div class="profile-card-name">Elon Musk</div><div class="profile-card-detail">USA · Tesla, SpaceX, xAI</div></div><div class="profile-card-val">$300B+</div></a>
+    <a href="/jeff-bezos" class="profile-card"><div class="profile-card-rank">2</div><div class="profile-card-info"><div class="profile-card-name">Jeff Bezos</div><div class="profile-card-detail">USA · Amazon</div></div><div class="profile-card-val">$291B</div></a>
+    <a href="/mark-zuckerberg" class="profile-card"><div class="profile-card-rank">3</div><div class="profile-card-info"><div class="profile-card-name">Mark Zuckerberg</div><div class="profile-card-detail">USA · Meta</div></div><div class="profile-card-val">$215B</div></a>
+    <a href="/jensen-huang" class="profile-card"><div class="profile-card-rank">4</div><div class="profile-card-info"><div class="profile-card-name">Jensen Huang</div><div class="profile-card-detail">USA · NVIDIA</div></div><div class="profile-card-val">$120B</div></a>
+  </div>
+</div>
+    `
+  },
+
+  'how-much-does-mrbeast-make': {
+    slug: 'how-much-does-mrbeast-make',
+    title: 'How Much Does MrBeast Make? Full Income Breakdown 2026',
+    excerpt: 'MrBeast earns an estimated $250M+ per year across YouTube, Feastables, sponsorships and his creator network. Full breakdown of Jimmy Donaldson\'s income sources.',
+    category: 'Creators',
+    date: 'May 2026',
+    readTime: 6,
+    content: `
+<p>MrBeast is the most subscribed individual creator on YouTube with over 370 million subscribers and an estimated net worth of $700 million. But how much does he actually make per year? The answer is more complex — and more interesting — than most people assume.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item"><div class="stat-callout-num">$80M</div><div class="stat-callout-label">YouTube AdSense</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$100M</div><div class="stat-callout-label">Feastables Revenue</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$50M+</div><div class="stat-callout-label">Sponsorships</div></div>
+</div>
+
+<h2>MrBeast's Income Sources — Full Breakdown</h2>
+
+<table class="data-table">
+  <thead><tr><th>Source</th><th>Estimated Annual</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>YouTube AdSense</td><td class="gold">~$80M</td><td>Main channel + network channels</td></tr>
+    <tr><td>Feastables chocolate</td><td class="gold">~$100M revenue</td><td>Own brand — $10M+ net</td></tr>
+    <tr><td>Brand sponsorships</td><td class="gold">~$50M</td><td>Integrated mid-rolls</td></tr>
+    <tr><td>MrBeast Burger</td><td class="gold">~$20M</td><td>Ghost kitchen chain</td></tr>
+    <tr><td>Merchandise</td><td class="gold">~$10M</td><td>Shop.mrbeast.com</td></tr>
+    <tr><td>Streaming deals</td><td class="gold">~$5M</td><td>Netflix, Amazon deals</td></tr>
+  </tbody>
+</table>
+
+<h2>Why YouTube AdSense Is Not His Biggest Income</h2>
+<p>Most people assume YouTube ad revenue is how MrBeast makes money. In reality, AdSense — despite generating approximately $80 million annually — is not his primary income source. That distinction belongs to Feastables, his chocolate brand that generates approximately $100 million in revenue per year. The YouTube channel funds the content that builds the audience that buys the product. The platform income is marketing spend, not the business itself.</p>
+
+<h2>Feastables — The Real Business</h2>
+<p>Feastables launched in 2022 and grew to $100 million in annual revenue within two years, competing directly with established chocolate brands on supermarket shelves. MrBeast's 370 million YouTube subscribers represent one of the most powerful distribution channels ever created for a consumer product launch. Each new Feastables video effectively serves as a multi-hundred-million-impression advertising campaign that costs nothing beyond production.</p>
+
+<h2>His Reinvestment Strategy</h2>
+<p>MrBeast is unique among creators in that he reinvests virtually all his YouTube income back into content production. Videos with $300,000+ budgets, custom-built challenge sets, and prize money of $1 million or more are funded directly from AdSense revenue. This reinvestment strategy has produced compounding returns — higher production values generate more views, generating more AdSense, generating more reinvestment capacity. His personal wealth comes primarily from Feastables equity rather than taking distributions from his YouTube operation.</p>
+
+<div class="related-profiles">
+  <h3>Related Profiles</h3>
+  <div class="profile-card-grid">
+    <a href="/mrbeast" class="profile-card"><div class="profile-card-rank">1</div><div class="profile-card-info"><div class="profile-card-name">MrBeast</div><div class="profile-card-detail">USA · YouTube</div></div><div class="profile-card-val">$700M</div></a>
+    <a href="/jake-paul" class="profile-card"><div class="profile-card-rank">2</div><div class="profile-card-info"><div class="profile-card-name">Jake Paul</div><div class="profile-card-detail">USA · Boxing + Creator</div></div><div class="profile-card-val">$200M</div></a>
+    <a href="/pewdiepie" class="profile-card"><div class="profile-card-rank">3</div><div class="profile-card-info"><div class="profile-card-name">PewDiePie</div><div class="profile-card-detail">Sweden · YouTube</div></div><div class="profile-card-val">$50M</div></a>
+    <a href="/ksi" class="profile-card"><div class="profile-card-rank">4</div><div class="profile-card-info"><div class="profile-card-name">KSI</div><div class="profile-card-detail">UK · YouTube + Boxing</div></div><div class="profile-card-val">$25M</div></a>
+  </div>
+</div>
+    `
+  },
+
+  'richest-onlyfans-creators-2026': {
+    slug: 'richest-onlyfans-creators-2026',
+    title: 'Richest OnlyFans Creators 2026 — Top Earners Ranked',
+    excerpt: 'Sophie Rain leads with $60M+ annually. Bhad Bhabie is the richest creator overall at $50M net worth. OnlyFans paid out $7.22B to creators in 2024. Full rankings.',
+    category: 'OnlyFans',
+    date: 'May 2026',
+    readTime: 6,
+    content: `
+<p>OnlyFans paid out $7.22 billion to creators in 2024 — a 9.1% increase from the previous year. The platform hosts 4.63 million creators, but earnings are extraordinarily concentrated. The top 0.1% of creators earn approximately $735,000 per year, while the average creator earns just $131 per month. Here are the top earners in 2026.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item"><div class="stat-callout-num">$7.22B</div><div class="stat-callout-label">Creator Payouts 2024</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$60M+</div><div class="stat-callout-label">Sophie Rain Annual</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">80%</div><div class="stat-callout-label">Creator Revenue Share</div></div>
+</div>
+
+<h2>Top 10 Richest OnlyFans Creators 2026</h2>
+
+<table class="data-table">
+  <thead><tr><th>#</th><th>Creator</th><th>Earnings</th><th>Known For</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td><a href="/sophie-rain">Sophie Rain</a></td><td class="gold">$60M+/yr</td><td>#1 earner 2025 — non-explicit</td></tr>
+    <tr><td>2</td><td><a href="/iggy-azalea-of">Iggy Azalea</a></td><td class="gold">$9.2M/month</td><td>Rapper turned OF top earner</td></tr>
+    <tr><td>3</td><td><a href="/erica-mena-of">Erica Mena</a></td><td class="gold">$4.5M/month</td><td>Love and Hip Hop — free + upsell</td></tr>
+    <tr><td>4</td><td><a href="/amouranth">Amouranth</a></td><td class="gold">$1.5M/month peak</td><td>Twitch streamer + cosplay</td></tr>
+    <tr><td>5</td><td><a href="/bhad-bhabie-of">Bhad Bhabie</a></td><td class="gold">$50M net worth</td><td>$1M in 6 hours at 18</td></tr>
+    <tr><td>6</td><td><a href="/blac-chyna">Blac Chyna</a></td><td class="gold">$20M/month peak</td><td>All-time monthly record holder</td></tr>
+    <tr><td>7</td><td><a href="/bella-thorne">Bella Thorne</a></td><td class="gold">$1M first 24hrs</td><td>First $1M/day on OF</td></tr>
+    <tr><td>8</td><td><a href="/corinna-kopf-of">Corinna Kopf</a></td><td class="gold">$1M first 48hrs</td><td>Vlog Squad — gaming creator</td></tr>
+    <tr><td>9</td><td><a href="/amber-rose-of">Amber Rose</a></td><td class="gold">Top 10 earner</td><td>SlutWalk founder</td></tr>
+    <tr><td>10</td><td><a href="/mia-khalifa">Mia Khalifa</a></td><td class="gold">$6.4M/month est.</td><td>Former adult star</td></tr>
+  </tbody>
+</table>
+
+<h2>How OnlyFans Creator Economics Work</h2>
+<p>OnlyFans takes 20% of all creator revenue — subscriptions, pay-per-view content and tips. Creators keep 80%. The platform's key mechanic is the combination of recurring subscription income and one-time PPV purchases. A creator with 10,000 subscribers at $15/month generates $120,000 monthly from subscriptions alone before any PPV upsells. Top creators layer PPV messages on top of this base, dramatically increasing per-subscriber revenue.</p>
+
+<h2>Bhad Bhabie — The $1M in 6 Hours Record</h2>
+<p>Danielle Bregoli — known as Bhad Bhabie from her viral Dr. Phil appearance — made $1 million in six hours on the day after her 18th birthday in April 2021, setting a record at the time. Her estimated lifetime OnlyFans earnings exceed $57 million, making her the wealthiest creator on the platform by net worth at $50 million. <a href="/bhad-bhabie-of">See Bhad Bhabie's full profile →</a></p>
+
+<div class="related-profiles">
+  <h3>Related Profiles</h3>
+  <div class="profile-card-grid">
+    <a href="/sophie-rain" class="profile-card"><div class="profile-card-rank">1</div><div class="profile-card-info"><div class="profile-card-name">Sophie Rain</div><div class="profile-card-detail">USA · Creator</div></div><div class="profile-card-val">$60M+/yr</div></a>
+    <a href="/bhad-bhabie-of" class="profile-card"><div class="profile-card-rank">2</div><div class="profile-card-info"><div class="profile-card-name">Bhad Bhabie</div><div class="profile-card-detail">USA · Creator</div></div><div class="profile-card-val">$50M NW</div></a>
+    <a href="/amouranth" class="profile-card"><div class="profile-card-rank">3</div><div class="profile-card-info"><div class="profile-card-name">Amouranth</div><div class="profile-card-detail">USA · Creator</div></div><div class="profile-card-val">$25M NW</div></a>
+    <a href="/iggy-azalea-of" class="profile-card"><div class="profile-card-rank">4</div><div class="profile-card-info"><div class="profile-card-name">Iggy Azalea</div><div class="profile-card-detail">Australia · Creator</div></div><div class="profile-card-val">$9.2M/mo</div></a>
+  </div>
+</div>
+    `
+  },
+
+  'richest-politicians-2026': {
+    slug: 'richest-politicians-2026',
+    title: 'Richest Politicians in the World 2026 — Net Worth Rankings',
+    excerpt: 'Vladimir Putin may be the world\'s richest person with $70-200B in hidden wealth. Rishi Sunak is the wealthiest UK PM ever at $800M. Full rankings.',
+    category: 'Politics',
+    date: 'May 2026',
+    readTime: 7,
+    content: `
+<p>Measuring politician wealth is one of the most contested exercises in public information. Official declarations rarely reflect reality. Vladimir Putin declares an 800 square foot apartment and two Soviet-era cars — while investigators estimate his hidden wealth at $70-200 billion. Here is what we know about the richest politicians in the world in 2026.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item"><div class="stat-callout-num">$70-200B</div><div class="stat-callout-label">Putin Hidden Wealth</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$800M</div><div class="stat-callout-label">Rishi Sunak</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$70M</div><div class="stat-callout-label">Barack Obama</div></div>
+</div>
+
+<h2>Top 10 Richest Politicians 2026</h2>
+
+<table class="data-table">
+  <thead><tr><th>#</th><th>Politician</th><th>Est. Net Worth</th><th>Source</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td><a href="/vladimir-putin">Vladimir Putin</a></td><td class="gold">$70B-$200B</td><td>Alleged hidden wealth via proxies</td></tr>
+    <tr><td>2</td><td><a href="/rishi-sunak">Rishi Sunak</a></td><td class="gold">$800M</td><td>Wife Akshata Murthy Infosys stake</td></tr>
+    <tr><td>3</td><td><a href="/donald-trump">Donald Trump</a></td><td class="gold">$6B</td><td>Real estate + Trump Media</td></tr>
+    <tr><td>4</td><td><a href="/volodymyr-zelensky">Volodymyr Zelensky</a></td><td class="gold">$30M</td><td>Acting and production career</td></tr>
+    <tr><td>5</td><td><a href="/barack-obama">Barack Obama</a></td><td class="gold">$70M</td><td>$65M book deal + Netflix</td></tr>
+    <tr><td>6</td><td><a href="/narendra-modi">Narendra Modi</a></td><td class="gold">$2M</td><td>Declared assets only</td></tr>
+    <tr><td>7</td><td><a href="/emmanuel-macron">Emmanuel Macron</a></td><td class="gold">$10M</td><td>Investment banking + property</td></tr>
+    <tr><td>8</td><td><a href="/boris-johnson">Boris Johnson</a></td><td class="gold">$10M</td><td>Speaking fees + memoir</td></tr>
+    <tr><td>9</td><td><a href="/keir-starmer">Keir Starmer</a></td><td class="gold">$5M</td><td>Legal career + PM salary</td></tr>
+    <tr><td>10</td><td><a href="/joe-biden">Joe Biden</a></td><td class="gold">$10M</td><td>Books + presidential pension</td></tr>
+  </tbody>
+</table>
+
+<h2>Why Politician Wealth Is So Hard to Measure</h2>
+<p>Democratic politicians in countries with disclosure requirements — the US, UK, EU — must file detailed asset declarations, though these are often incomplete. Authoritarian leaders like Putin operate entirely outside any disclosure framework. Putin's officially declared assets are laughably inconsistent with his lifestyle — a $1.4 billion Black Sea palace, a $100 million superyacht and a collection of luxury watches worth multiples of his declared annual income of $140,000.</p>
+
+<h2>Rishi Sunak — The Wealthiest UK PM in History</h2>
+<p>Rishi Sunak became the wealthiest UK Prime Minister in history with $800 million in combined wealth, primarily from wife Akshata Murthy's stake in Infosys. His tenure as PM from 2022-2024 ended with a landslide Labour election loss. The contrast between his personal wealth and the cost-of-living pressures his government presided over was a recurring political theme. <a href="/rishi-sunak">See Sunak's full profile →</a></p>
+
+<div class="related-profiles">
+  <h3>Related Profiles</h3>
+  <div class="profile-card-grid">
+    <a href="/vladimir-putin" class="profile-card"><div class="profile-card-rank">1</div><div class="profile-card-info"><div class="profile-card-name">Vladimir Putin</div><div class="profile-card-detail">Russia · President</div></div><div class="profile-card-val">$70-200B</div></a>
+    <a href="/donald-trump" class="profile-card"><div class="profile-card-rank">2</div><div class="profile-card-info"><div class="profile-card-name">Donald Trump</div><div class="profile-card-detail">USA · President</div></div><div class="profile-card-val">$6B</div></a>
+    <a href="/barack-obama" class="profile-card"><div class="profile-card-rank">3</div><div class="profile-card-info"><div class="profile-card-name">Barack Obama</div><div class="profile-card-detail">USA · Former President</div></div><div class="profile-card-val">$70M</div></a>
+    <a href="/rishi-sunak" class="profile-card"><div class="profile-card-rank">4</div><div class="profile-card-info"><div class="profile-card-name">Rishi Sunak</div><div class="profile-card-detail">UK · Former PM</div></div><div class="profile-card-val">$800M</div></a>
+  </div>
+</div>
+    `
+  },
+
+  'richest-athletes-2026': {
+    slug: 'richest-athletes-2026',
+    title: 'Richest Athletes in the World 2026 — Net Worth Rankings',
+    excerpt: 'Roger Federer became a billionaire through his On Running stake. Tiger Woods leads at $1.1B. Full rankings of the wealthiest athletes across all sports in 2026.',
+    category: 'Athletes',
+    date: 'May 2026',
+    readTime: 7,
+    content: `
+<p>The wealthiest athletes in 2026 built their fortunes through business ownership and investment rather than playing contracts alone. Roger Federer's $1.1 billion net worth is driven primarily by a 3% stake in On Running worth over $375 million — more than his entire $130 million career prize money. Tiger Woods's billion was built through his own course design business and Nike partnership.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item"><div class="stat-callout-num">$1.1B</div><div class="stat-callout-label">Tiger Woods</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$1.1B</div><div class="stat-callout-label">Roger Federer</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$600M</div><div class="stat-callout-label">Michael Schumacher</div></div>
+</div>
+
+<h2>Top 10 Richest Athletes 2026 (Non-Football, Non-Basketball)</h2>
+
+<table class="data-table">
+  <thead><tr><th>#</th><th>Athlete</th><th>Net Worth</th><th>Sport</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td><a href="/tiger-woods">Tiger Woods</a></td><td class="gold">$1.1B</td><td>Golf</td></tr>
+    <tr><td>2</td><td><a href="/roger-federer">Roger Federer</a></td><td class="gold">$1.1B</td><td>Tennis</td></tr>
+    <tr><td>3</td><td><a href="/michael-schumacher">Michael Schumacher</a></td><td class="gold">$600M</td><td>Formula 1</td></tr>
+    <tr><td>4</td><td><a href="/floyd-mayweather">Floyd Mayweather</a></td><td class="gold">$450M</td><td>Boxing</td></tr>
+    <tr><td>5</td><td><a href="/manny-pacquiao">Manny Pacquiao</a></td><td class="gold">$220M</td><td>Boxing</td></tr>
+    <tr><td>6</td><td><a href="/wayne-gretzky">Wayne Gretzky</a></td><td class="gold">$250M</td><td>Ice Hockey</td></tr>
+    <tr><td>7</td><td><a href="/maria-sharapova">Maria Sharapova</a></td><td class="gold">$180M</td><td>Tennis</td></tr>
+    <tr><td>8</td><td><a href="/derek-jeter">Derek Jeter</a></td><td class="gold">$200M</td><td>Baseball</td></tr>
+    <tr><td>9</td><td><a href="/serena-williams">Serena Williams</a></td><td class="gold">$300M</td><td>Tennis</td></tr>
+    <tr><td>10</td><td><a href="/lewis-hamilton">Lewis Hamilton</a></td><td class="gold">$300M</td><td>Formula 1</td></tr>
+  </tbody>
+</table>
+
+<h2>Roger Federer — The Investor Who Became a Billionaire</h2>
+<p>Roger Federer joined the Forbes billionaires list for the first time in March 2026. His $1.1 billion net worth is built not on his $130 million career prize money but on a 3% stake in Swiss running shoe brand On, acquired in 2019 when the company was still small. On has since become one of the fastest-growing sports brands in the world, making Federer's stake worth over $375 million. His $300 million Uniqlo deal and $8 million annual Rolex partnership add further income. <a href="/roger-federer">See Federer's full profile →</a></p>
+
+<h2>Tiger Woods — Golf's First Billionaire</h2>
+<p>Tiger Woods built his $1.1 billion fortune through 27 years of Nike partnership income, his own golf course design business Jupiter Links, and the continuing commercial value of his name even through injury and personal setbacks. He earns approximately $50 million per year in endorsements despite rarely competing. <a href="/tiger-woods">See Woods's full profile →</a></p>
+
+<div class="related-profiles">
+  <h3>Related Profiles</h3>
+  <div class="profile-card-grid">
+    <a href="/tiger-woods" class="profile-card"><div class="profile-card-rank">1</div><div class="profile-card-info"><div class="profile-card-name">Tiger Woods</div><div class="profile-card-detail">USA · Golf</div></div><div class="profile-card-val">$1.1B</div></a>
+    <a href="/roger-federer" class="profile-card"><div class="profile-card-rank">2</div><div class="profile-card-info"><div class="profile-card-name">Roger Federer</div><div class="profile-card-detail">Switzerland · Tennis</div></div><div class="profile-card-val">$1.1B</div></a>
+    <a href="/floyd-mayweather" class="profile-card"><div class="profile-card-rank">3</div><div class="profile-card-info"><div class="profile-card-name">Floyd Mayweather</div><div class="profile-card-detail">USA · Boxing</div></div><div class="profile-card-val">$450M</div></a>
+    <a href="/serena-williams" class="profile-card"><div class="profile-card-rank">4</div><div class="profile-card-info"><div class="profile-card-name">Serena Williams</div><div class="profile-card-detail">USA · Tennis</div></div><div class="profile-card-val">$300M</div></a>
+  </div>
+</div>
+    `
+  },
+
+  'top-ai-companies-revenue-2026': {
+    slug: 'top-ai-companies-revenue-2026',
+    title: 'Top AI Companies by Revenue 2026 — Rankings and Growth',
+    excerpt: 'OpenAI leads at $3.7B ARR growing 340%. xAI hit $350M standalone revenue. Cursor reached $500M ARR in 18 months. Full AI company revenue rankings for 2026.',
+    category: 'AI',
+    date: 'May 2026',
+    readTime: 7,
+    content: `
+<p>The AI industry in 2026 has produced revenue growth rates without precedent in software history. OpenAI grew from $0 to $3.7 billion in ARR in approximately 24 months. Cursor reached $500 million ARR in under 18 months. Cognition grew from $1 million to $73 million ARR in nine months. These are the fastest-growing companies of all time.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item"><div class="stat-callout-num">$3.7B</div><div class="stat-callout-label">OpenAI ARR</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$500M</div><div class="stat-callout-label">Cursor ARR</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$350M</div><div class="stat-callout-label">xAI Revenue</div></div>
+</div>
+
+<h2>Top AI Companies by Revenue 2026</h2>
+
+<table class="data-table">
+  <thead><tr><th>#</th><th>Company</th><th>ARR / Revenue</th><th>Growth</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td><a href="/openai">OpenAI</a></td><td class="gold">$3.7B ARR</td><td>+340% YoY</td></tr>
+    <tr><td>2</td><td><a href="/cursor-ai">Cursor (Anysphere)</a></td><td class="gold">$500M ARR</td><td>$0 → $500M in 18 months</td></tr>
+    <tr><td>3</td><td><a href="/xai-company">xAI (Grok)</a></td><td class="gold">$350M</td><td>Launched Nov 2023</td></tr>
+    <tr><td>4</td><td><a href="/anthropic-company">Anthropic</a></td><td class="gold">$1B+ ARR</td><td>+69% YoY</td></tr>
+    <tr><td>5</td><td><a href="/midjourney-ai">Midjourney</a></td><td class="gold">$300M ARR</td><td>40 employees, bootstrapped</td></tr>
+    <tr><td>6</td><td><a href="/mistral-ai-fr">Mistral AI</a></td><td class="gold">$50M+ ARR</td><td>$6B valuation</td></tr>
+    <tr><td>7</td><td><a href="/eleven-x-labs">ElevenLabs</a></td><td class="gold">$100M+ ARR</td><td>$3.3B valuation</td></tr>
+    <tr><td>8</td><td><a href="/perplexity-ai">Perplexity AI</a></td><td class="gold">$100M+ ARR</td><td>AI search challenger</td></tr>
+    <tr><td>9</td><td><a href="/cognition-devin">Cognition</a></td><td class="gold">$150M+ ARR</td><td>$1M → $73M in 9 months</td></tr>
+    <tr><td>10</td><td><a href="/hugging-face">Hugging Face</a></td><td class="gold">$100M+ ARR</td><td>$4.5B valuation</td></tr>
+  </tbody>
+</table>
+
+<h2>OpenAI — The Fastest Growing Software Company in History</h2>
+<p>OpenAI grew from $1 billion to $3.7 billion in ARR in a single year — faster than Stripe, Slack, Zoom or any other software product at comparable scale. ChatGPT reached 100 million users in two months, faster than any product in history. Revenue splits approximately between ChatGPT subscriptions (54%), API access (32%) and enterprise contracts (14%). <a href="/openai">See OpenAI's full profile →</a></p>
+
+<h2>Cursor — $500M ARR in 18 Months</h2>
+<p>Cursor, the AI code editor built by Anysphere, grew from zero to $500 million ARR in under 18 months — one of the fastest-growing developer tools ever built. xAI has reportedly been in acquisition talks with Anysphere at a $60 billion valuation. <a href="/cursor-ai">See Cursor's full profile →</a></p>
+
+<div class="related-profiles">
+  <h3>Related Profiles</h3>
+  <div class="profile-card-grid">
+    <a href="/openai" class="profile-card"><div class="profile-card-rank">1</div><div class="profile-card-info"><div class="profile-card-name">OpenAI</div><div class="profile-card-detail">USA · AI</div></div><div class="profile-card-val">$3.7B ARR</div></a>
+    <a href="/anthropic-company" class="profile-card"><div class="profile-card-rank">2</div><div class="profile-card-info"><div class="profile-card-name">Anthropic</div><div class="profile-card-detail">USA · AI</div></div><div class="profile-card-val">$1B+ ARR</div></a>
+    <a href="/cursor-ai" class="profile-card"><div class="profile-card-rank">3</div><div class="profile-card-info"><div class="profile-card-name">Cursor</div><div class="profile-card-detail">USA · AI Coding</div></div><div class="profile-card-val">$500M ARR</div></a>
+    <a href="/midjourney-ai" class="profile-card"><div class="profile-card-rank">4</div><div class="profile-card-info"><div class="profile-card-name">Midjourney</div><div class="profile-card-detail">USA · AI Images</div></div><div class="profile-card-val">$300M ARR</div></a>
+  </div>
+</div>
+    `
+  },
+
+  'canva-figma-revenue-2026': {
+    slug: 'canva-figma-revenue-2026',
+    title: 'Canva vs Figma — Revenue, Valuation and Growth 2026',
+    excerpt: 'Canva confirmed $4B ARR at $42B valuation. Figma IPO\'d at $56B in July 2025. Two design giants, completely different trajectories. Full comparison.',
+    category: 'Startups',
+    date: 'May 2026',
+    readTime: 6,
+    content: `
+<p>2025-26 has produced two of the most watched events in design software history: Figma's spectacular IPO in July 2025 and Canva's confirmation of $4 billion ARR heading into a 2026 IPO. Two companies, two very different stories — and a comparison that reveals as much about software valuation as it does about product strategy.</p>
+
+<div class="stat-callout">
+  <div class="stat-callout-item"><div class="stat-callout-num">$4B</div><div class="stat-callout-label">Canva ARR</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$821M</div><div class="stat-callout-label">Figma Revenue</div></div>
+  <div class="stat-callout-item"><div class="stat-callout-num">$56B</div><div class="stat-callout-label">Figma Market Cap</div></div>
+</div>
+
+<h2>Canva vs Figma — Key Metrics Comparison</h2>
+
+<table class="data-table">
+  <thead><tr><th>Metric</th><th>Canva</th><th>Figma</th></tr></thead>
+  <tbody>
+    <tr><td>ARR / Revenue</td><td class="gold">$4B ARR</td><td class="gold">$821M TTM</td></tr>
+    <tr><td>Valuation</td><td>$42B (private)</td><td>$56B (public)</td></tr>
+    <tr><td>Revenue multiple</td><td>10.5x ARR</td><td>68x revenue</td></tr>
+    <tr><td>Users</td><td>265M MAU</td><td>8M+ MAU</td></tr>
+    <tr><td>Growth rate</td><td>+35% YoY</td><td>+31% YoY</td></tr>
+    <tr><td>Profitable?</td><td>8 years profitable</td><td>Not disclosed</td></tr>
+    <tr><td>Status</td><td>Private — IPO H2 2026</td><td>Public — NYSE: FIG</td></tr>
+  </tbody>
+</table>
+
+<h2>Figma's IPO — The 250% First Day Pop</h2>
+<p>Figma went public on the NYSE in July 2025, priced at $33 per share and closing its first day at $115.50 — a 250% increase that valued the company at $56.3 billion. At 68x trailing revenue, the valuation reflected investor belief that Figma is the defining design infrastructure platform. This came after Adobe's $20 billion acquisition attempt was blocked by EU regulators in 2023 — a decision that, in hindsight, was one of the great regulatory gifts to a company's long-term value. <a href="/figma-saas">See Figma's full profile →</a></p>
+
+<h2>Canva's Remarkable Position</h2>
+<p>Canva generates 4x more revenue than Figma at a 3.4x lower valuation multiple — a discrepancy that public market investors are expected to close aggressively when Canva IPOs in H2 2026. With $4 billion ARR confirmed by co-founder Cliff Obrecht at Web Summit Qatar in February 2026, 265 million monthly active users, eight consecutive years of profitability and 800 million AI interactions monthly, Canva may be the most compelling IPO candidate of the decade. <a href="/canva-mrr">See Canva's full profile →</a></p>
+
+<h2>Different Markets, Different Multiples</h2>
+<p>The valuation gap reflects market positioning more than financial quality. Figma owns the professional UI/UX design market with near-monopoly levels of adoption — every product designer uses it. Canva serves everyone else — marketing teams, educators, small businesses, social media creators. Figma's smaller, higher-value B2B customer base justifies premium multiples. Canva's mass market means a larger addressable market but more pricing pressure. Both approaches are working.</p>
+
+<div class="related-profiles">
+  <h3>Related Profiles</h3>
+  <div class="profile-card-grid">
+    <a href="/canva-mrr" class="profile-card"><div class="profile-card-rank">1</div><div class="profile-card-info"><div class="profile-card-name">Canva</div><div class="profile-card-detail">Australia · Design SaaS</div></div><div class="profile-card-val">$4B ARR</div></a>
+    <a href="/figma-saas" class="profile-card"><div class="profile-card-rank">2</div><div class="profile-card-info"><div class="profile-card-name">Figma</div><div class="profile-card-detail">USA · Design SaaS</div></div><div class="profile-card-val">$821M</div></a>
+    <a href="/hubspot-saas" class="profile-card"><div class="profile-card-rank">3</div><div class="profile-card-info"><div class="profile-card-name">HubSpot</div><div class="profile-card-detail">USA · CRM SaaS</div></div><div class="profile-card-val">$2.6B</div></a>
+    <a href="/notion-startup" class="profile-card"><div class="profile-card-rank">4</div><div class="profile-card-info"><div class="profile-card-name">Notion</div><div class="profile-card-detail">USA · Productivity</div></div><div class="profile-card-val">$330M ARR</div></a>
+  </div>
+</div>
+    `
+  }
+}
