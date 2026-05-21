@@ -1750,10 +1750,6 @@ slug: 'scroll-the-globe-travel-blog',
     `
   },
 
-
-
-}
-
   'richest-footballers-2026': {
     slug: 'richest-footballers-2026',
     title: 'Richest Footballers in the World 2026 — Net Worth Rankings',
